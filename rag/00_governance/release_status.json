@@ -54,8 +54,18 @@
     "rc2": {
       "candidate_sha256": "67d0804361c2cb594216c5c33de330cc7c22c5f5988372eabd9988ba8f86ae2a",
       "freeze_eligible": false,
+      "fresh_regeneration": {
+        "embedded_validator": "PASS_134_OF_134",
+        "external_auditor_confirmation_required": true,
+        "fresh_candidate_sha256": "1a06c0d1779f043bfcd75ec04b575b85d491c4ff6dddcac4c9b9db6e95ae8db4",
+        "fresh_vector_sha256": "89189e573b7f7818b137bd69d00a0acabbaec0c64a2778d22c9244b432262a6e",
+        "locally_verified": true,
+        "snapshot_root_sha256": "39f3282103fbafccc288ad3ff8b3717d5266d378f3e684a83587506fdc7473ad",
+        "snapshot_zip_sha256": "3e79757c748ede47e8ebe3c768a29ce0218e14949dab41177b8ce42b40fdec12",
+        "vector_byte_identical_to_historical": true
+      },
       "revoked_frozen_attestation_sha256": "deea94bfe44ea672695bddab3d4de17189e8378ae2f6281838fded66934f63d1",
-      "status": "BLOCKED_PENDING_EXTERNAL_TRUST_EVIDENCE",
+      "status": "READY_FOR_SUPPLEMENTAL_EXTERNAL_AUDIT",
       "supplemental_audit_sha256": "8351b311a0e8190aa50dce9f9d83e7cb522c0611225b5db6a8694b0caa93b142",
       "supplemental_audit_verdict": "BLOCKED",
       "vector_sha256": "89189e573b7f7818b137bd69d00a0acabbaec0c64a2778d22c9244b432262a6e"
@@ -63,5 +73,5 @@
   },
   "repository": "mvera37/RAG_DIAloga",
   "schema_version": "dialoga_rag_release_status_v1",
-  "updated_at": "2026-08-18T15:04:00-05:00"
+  "updated_at": "2026-08-18T16:16:00-05:00"
 }
