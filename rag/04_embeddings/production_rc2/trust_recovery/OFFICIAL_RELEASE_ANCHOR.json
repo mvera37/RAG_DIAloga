@@ -16,26 +16,77 @@
   "model": {
     "canonical_snapshot_root_sha256": "39f3282103fbafccc288ad3ff8b3717d5266d378f3e684a83587506fdc7473ad",
     "expected_files": {
-      "1_Pooling/config.json": {"bytes": 313, "sha256": "781299da695e58439d70d491840da22ea0935d1d57d9646eb9725f1f19754e89"},
-      "README.md": {"bytes": 21421, "sha256": "3c47e61d962601a89027f406fe78f32f9bcdd9c73576c5204b3e70defb3e796b"},
-      "config.json": {"bytes": 1191, "sha256": "e1e3fc842a8e0537e25d6e4c93879698b92ae96722e8c162bef334b57978a3b0"},
-      "config_sentence_transformers.json": {"bytes": 283, "sha256": "f09adf93fcf868bb2fc3976a435d810b2ecdffa953d1da091d2a91168abab44b"},
-      "model.safetensors": {"bytes": 623341952, "sha256": "dcb6431bfa6e817fe100a2b0521360cec3383963b03fa966b685de18ca310d31"},
-      "modules.json": {"bytes": 349, "sha256": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf"},
-      "sentence_bert_config.json": {"bytes": 60, "sha256": "967ef958285e4a7a37d8ff1832473d967edd913b4e48572f31c3d3ea361d5327"},
-      "special_tokens_map.json": {"bytes": 694, "sha256": "cb9e60dcf4d8d314315cb3e761fe4c2e664fda8dbf66d7815372b2639e381182"},
-      "tokenizer.json": {"bytes": 33384821, "sha256": "0087c868b33bad550a78a08d19798cfd7f713cde4f020803b8f51f405503e15f"},
-      "tokenizer_config.json": {"bytes": 1155500, "sha256": "7947bdf0378520e69ca412b8c4dacd1cffa8aef099f851fdd5c65aa27c6b36a0"}
+      "1_Pooling/config.json": {
+        "bytes": 313,
+        "sha256": "781299da695e58439d70d491840da22ea0935d1d57d9646eb9725f1f19754e89"
+      },
+      "README.md": {
+        "bytes": 21421,
+        "sha256": "3c47e61d962601a89027f406fe78f32f9bcdd9c73576c5204b3e70defb3e796b"
+      },
+      "config.json": {
+        "bytes": 1191,
+        "sha256": "e1e3fc842a8e0537e25d6e4c93879698b92ae96722e8c162bef334b57978a3b0"
+      },
+      "config_sentence_transformers.json": {
+        "bytes": 283,
+        "sha256": "f09adf93fcf868bb2fc3976a435d810b2ecdffa953d1da091d2a91168abab44b"
+      },
+      "model.safetensors": {
+        "bytes": 623341952,
+        "sha256": "dcb6431bfa6e817fe100a2b0521360cec3383963b03fa966b685de18ca310d31"
+      },
+      "modules.json": {
+        "bytes": 349,
+        "sha256": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf"
+      },
+      "sentence_bert_config.json": {
+        "bytes": 60,
+        "sha256": "967ef958285e4a7a37d8ff1832473d967edd913b4e48572f31c3d3ea361d5327"
+      },
+      "special_tokens_map.json": {
+        "bytes": 694,
+        "sha256": "cb9e60dcf4d8d314315cb3e761fe4c2e664fda8dbf66d7815372b2639e381182"
+      },
+      "tokenizer.json": {
+        "bytes": 33384821,
+        "sha256": "0087c868b33bad550a78a08d19798cfd7f713cde4f020803b8f51f405503e15f"
+      },
+      "tokenizer_config.json": {
+        "bytes": 1155500,
+        "sha256": "7947bdf0378520e69ca412b8c4dacd1cffa8aef099f851fdd5c65aa27c6b36a0"
+      }
     },
     "model_id": "ibm-granite/granite-embedding-311m-multilingual-r2",
     "revision": "44399559930365213510b1ee2eb15ded83374f0e"
   },
   "official_received_artifacts": {
-    "execution_bundle": {"bytes": 76635021, "filename": "DIAloga_Production_Embedding_Generation_RC2_Execution_Bundle.zip", "sha256": "e5bf137afcdb782d11de7fdc455cdc10bfbf12e4dc8db4ba3e75469dc8bfdb6c"},
-    "pairing_manifest": {"bytes": 942, "filename": "DIAloga_Production_Embedding_RC2_EXECUTION_PAIRING_MANIFEST.json", "sha256": "ac3d2d87477d9a74e038e60865eab9a4dc86d1f73de2de38"},
-    "preexecution_attestation": {"bytes": 2010, "filename": "DIAloga_Production_Embedding_RC2_PREEXECUTION_FROZEN_ATTESTATION_e5bf137a.json", "sha256": "82b175399bdf8d092ff2020cd096f9838f2880510b56950964818375fa8152bc"},
-    "production_candidate": {"bytes": 17164878, "filename": "DIAloga_Production_Embeddings_RC2_Candidate.zip", "sha256": "67d0804361c2cb594216c5c33de330cc7c22c5f5988372eabd9988ba8f86ae2a"},
-    "supplemental_external_audit_final": {"bytes": 44506, "filename": "DIAloga_Production_Embeddings_RC2_External_Audit_FINAL.md", "sha256": "8351b311a0e8190aa50dce9f9d83e7cb522c0611225b5db6a8694b0caa93b142", "verdict": "BLOCKED"}
+    "execution_bundle": {
+      "bytes": 76635021,
+      "filename": "DIAloga_Production_Embedding_Generation_RC2_Execution_Bundle.zip",
+      "sha256": "e5bf137afcdb782d11de7fdc455cdc10bfbf12e4dc8db4ba3e75469dc8bfdb6c"
+    },
+    "pairing_manifest": {
+      "bytes": 942,
+      "filename": "DIAloga_Production_Embedding_RC2_EXECUTION_PAIRING_MANIFEST.json",
+      "sha256": "ac3d2d87477d9a74e038e60865eab9a4bd59dc717293b9a4dc86d1f73de2de38"
+    },
+    "preexecution_attestation": {
+      "bytes": 2010,
+      "filename": "DIAloga_Production_Embedding_RC2_PREEXECUTION_FROZEN_ATTESTATION_e5bf137a.json",
+      "sha256": "82b175399bdf8d092ff2020cd096f9838f2880510b56950964818375fa8152bc"
+    },
+    "production_candidate": {
+      "bytes": 17164878,
+      "filename": "DIAloga_Production_Embeddings_RC2_Candidate.zip",
+      "sha256": "67d0804361c2cb594216c5c33de330cc7c22c5f5988372eabd9988ba8f86ae2a"
+    },
+    "supplemental_external_audit_final": {
+      "bytes": 44506,
+      "filename": "DIAloga_Production_Embeddings_RC2_External_Audit_FINAL.md",
+      "sha256": "8351b311a0e8190aa50dce9f9d83e7cb522c0611225b5db6a8694b0caa93b142",
+      "verdict": "BLOCKED"
+    }
   },
   "policy": {
     "do_not_modify_execution_receipts": true,
@@ -50,7 +101,10 @@
     "dtype": "float32",
     "role": "audited stored vector; expected comparison target for fresh regeneration, not a generator acceptance shortcut",
     "sha256": "89189e573b7f7818b137bd69d00a0acabbaec0c64a2778d22c9244b432262a6e",
-    "shape": [1450, 768]
+    "shape": [
+      1450,
+      768
+    ]
   },
   "purpose": "EXTERNAL_RELEASE_AUTHENTICITY_ANCHOR",
   "release": "DIAloga_Hybrid_Index_V4_Production_Embedding_Generation_RC2",
