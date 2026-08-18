@@ -1,0 +1,20 @@
+{
+  "artifact_hash_verification_sha256": "efff5228979071a2441976b351f9f3ba5bbe2f6a502af9a9a31dc8fc30bee8d0",
+  "artifact_hashes_sha256": "0b557342b38369141cceb4d096c293a879a3489aabb2676927e7d86d7cbd9545",
+  "attestation_role": "CANDIDATE_EXTERNAL_TRUST_ANCHOR_NOT_FREEZE_ATTESTATION",
+  "candidate": "DIAloga_RAG_Canonical_V4_Integrated_RC4",
+  "corpus_sha256": "c488a97b588032f0c6150e95580ec77d51868b9355323487dcf9c428a84a37c6",
+  "integration_frozen": false,
+  "package_closure_root_sha256": "c80887f065e8d9bee3c88dd4e699d63fd68a0d64d1eab01b77cad535a8060a5a",
+  "package_inventory_sha256": "296bcf4d93d0725bf6cc91e7aded14fa4f548513050ca96e0afa7b3114385fe1",
+  "ready_for_embeddings": false,
+  "ready_for_index_build": false,
+  "records_total": 1466,
+  "registry_sha256": "f37d233c6566857e39af75ee88d90119582ba3d7775960c80a006b6ff8bebd63",
+  "release_class": "FINAL_TRUST_WORKFLOW_VALIDATOR_HARDENING_ONLY",
+  "release_root_sha256": "b8d357978fb75e4fca14a3df91a73183b718848dc84e4c80d5cba90c1a8fabc9",
+  "schema": "canonical_v4_external_trust_anchor_rc4",
+  "status": "READY_FOR_EXTERNAL_AUDIT",
+  "zip_bytes": 76570567,
+  "zip_sha256": "f45eb3a90b73dadb14d9c73bc87fde64f1b1a49d298395e93fe8a8e7555214d1"
+}
