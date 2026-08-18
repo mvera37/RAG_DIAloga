@@ -1,0 +1,67 @@
+{
+  "application_wiring": {
+    "status": "BLOCKED_PENDING_FULL_HYBRID_AND_LOCAL_DIALOGA_SOURCE"
+  },
+  "canonical": {
+    "integrated_v4_rc4": {
+      "candidate_sha256": "f45eb3a90b73dadb14d9c73bc87fde64f1b1a49d298395e93fe8a8e7555214d1",
+      "corpus_sha256": "c488a97b588032f0c6150e95580ec77d51868b9355323487dcf9c428a84a37c6",
+      "records": 1466,
+      "status": "FROZEN"
+    }
+  },
+  "dense_index": {
+    "rc1": {
+      "audit_authorized": false,
+      "candidate_sha256": "9f73ca146952b1e1f2c8d3936908ee5877f03490ff67f8711490467f6e8d1773",
+      "external_audit_bundle_sha256": "0ce7fdb6cb5e4d06cea564a8d433feefaf1f5b3610702d15d135010d812224a9",
+      "index_sha256": "60c82903864df04a07dc6756a5939c37238dd426b582ec56ecd3f000ba901d42",
+      "status": "HOLD_PREMATURE_PARENT_FREEZE"
+    }
+  },
+  "embedding_model_benchmark": {
+    "rc2": {
+      "canonical_snapshot_root_sha256": "39f3282103fbafccc288ad3ff8b3717d5266d378f3e684a83587506fdc7473ad",
+      "frozen_attestation_sha256": "cf45c855cb209e278c4f0e0604d9a1f90d71b592bd39fba4c1646d5579c8eb79",
+      "revision": "44399559930365213510b1ee2eb15ded83374f0e",
+      "selected_model": "ibm-granite/granite-embedding-311m-multilingual-r2",
+      "status": "FROZEN"
+    }
+  },
+  "full_hybrid": {
+    "status": "BLOCKED"
+  },
+  "hybrid_design": {
+    "rc9": {
+      "candidate_sha256": "e7f9eb8da031a56752e89c0cd357aa3dd6a244fac365743b38574fb80a90e8f5",
+      "frozen_attestation_sha256": "71a1cbca13ac20716c86e04c44bfb6ca9084b409b76105a2a36df69286ca2679",
+      "status": "FROZEN"
+    }
+  },
+  "lexical": {
+    "index_rc1": {
+      "frozen_attestation_sha256": "ce49cbdebe04a11e8ef239f2a9156d1ca2eb52063835794ea26880ea0d4e1df9",
+      "index_sha256": "67edda46bb3e0465921c254ae05df4a1b6a30926b6a26f45574b69f97dd2cdac",
+      "status": "FROZEN"
+    },
+    "runtime_rc2": {
+      "candidate_sha256": "f2ff25c2129e9065a6ab3e9fbfe2fcdf3c7b7bee6bd5a7dc6874028a5ecfe36f",
+      "frozen_attestation_sha256": "7084a3be23d8c34dca7737e2628092f40a906e76d2f6d5151b20a6329ae04f5e",
+      "status": "FROZEN"
+    }
+  },
+  "production_embeddings": {
+    "rc2": {
+      "candidate_sha256": "67d0804361c2cb594216c5c33de330cc7c22c5f5988372eabd9988ba8f86ae2a",
+      "freeze_eligible": false,
+      "revoked_frozen_attestation_sha256": "deea94bfe44ea672695bddab3d4de17189e8378ae2f6281838fded66934f63d1",
+      "status": "BLOCKED_PENDING_EXTERNAL_TRUST_EVIDENCE",
+      "supplemental_audit_sha256": "8351b311a0e8190aa50dce9f9d83e7cb522c0611225b5db6a8694b0caa93b142",
+      "supplemental_audit_verdict": "BLOCKED",
+      "vector_sha256": "89189e573b7f7818b137bd69d00a0acabbaec0c64a2778d22c9244b432262a6e"
+    }
+  },
+  "repository": "mvera37/RAG_DIAloga",
+  "schema_version": "dialoga_rag_release_status_v1",
+  "updated_at": "2026-08-18T15:04:00-05:00"
+}
