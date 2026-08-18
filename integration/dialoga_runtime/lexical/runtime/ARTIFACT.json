@@ -1,0 +1,9 @@
+{
+  "component": "lexical_runtime_rc2",
+  "status": "FROZEN",
+  "artifact": "DIAloga_Hybrid_Index_V4_Lexical_Runtime_Integration_RC2.zip",
+  "sha256": "f2ff25c2129e9065a6ab3e9fbfe2fcdf3c7b7bee6bd5a7dc6874028a5ecfe36f",
+  "runtime_source": "rag/03_lexical/runtime_rc2/scripts/runtime_lexical_retriever_rc2.py",
+  "contract": "rag/03_lexical/runtime_rc2/runtime_integration_contract_rc2.json",
+  "dependency_trust_manifest": "rag/03_lexical/runtime_rc2/runtime_dependency_trust_manifest_rc2.json"
+}
