@@ -1,0 +1,101 @@
+{
+  "artifact_type": "EXTERNAL_FROZEN_ATTESTATION",
+  "candidate": "DIAloga_Hybrid_Index_V4_Lexical_Index_RC1",
+  "change_control": {
+    "index_artifact_change": "NEW_LEXICAL_BUILD_RELEASE_AND_EXTERNAL_AUDIT_REQUIRED",
+    "parent_design_change": "NEW_DESIGN_RELEASE_AND_EXTERNAL_AUDIT_REQUIRED",
+    "runtime_integration_outputs": "Version and audit separately; do not mutate frozen Lexical RC1."
+  },
+  "downstream_rules": {
+    "dense_index_build": "NOT_AUTHORIZED",
+    "embedding_model_benchmark": "AUTHORIZED",
+    "full_hybrid_index_build": "NOT_AUTHORIZED",
+    "production_embedding_generation": "NOT_AUTHORIZED",
+    "required_binding": "Every runtime lexical integration and embedding benchmark artifact must pin the Lexical RC1 ZIP SHA-256 and this frozen-attestation SHA-256.",
+    "runtime_lexical_retriever_integration": "AUTHORIZED_AFTER_THIS_ATTESTATION"
+  },
+  "freeze_basis": {
+    "external_audit_assertions": {
+      "lexical_index_rc1": "APPROVED",
+      "lexical_index_rc1_freeze": "ELIGIBLE",
+      "lexical_rc1_binding_to_frozen_rc9": "PASS",
+      "lexical_rc2_required": false,
+      "parent_design_provenance": "PASS",
+      "rc9_frozen_attestation": "PASS_PHYSICAL_HASH_AND_CONTENT",
+      "rebuild_lexical_index": false
+    },
+    "external_audit_decision": "PASS",
+    "external_audit_report": {
+      "bytes": 11588,
+      "filename": "Lexical_Index_RC1_external_audit_PASS.md",
+      "sha256": "5c5cfefa09497b51d9ce35b81cef7a80c6db788633d0f8a9b6fe94810d91a3d1"
+    }
+  },
+  "freeze_status": "FROZEN",
+  "freeze_timestamp": {
+    "america_lima": "2026-08-14T15:55:00-05:00",
+    "utc": "2026-08-14T20:55:00Z"
+  },
+  "freeze_transition": {
+    "lexical_index_built": true,
+    "lexical_index_frozen": true,
+    "lexical_index_internal_validated": true,
+    "ready_for_dense_index_build": false,
+    "ready_for_embedding_model_benchmark": true,
+    "ready_for_full_hybrid_index": false,
+    "ready_for_production_embeddings": false,
+    "ready_for_runtime_integration": true
+  },
+  "frozen_index": {
+    "bytes": 401289,
+    "filename": "DIAloga_Hybrid_Index_V4_Lexical_Index_RC1.zip",
+    "immutability_rule": "The Lexical Index RC1 ZIP is immutable. Any change to its four index artifacts requires a new downstream lexical build and audit.",
+    "members": 4,
+    "sha256": "67edda46bb3e0465921c254ae05df4a1b6a30926b6a26f45574b69f97dd2cdac"
+  },
+  "parent_design_binding": {
+    "dense_index_build_authorized": false,
+    "design_candidate": "DIAloga_Hybrid_Index_V4_Design_RC9",
+    "design_candidate_sha256": "e7f9eb8da031a56752e89c0cd357aa3dd6a244fac365743b38574fb80a90e8f5",
+    "design_frozen": true,
+    "design_frozen_attestation_sha256": "71a1cbca13ac20716c86e04c44bfb6ca9084b409b76105a2a36df69286ca2679",
+    "embedding_model_benchmark_authorized": true,
+    "full_hybrid_index_build_authorized": false,
+    "lexical_build_authorized": true,
+    "production_embeddings_authorized": false
+  },
+  "schema_version": "dialoga_lexical_index_v4_rc1_frozen_attestation_v1",
+  "trusted_evidence": {
+    "external_audit_report": {
+      "sha256": "5c5cfefa09497b51d9ce35b81cef7a80c6db788633d0f8a9b6fe94810d91a3d1"
+    },
+    "index_content": {
+      "deterministic_repack": "PASS_BYTE_IDENTICAL",
+      "documents": "PASS_1466_OF_1466_BYTE_IDENTICAL",
+      "lexical_only": "PASS_16_OF_16",
+      "manifest": "PASS_BYTE_IDENTICAL_REBUILD",
+      "postings": "PASS_BYTE_IDENTICAL",
+      "random_bm25_differential_tests": "PASS_1000_OF_1000",
+      "stats": "PASS"
+    },
+    "internal_validation": {
+      "result": "PASS_36929_OF_36929",
+      "sha256": "2b362ba731624f67f91c1b172d7bb0b6919825f1355bce278aced64a5d824036"
+    },
+    "lexical_build_contract": {
+      "bytes": 3452,
+      "sha256": "2d33c541522dc777a03d66bf0b9ddfa7ea8201b38a739b83181abdb1af8ca241"
+    },
+    "parent_provenance_package": {
+      "result": "PASS_PARENT_DESIGN_PROVENANCE",
+      "sha256": "a32c5699cda7606d11d8531139ec2292bbbaa613b6685637e4e0f183d1db42ff"
+    },
+    "pre_freeze_release_gate": {
+      "sha256": "10093f386b221e96f6b1d6747abd59ab1ad88eaa488149a038d6ef731b225eac",
+      "status": "READY_FOR_EXTERNAL_LEXICAL_INDEX_AUDIT"
+    },
+    "validation_plan": {
+      "sha256": "93b5c5c05a765bd26c01060aea8a0213950e705ce29d050664bb4ce60b117509"
+    }
+  }
+}
