@@ -1,0 +1,71 @@
+{
+  "canonical_snapshot_root_sha256": "39f3282103fbafccc288ad3ff8b3717d5266d378f3e684a83587506fdc7473ad",
+  "files": [
+    {
+      "bytes": 313,
+      "path": "1_Pooling/config.json",
+      "sha256": "781299da695e58439d70d491840da22ea0935d1d57d9646eb9725f1f19754e89"
+    },
+    {
+      "bytes": 1191,
+      "path": "config.json",
+      "sha256": "e1e3fc842a8e0537e25d6e4c93879698b92ae96722e8c162bef334b57978a3b0"
+    },
+    {
+      "bytes": 283,
+      "path": "config_sentence_transformers.json",
+      "sha256": "f09adf93fcf868bb2fc3976a435d810b2ecdffa953d1da091d2a91168abab44b"
+    },
+    {
+      "bytes": 623341952,
+      "path": "model.safetensors",
+      "sha256": "dcb6431bfa6e817fe100a2b0521360cec3383963b03fa966b685de18ca310d31"
+    },
+    {
+      "bytes": 349,
+      "path": "modules.json",
+      "sha256": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf"
+    },
+    {
+      "bytes": 21421,
+      "path": "README.md",
+      "sha256": "3c47e61d962601a89027f406fe78f32f9bcdd9c73576c5204b3e70defb3e796b"
+    },
+    {
+      "bytes": 60,
+      "path": "sentence_bert_config.json",
+      "sha256": "967ef958285e4a7a37d8ff1832473d967edd913b4e48572f31c3d3ea361d5327"
+    },
+    {
+      "bytes": 694,
+      "path": "special_tokens_map.json",
+      "sha256": "cb9e60dcf4d8d314315cb3e761fe4c2e664fda8dbf66d7815372b2639e381182"
+    },
+    {
+      "bytes": 33384821,
+      "path": "tokenizer.json",
+      "sha256": "0087c868b33bad550a78a08d19798cfd7f713cde4f020803b8f51f405503e15f"
+    },
+    {
+      "bytes": 1155500,
+      "path": "tokenizer_config.json",
+      "sha256": "7947bdf0378520e69ca412b8c4dacd1cffa8aef099f851fdd5c65aa27c6b36a0"
+    }
+  ],
+  "model_id": "ibm-granite/granite-embedding-311m-multilingual-r2",
+  "ordered_allowlist": [
+    "1_Pooling/config.json",
+    "config.json",
+    "config_sentence_transformers.json",
+    "model.safetensors",
+    "modules.json",
+    "README.md",
+    "sentence_bert_config.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "revision": "44399559930365213510b1ee2eb15ded83374f0e",
+  "schema_version": "dialoga_granite311_authenticated_snapshot_rc2_v1",
+  "status": "AUTHENTICATED"
+}
