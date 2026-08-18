@@ -1,0 +1,26 @@
+{
+  "schema_version": "dialoga_runtime_artifact_map_v1",
+  "authority_paths": {
+    "canonical": {
+      "trust_anchor": "rag/01_canonical/integrated_rc4/external_trust_anchor.json",
+      "physical_release_asset": "DIAloga_RAG_Canonical_V4_Integrated_RC4.zip"
+    },
+    "hybrid_design": {
+      "trust_anchor": "rag/02_hybrid_design/rc9/external_trust_anchor.json",
+      "physical_release_asset": "DIAloga_Hybrid_Index_V4_Design_RC9.zip"
+    },
+    "lexical_index": {
+      "frozen_attestation": "rag/03_lexical/index_rc1/frozen_attestation.json",
+      "physical_release_asset": "DIAloga_Hybrid_Index_V4_Lexical_Index_RC1.zip"
+    },
+    "lexical_runtime": {
+      "frozen_attestation": "rag/03_lexical/runtime_rc2/frozen_attestation.json",
+      "contract": "rag/03_lexical/runtime_rc2/runtime_integration_contract_rc2.json",
+      "dependency_trust_manifest": "rag/03_lexical/runtime_rc2/runtime_dependency_trust_manifest_rc2.json",
+      "runtime_source": "rag/03_lexical/runtime_rc2/scripts/runtime_lexical_retriever_rc2.py",
+      "physical_release_asset": "DIAloga_Hybrid_Index_V4_Lexical_Runtime_Integration_RC2.zip"
+    }
+  },
+  "asset_catalog": "releases/ASSET_CATALOG.json",
+  "release_status": "rag/00_governance/release_status.json"
+}
