@@ -1,0 +1,8 @@
+{
+  "artifact": "DIAloga_RAG_Canonical_V4_phase1_RC3.zip",
+  "bytes": 1159738,
+  "contents_scope": "CNEB General + Educación Inicial",
+  "role": "REUSABLE_CANONICAL_DATASET_AND_FROZEN_DEPENDENCY",
+  "sha256": "bf242b4e37cdb91e75ecd8fd0a2660c2dfdc08bc429a954d1ea166907d47c7da",
+  "upstream_use": "dependency of DIAloga_RAG_Canonical_V4_Integrated_RC4.zip"
+}
