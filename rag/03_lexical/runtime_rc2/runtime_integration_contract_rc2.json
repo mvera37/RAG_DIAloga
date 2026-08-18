@@ -1,0 +1,95 @@
+{
+  "adversarial_runner": {
+    "bytes": 12896,
+    "path": "scripts/run_runtime_rc2_adversarial.py",
+    "sha256": "12fbb7dbe015faffc4091ffd4c869a7c818f371902e5b1d6e2430415fd8f0f31"
+  },
+  "candidate": "DIAloga_Hybrid_Index_V4_Lexical_Runtime_Integration_RC2",
+  "functional_preservation": {
+    "bm25": "UNCHANGED",
+    "candidate_universe_semantics": "UNCHANGED",
+    "corpus_routing": "UNCHANGED",
+    "rc4_corpus": "UNCHANGED",
+    "structured_routing": "UNCHANGED",
+    "tokenization": "UNCHANGED",
+    "top_k_semantics": "UNCHANGED",
+    "topic_routing": "UNCHANGED"
+  },
+  "functional_preservation_manifest": {
+    "bytes": 2659,
+    "path": "runtime_rc2_functional_preservation_manifest.json",
+    "sha256": "41cf8ddabef5fd4563feadc8bf38adbe59f95c2402a93304f26505a7f32d2b73"
+  },
+  "internal_results": {
+    "caller_pin_map_api": "REMOVED",
+    "dependency_required_set": "EXACT_9",
+    "functional_validation": "PASS_9246_OF_9246",
+    "reference_artifacts_rc1_to_rc2": "PASS_6_OF_6_BYTE_IDENTICAL",
+    "trust_adversarial": "PASS_36_OF_36",
+    "verified_snapshot_toctou": "CLOSED"
+  },
+  "readiness": {
+    "internal_validation_passed": true,
+    "ready_for_application_wiring": false,
+    "ready_for_dense_index_build": false,
+    "ready_for_embedding_model_benchmark": true,
+    "ready_for_external_runtime_audit": true,
+    "ready_for_full_hybrid_index": false,
+    "ready_for_production_embeddings": false,
+    "runtime_integration_frozen": false,
+    "runtime_module_built": true,
+    "trust_pin_hardening_built": true
+  },
+  "release_class": "RUNTIME_DEPENDENCY_TRUST_PIN_HARDENING_ONLY",
+  "repair_basis": {
+    "blocking_defect": "DEPENDENCY_TRUST_PIN_AUTHORITY_NOT_FAIL_CLOSED",
+    "design_rc9": "DO_NOT_MODIFY",
+    "lexical_index_rc1": "DO_NOT_MODIFY_REMAINS_FROZEN",
+    "rc1_algorithmic_runtime": "PRESERVE",
+    "rc1_external_audit_sha256": "4b5e4e3a67817fe326ce3c7daeda1f3546ab4eda78d3c34c718d94159d28a350"
+  },
+  "runtime_artifact": {
+    "bytes": 13232,
+    "path": "scripts/runtime_lexical_retriever_rc2.py",
+    "sha256": "d260caab5d81debf6199dc52c6b9bb045487296282b4f4ed70006eaf911ad694"
+  },
+  "runtime_semantics": {
+    "bm25_statistics": "global frozen N/df/avgdl",
+    "candidate_filtering": "RC9 candidate universe before BM25",
+    "dense_lane": "ABSENT",
+    "input": {
+      "canonical_request": "RC9 canonical request object",
+      "query_text": "non-empty string",
+      "top_k": "integer 1..40"
+    },
+    "lexical_lanes": ["open_curricular","topic_exact","corpus_hybrid"],
+    "production_embeddings": "ABSENT",
+    "structured_exact": "complete exact set; BM25 bypass; top_k does not truncate closed-world membership",
+    "zero_match": "EMPTY_LEXICAL_LANE"
+  },
+  "schema_version": "dialoga_lexical_runtime_integration_rc2_contract_v1",
+  "source_binding": {
+    "lexical_frozen_attestation": {"bytes": 4280,"sha256": "ce49cbdebe04a11e8ef239f2a9156d1ca2eb52063835794ea26880ea0d4e1df9"},
+    "lexical_index": {"bytes": 401289,"sha256": "67edda46bb3e0465921c254ae05df4a1b6a30926b6a26f45574b69f97dd2cdac"},
+    "rc4_zip": {"bytes": 76570567,"sha256": "f45eb3a90b73dadb14d9c73bc87fde64f1b1a49d298395e93fe8a8e7555214d1"},
+    "rc9_candidate": {"bytes": 708462,"sha256": "e7f9eb8da031a56752e89c0cd357aa3dd6a244fac365743b38574fb80a90e8f5"}
+  },
+  "status": "READY_FOR_EXTERNAL_RUNTIME_INTEGRATION_AUDIT",
+  "trust_architecture": {
+    "caller_pin_map_empty_partial_extra_null_malformed": "NO_INTERFACE_EXISTS_FOR_CALLER_PIN_MAP",
+    "caller_supplied_expected_pins": "REMOVED_FROM_CONSTRUCTOR_API",
+    "coherent_repin_of_manifest_only": "REJECT_TRUST_MANIFEST_SHA256_MISMATCH",
+    "expected_hash_authority": "EMBEDDED_IN_VERSIONED_RUNTIME_RC2",
+    "expected_size_authority": "EMBEDDED_IN_VERSIONED_RUNTIME_RC2",
+    "full_runtime_candidate_change": "MUST_CHANGE_CANDIDATE_SHA_AND_REQUIRE_NEW_EXTERNAL_AUDIT_FREEZE",
+    "hash_check_use_toctou": "CLOSED",
+    "initialization_rule": "ALL_NINE_DEPENDENCIES_MUST_EXIST_AND_MATCH_EMBEDDED_SHA256_AND_BYTES",
+    "missing_or_tampered_dependency": "INITIALIZATION_ABORT",
+    "required_dependency_count": 9,
+    "required_dependency_keys": ["rc4_zip","rc9_candidate","lexical_index","lexical_frozen_attestation","constraint_engine","request_schema","intent_lane","semantic_domain","structured_state_registry"],
+    "trust_manifest": {"bytes": 2211,"path": "runtime_dependency_trust_manifest_rc2.json","runtime_embeds_manifest_sha256": true,"sha256": "e65a3100353778ad35913a8d46663d7a8ae66c74402c05afe93b74dfb861e8f3"},
+    "verified_snapshot_use": "ALL_NINE_DEPENDENCIES_READ_ONCE_VERIFIED_THEN_CONSUMED_FROM_VERIFIED_BYTES"
+  },
+  "validation_plan": {"bytes": 1900,"path": "runtime_integration_validation_plan_rc2.json","sha256": "801c53d4f0288a8c5210ee1392e38ae0ae489bdd907e1dd188bff2df24e0e30a"},
+  "validator_artifact": {"bytes": 17922,"path": "scripts/validate_runtime_integration_rc2.py","sha256": "aa0f7ba138beead35a9447fed08f1905be069c29e4dd7d0ddf7e5f13850e988c"}
+}
