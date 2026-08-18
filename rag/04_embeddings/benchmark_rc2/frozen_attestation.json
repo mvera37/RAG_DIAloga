@@ -68,9 +68,15 @@
     "declared_seed": 20260816,
     "dense_only_replaces_lexical_bm25": false,
     "granite311_quality_superiority": "PASS_STATISTICALLY_DECISIVE",
-    "paired_mrr10_ci95": [0.09051400543704152,0.12024992557768557],
+    "paired_mrr10_ci95": [
+      0.09051400543704152,
+      0.12024992557768557
+    ],
     "paired_mrr10_delta_granite311_minus_granite97": 0.10539042226940318,
-    "paired_ndcg10_ci95": [0.06814383854143329,0.09057264120976292],
+    "paired_ndcg10_ci95": [
+      0.06814383854143329,
+      0.09057264120976292
+    ],
     "paired_ndcg10_delta_granite311_minus_granite97": 0.07941143816485212,
     "primary_subset": "natural + nontrivial",
     "primary_subset_cases": 1413,
