@@ -112,6 +112,7 @@ class LexicalRuntimeRetrieverRC2:
                  structured_state_registry_path):
         _validate_embedded_trust_root()
 
+        # The trust manifest is a versioned internal dependency of this exact runtime module.
         runtime_root=Path(__file__).resolve().parent.parent
         trust_manifest_path=runtime_root/TRUST_MANIFEST_FILENAME
         if not trust_manifest_path.is_file():
@@ -151,6 +152,9 @@ class LexicalRuntimeRetrieverRC2:
         if set(paths)!=REQUIRED_DEPENDENCY_KEYS:
             raise ValueError("RUNTIME_DEPENDENCY_PATH_SET_MISMATCH")
 
+        # Caller supplies only physical paths. Expected hashes are never caller-controlled.
+        # Read each dependency exactly once, verify that exact byte snapshot, then use only
+        # the verified snapshots below. This closes hash-check/use TOCTOU windows.
         verified_bytes={}
         for key in sorted(REQUIRED_DEPENDENCY_KEYS):
             path=paths[key]
