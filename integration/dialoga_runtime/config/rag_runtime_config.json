@@ -1,0 +1,9 @@
+{
+  "schema_version": "dialoga_rag_runtime_config_v1",
+  "startup_mode": "FAIL_CLOSED",
+  "enabled_lanes": ["structured_exact", "open_curricular", "topic_exact", "corpus_lexical"],
+  "disabled_lanes": ["dense", "hybrid_semantic"],
+  "lexical": {"candidate_k": 40, "statistics_scope": "GLOBAL_FROZEN_LEXICAL_CORPUS"},
+  "integrity": {"verify_sha256_before_load": true, "reject_unknown_artifacts": true},
+  "authority": "integration/dialoga_runtime/integration_manifest.json"
+}
