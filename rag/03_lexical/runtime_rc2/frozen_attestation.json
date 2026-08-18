@@ -1,0 +1,100 @@
+{
+  "artifact_type": "EXTERNAL_FROZEN_ATTESTATION",
+  "audited_bundle": {
+    "bytes": 78792855,
+    "deterministic_repack": "PASS_BYTE_IDENTICAL",
+    "filename": "DIAloga_Hybrid_Index_V4_Lexical_Runtime_Integration_RC2_Audit_Bundle.zip",
+    "inventory": "PASS_28_PLUS_2",
+    "members": 30,
+    "sha256": "3f4043237cac50245caa02e13d86679080aebb3edd776f7f2b80e640449ddd3c"
+  },
+  "candidate": "DIAloga_Hybrid_Index_V4_Lexical_Runtime_Integration_RC2",
+  "downstream_rules": {
+    "application_wiring": "AUTHORIZED_AFTER_THIS_ATTESTATION",
+    "dense_index_build": "NOT_AUTHORIZED",
+    "embedding_model_benchmark": "AUTHORIZED",
+    "full_hybrid_index_build": "NOT_AUTHORIZED",
+    "production_embedding_generation": "NOT_AUTHORIZED",
+    "required_binding": "Every application-wiring release must pin Runtime RC2 candidate SHA-256 and this Frozen Attestation SHA-256."
+  },
+  "freeze_basis": {
+    "external_audit_assertions": {
+      "blocking_defects": 0,
+      "create_runtime_rc3": false,
+      "modify_design_rc9": false,
+      "modify_lexical_index_rc1": false,
+      "rc1_root_cause_resolved": true,
+      "rebuild_lexical_index": false,
+      "repair_class": "RUNTIME_DEPENDENCY_TRUST_PIN_HARDENING_ONLY",
+      "runtime_rc2_freeze_eligible": true
+    },
+    "external_audit_decision": "PASS_EXTERNAL_RUNTIME_INTEGRATION_AUDIT",
+    "external_audit_report": {
+      "bytes": 21633,
+      "filename": "Lexical_Runtime_Integration_RC2_external_audit_PASS.md",
+      "sha256": "b1d39918e16838376a59734476a1a4ca0a6fbb1b83b94149b5a1cf46a6185843"
+    }
+  },
+  "freeze_status": "FROZEN",
+  "freeze_timestamp": {
+    "america_lima": "2026-08-14T18:34:00-05:00",
+    "utc": "2026-08-14T23:34:00Z"
+  },
+  "freeze_transition": {
+    "ready_for_application_wiring": true,
+    "ready_for_dense_index_build": false,
+    "ready_for_embedding_model_benchmark": true,
+    "ready_for_full_hybrid_index": false,
+    "ready_for_production_embeddings": false,
+    "runtime_integration_frozen": true
+  },
+  "frozen_candidate": {
+    "bytes": 551255,
+    "filename": "DIAloga_Hybrid_Index_V4_Lexical_Runtime_Integration_RC2.zip",
+    "immutability_rule": "Any Runtime RC2 candidate/trust-root change requires a new runtime integration release and external audit.",
+    "members": 17,
+    "sha256": "f2ff25c2129e9065a6ab3e9fbfe2fcdf3c7b7bee6bd5a7dc6874028a5ecfe36f"
+  },
+  "parent_bindings": {
+    "design_rc9": {
+      "candidate_sha256": "e7f9eb8da031a56752e89c0cd357aa3dd6a244fac365743b38574fb80a90e8f5",
+      "frozen_attestation_sha256": "71a1cbca13ac20716c86e04c44bfb6ca9084b409b76105a2a36df69286ca2679",
+      "state": "FROZEN_UNCHANGED"
+    },
+    "lexical_index_rc1": {
+      "frozen_attestation_sha256": "ce49cbdebe04a11e8ef239f2a9156d1ca2eb52063835794ea26880ea0d4e1df9",
+      "index_sha256": "67edda46bb3e0465921c254ae05df4a1b6a30926b6a26f45574b69f97dd2cdac",
+      "state": "FROZEN_UNCHANGED"
+    },
+    "rc4_authentication": "PASS_EXTERNAL_ATTESTATION_99_OF_99"
+  },
+  "schema_version": "dialoga_lexical_runtime_integration_rc2_frozen_attestation_v1",
+  "trusted_evidence": {
+    "additional_random_bm25_differential": "PASS_1000_OF_1000",
+    "adversarial_validation": {
+      "independently_reproduced": true,
+      "result": "PASS_36_OF_36",
+      "sha256": "39b9e376ffe3ca7cb4543b0c9d890dd1541d2f6615e5b85563a2887c7761dd35"
+    },
+    "caller_expected_pins_api": "REMOVED",
+    "coherent_manifest_repin": "REJECTED",
+    "contract_sha256": "98f4cec2874185aa5b631e2835901431a7a5bd72ecd13871967a77850f346773",
+    "dependency_trust_pin_authority": "PASS_FAIL_CLOSED",
+    "functional_preservation_manifest_sha256": "41cf8ddabef5fd4563feadc8bf38adbe59f95c2402a93304f26505a7f32d2b73",
+    "hash_check_use_toctou": "CLOSED_BY_VERIFIED_BYTE_SNAPSHOTS",
+    "internal_validation": {
+      "independently_reproduced": true,
+      "result": "PASS_9246_OF_9246",
+      "sha256": "0b2869bbc05cd6c8269988bbbfd773090d5d30d362efee272e8f15bf57ee81e8"
+    },
+    "kwargs_pin_backdoor": "ABSENT",
+    "post_initialization_dependency_mutation": "NO_EFFECT_ON_VERIFIED_RUNTIME_STATE",
+    "pre_freeze_release_gate_sha256": "17b5c35337045b753a401b2e9af276ea14c7faaa384fb5b971c8db6756af1472",
+    "rc1_rc2_functional_differential": "PASS_4027_OF_4027_EXACT",
+    "rc1_scope_leak_attack": "REJECTED_BEFORE_RETRIEVAL",
+    "required_dependency_trust_set": "EXACT_9",
+    "same_size_dependency_tamper": "REJECTED_9_OF_9",
+    "same_size_trust_manifest_tamper": "REJECTED",
+    "trust_manifest_sha256": "e65a3100353778ad35913a8d46663d7a8ae66c74402c05afe93b74dfb861e8f3"
+  }
+}
