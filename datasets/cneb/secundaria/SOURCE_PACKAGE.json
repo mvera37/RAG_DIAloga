@@ -1,0 +1,8 @@
+{
+  "artifact": "DIAloga_RAG_Canonical_V4_Secundaria_RC7.zip",
+  "bytes": 49906836,
+  "contents_scope": "CNEB Educación Secundaria",
+  "role": "REUSABLE_CANONICAL_DATASET_AND_FROZEN_DEPENDENCY",
+  "sha256": "471648192628656c4a39ef32caebb6292f013d80bffac76b836c4163b226b9bd",
+  "upstream_use": "dependency of DIAloga_RAG_Canonical_V4_Integrated_RC4.zip"
+}
