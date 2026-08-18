@@ -62,17 +62,33 @@
       "query_text": "non-empty string",
       "top_k": "integer 1..40"
     },
-    "lexical_lanes": ["open_curricular","topic_exact","corpus_hybrid"],
+    "lexical_lanes": [
+      "open_curricular",
+      "topic_exact",
+      "corpus_hybrid"
+    ],
     "production_embeddings": "ABSENT",
     "structured_exact": "complete exact set; BM25 bypass; top_k does not truncate closed-world membership",
     "zero_match": "EMPTY_LEXICAL_LANE"
   },
   "schema_version": "dialoga_lexical_runtime_integration_rc2_contract_v1",
   "source_binding": {
-    "lexical_frozen_attestation": {"bytes": 4280,"sha256": "ce49cbdebe04a11e8ef239f2a9156d1ca2eb52063835794ea26880ea0d4e1df9"},
-    "lexical_index": {"bytes": 401289,"sha256": "67edda46bb3e0465921c254ae05df4a1b6a30926b6a26f45574b69f97dd2cdac"},
-    "rc4_zip": {"bytes": 76570567,"sha256": "f45eb3a90b73dadb14d9c73bc87fde64f1b1a49d298395e93fe8a8e7555214d1"},
-    "rc9_candidate": {"bytes": 708462,"sha256": "e7f9eb8da031a56752e89c0cd357aa3dd6a244fac365743b38574fb80a90e8f5"}
+    "lexical_frozen_attestation": {
+      "bytes": 4280,
+      "sha256": "ce49cbdebe04a11e8ef239f2a9156d1ca2eb52063835794ea26880ea0d4e1df9"
+    },
+    "lexical_index": {
+      "bytes": 401289,
+      "sha256": "67edda46bb3e0465921c254ae05df4a1b6a30926b6a26f45574b69f97dd2cdac"
+    },
+    "rc4_zip": {
+      "bytes": 76570567,
+      "sha256": "f45eb3a90b73dadb14d9c73bc87fde64f1b1a49d298395e93fe8a8e7555214d1"
+    },
+    "rc9_candidate": {
+      "bytes": 708462,
+      "sha256": "e7f9eb8da031a56752e89c0cd357aa3dd6a244fac365743b38574fb80a90e8f5"
+    }
   },
   "status": "READY_FOR_EXTERNAL_RUNTIME_INTEGRATION_AUDIT",
   "trust_architecture": {
@@ -86,10 +102,33 @@
     "initialization_rule": "ALL_NINE_DEPENDENCIES_MUST_EXIST_AND_MATCH_EMBEDDED_SHA256_AND_BYTES",
     "missing_or_tampered_dependency": "INITIALIZATION_ABORT",
     "required_dependency_count": 9,
-    "required_dependency_keys": ["rc4_zip","rc9_candidate","lexical_index","lexical_frozen_attestation","constraint_engine","request_schema","intent_lane","semantic_domain","structured_state_registry"],
-    "trust_manifest": {"bytes": 2211,"path": "runtime_dependency_trust_manifest_rc2.json","runtime_embeds_manifest_sha256": true,"sha256": "e65a3100353778ad35913a8d46663d7a8ae66c74402c05afe93b74dfb861e8f3"},
+    "required_dependency_keys": [
+      "rc4_zip",
+      "rc9_candidate",
+      "lexical_index",
+      "lexical_frozen_attestation",
+      "constraint_engine",
+      "request_schema",
+      "intent_lane",
+      "semantic_domain",
+      "structured_state_registry"
+    ],
+    "trust_manifest": {
+      "bytes": 2211,
+      "path": "runtime_dependency_trust_manifest_rc2.json",
+      "runtime_embeds_manifest_sha256": true,
+      "sha256": "e65a3100353778ad35913a8d46663d7a8ae66c74402c05afe93b74dfb861e8f3"
+    },
     "verified_snapshot_use": "ALL_NINE_DEPENDENCIES_READ_ONCE_VERIFIED_THEN_CONSUMED_FROM_VERIFIED_BYTES"
   },
-  "validation_plan": {"bytes": 1900,"path": "runtime_integration_validation_plan_rc2.json","sha256": "801c53d4f0288a8c5210ee1392e38ae0ae489bdd907e1dd188bff2df24e0e30a"},
-  "validator_artifact": {"bytes": 17922,"path": "scripts/validate_runtime_integration_rc2.py","sha256": "aa0f7ba138beead35a9447fed08f1905be069c29e4dd7d0ddf7e5f13850e988c"}
+  "validation_plan": {
+    "bytes": 1900,
+    "path": "runtime_integration_validation_plan_rc2.json",
+    "sha256": "801c53d4f0288a8c5210ee1392e38ae0ae489bdd907e1dd188bff2df24e0e30a"
+  },
+  "validator_artifact": {
+    "bytes": 17922,
+    "path": "scripts/validate_runtime_integration_rc2.py",
+    "sha256": "aa0f7ba138beead35a9447fed08f1905be069c29e4dd7d0ddf7e5f13850e988c"
+  }
 }
