@@ -1,0 +1,61 @@
+{
+  "authority": "VERSIONED_RUNTIME_INTERNAL_TRUST_ROOT",
+  "caller_supplied_expected_pins": "FORBIDDEN",
+  "candidate": "DIAloga_Hybrid_Index_V4_Lexical_Runtime_Integration_RC2",
+  "coherent_repin_semantics": "REJECT_UNLESS_RUNTIME_CANDIDATE_ITSELF_IS_MODIFIED",
+  "dependencies": {
+    "constraint_engine": {
+      "bytes": 15941,
+      "sha256": "39f18c9d8d55d2f40b567d20b63d45007bf6e2dc8b48615cf9ca797c8a175d71"
+    },
+    "intent_lane": {
+      "bytes": 6696,
+      "sha256": "a11ad47a526328fedf6cc590b0e639aca3bbfb32ec4da66465921215d34e55bb"
+    },
+    "lexical_frozen_attestation": {
+      "bytes": 4280,
+      "sha256": "ce49cbdebe04a11e8ef239f2a9156d1ca2eb52063835794ea26880ea0d4e1df9"
+    },
+    "lexical_index": {
+      "bytes": 401289,
+      "sha256": "67edda46bb3e0465921c254ae05df4a1b6a30926b6a26f45574b69f97dd2cdac"
+    },
+    "rc4_zip": {
+      "bytes": 76570567,
+      "sha256": "f45eb3a90b73dadb14d9c73bc87fde64f1b1a49d298395e93fe8a8e7555214d1"
+    },
+    "rc9_candidate": {
+      "bytes": 708462,
+      "sha256": "e7f9eb8da031a56752e89c0cd357aa3dd6a244fac365743b38574fb80a90e8f5"
+    },
+    "request_schema": {
+      "bytes": 1486,
+      "sha256": "36b0419500e076e403f77d7858e555f721863e0bac188abe5d67c136be1342ac"
+    },
+    "semantic_domain": {
+      "bytes": 81640,
+      "sha256": "1ee298b8710d2f68aeeaf5b4c26e61e7c9e962221d573ddc20d10e3d2e0e5055"
+    },
+    "structured_state_registry": {
+      "bytes": 856439,
+      "sha256": "050e375a175565309447312b0531cd237146205b0b1661146722868091f4df5d"
+    }
+  },
+  "downstream_rule": "After external audit/freeze, application wiring must pin the full Runtime RC2 candidate SHA-256 and Runtime RC2 Frozen Attestation SHA-256.",
+  "extra_pin_semantics": "NOT_APPLICABLE_NO_CALLER_PIN_MAP",
+  "missing_pin_semantics": "INITIALIZATION_ABORT",
+  "null_pin_semantics": "NOT_APPLICABLE_NO_CALLER_PIN_MAP",
+  "required_dependency_count": 9,
+  "required_keys": [
+    "constraint_engine",
+    "intent_lane",
+    "lexical_frozen_attestation",
+    "lexical_index",
+    "rc4_zip",
+    "rc9_candidate",
+    "request_schema",
+    "semantic_domain",
+    "structured_state_registry"
+  ],
+  "schema_version": "dialoga_runtime_dependency_trust_manifest_rc2_v1"
+}
