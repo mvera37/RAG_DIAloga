@@ -1,0 +1,7 @@
+{
+  "component": "lexical_index_rc1",
+  "status": "FROZEN",
+  "artifact": "DIAloga_Hybrid_Index_V4_Lexical_Index_RC1.zip",
+  "sha256": "67edda46bb3e0465921c254ae05df4a1b6a30926b6a26f45574b69f97dd2cdac",
+  "bm25": {"N":1466,"k1":1.2,"b":0.75,"candidate_k":40,"statistics_scope":"GLOBAL_FROZEN_LEXICAL_CORPUS"}
+}
