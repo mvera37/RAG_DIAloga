@@ -1,0 +1,18 @@
+{
+  "all_file_metadata_exact": true,
+  "canonical_file_count": 10,
+  "canonical_root_recomputed": true,
+  "canonical_snapshot_root_sha256": "39f3282103fbafccc288ad3ff8b3717d5266d378f3e684a83587506fdc7473ad",
+  "fresh_regeneration_authorized_next": true,
+  "model_id": "ibm-granite/granite-embedding-311m-multilingual-r2",
+  "model_safetensors": {
+    "bytes": 623341952,
+    "sha256": "dcb6431bfa6e817fe100a2b0521360cec3383963b03fa966b685de18ca310d31"
+  },
+  "note": "The full snapshot ZIP remains local; GitHub records its exact cryptographic identity and authenticated manifest.",
+  "revision": "44399559930365213510b1ee2eb15ded83374f0e",
+  "schema_version": "dialoga_granite311_snapshot_authentication_validation_v1",
+  "snapshot_zip_filename": "DIAloga_Granite311_Authenticated_Snapshot_RC2.zip",
+  "snapshot_zip_sha256": "3e79757c748ede47e8ebe3c768a29ce0218e14949dab41177b8ce42b40fdec12",
+  "status": "PASS"
+}
