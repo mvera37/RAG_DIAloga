@@ -1,0 +1,58 @@
+{
+  "schema_version": "dialoga_rag_deployment_artifact_manifest_v1",
+  "repository": "mvera37/RAG_DIAloga",
+  "purpose": "Resolve physical deployment artifacts by exact SHA-256 without storing large binaries in normal Git history.",
+  "artifacts": {
+    "integrated_canonical_v4_rc4": {
+      "required_for": ["lexical_runtime", "future_dense_hybrid"],
+      "filename": "DIAloga_RAG_Canonical_V4_Integrated_RC4.zip",
+      "sha256": "f45eb3a90b73dadb14d9c73bc87fde64f1b1a49d298395e93fe8a8e7555214d1",
+      "bytes": 76570567,
+      "status": "FROZEN"
+    },
+    "hybrid_design_rc9": {
+      "required_for": ["constraint_engine", "routing_contracts", "future_hybrid"],
+      "filename": "DIAloga_Hybrid_Index_V4_Design_RC9.zip",
+      "sha256": "e7f9eb8da031a56752e89c0cd357aa3dd6a244fac365743b38574fb80a90e8f5",
+      "status": "FROZEN"
+    },
+    "lexical_index_rc1": {
+      "required_for": ["lexical_runtime"],
+      "filename": "DIAloga_Hybrid_Index_V4_Lexical_Index_RC1.zip",
+      "sha256": "67edda46bb3e0465921c254ae05df4a1b6a30926b6a26f45574b69f97dd2cdac",
+      "bytes": 401289,
+      "status": "FROZEN"
+    },
+    "lexical_runtime_rc2": {
+      "required_for": ["dialoga_application_wiring"],
+      "filename": "DIAloga_Hybrid_Index_V4_Lexical_Runtime_Integration_RC2.zip",
+      "sha256": "f2ff25c2129e9065a6ab3e9fbfe2fcdf3c7b7bee6bd5a7dc6874028a5ecfe36f",
+      "frozen_attestation_sha256": "7084a3be23d8c34dca7737e2628092f40a906e76d2f6d5151b20a6329ae04f5e",
+      "status": "FROZEN"
+    },
+    "granite311_snapshot": {
+      "required_for": ["production_embeddings_fresh_regeneration", "future_dense_query_embedding"],
+      "model_id": "ibm-granite/granite-embedding-311m-multilingual-r2",
+      "revision": "44399559930365213510b1ee2eb15ded83374f0e",
+      "canonical_snapshot_root_sha256": "39f3282103fbafccc288ad3ff8b3717d5266d378f3e684a83587506fdc7473ad",
+      "model_safetensors_sha256": "dcb6431bfa6e817fe100a2b0521360cec3383963b03fa966b685de18ca310d31",
+      "model_safetensors_bytes": 623341952,
+      "status": "FROZEN_MODEL_CONFIGURATION_BYTES_EXTERNAL"
+    },
+    "production_embeddings_rc2_candidate": {
+      "required_for": ["trust_recovery_only"],
+      "filename": "DIAloga_Production_Embeddings_RC2_Candidate.zip",
+      "sha256": "67d0804361c2cb594216c5c33de330cc7c22c5f5988372eabd9988ba8f86ae2a",
+      "vector_sha256": "89189e573b7f7818b137bd69d00a0acabbaec0c64a2778d22c9244b432262a6e",
+      "status": "BLOCKED_NOT_DEPLOYABLE"
+    },
+    "dense_index_rc1_candidate": {
+      "required_for": [],
+      "filename": "DIAloga_Dense_Index_Build_RC1_Candidate.zip",
+      "sha256": "9f73ca146952b1e1f2c8d3936908ee5877f03490ff67f8711490467f6e8d1773",
+      "index_sha256": "60c82903864df04a07dc6756a5939c37238dd426b582ec56ecd3f000ba901d42",
+      "status": "HOLD_DO_NOT_DEPLOY_OR_AUDIT"
+    }
+  },
+  "runtime_rule": "DIAloga must reject startup or disable the affected retrieval lane when a required artifact is missing, hash-mismatched, or has a non-authorized release status."
+}
