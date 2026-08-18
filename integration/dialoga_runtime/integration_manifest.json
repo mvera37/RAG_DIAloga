@@ -1,0 +1,38 @@
+{
+  "schema_version": "dialoga_runtime_integration_manifest_v1",
+  "runtime_bundle": "DIAloga_RAG_Runtime",
+  "status": "PARTIAL_AUTHORIZED_LEXICAL_ONLY",
+  "policy": "FAIL_CLOSED",
+  "components": {
+    "canonical_rc4": {
+      "status": "FROZEN",
+      "artifact": "DIAloga_RAG_Canonical_V4_Integrated_RC4.zip",
+      "bytes": 76570567,
+      "sha256": "f45eb3a90b73dadb14d9c73bc87fde64f1b1a49d298395e93fe8a8e7555214d1"
+    },
+    "hybrid_design_rc9": {
+      "status": "FROZEN",
+      "artifact": "DIAloga_Hybrid_Index_V4_Design_RC9.zip",
+      "bytes": 708462,
+      "sha256": "e7f9eb8da031a56752e89c0cd357aa3dd6a244fac365743b38574fb80a90e8f5"
+    },
+    "lexical_index_rc1": {
+      "status": "FROZEN",
+      "artifact": "DIAloga_Hybrid_Index_V4_Lexical_Index_RC1.zip",
+      "bytes": 401289,
+      "sha256": "67edda46bb3e0465921c254ae05df4a1b6a30926b6a26f45574b69f97dd2cdac"
+    },
+    "lexical_runtime_rc2": {
+      "status": "FROZEN",
+      "artifact": "DIAloga_Hybrid_Index_V4_Lexical_Runtime_Integration_RC2.zip",
+      "bytes": 551255,
+      "sha256": "f2ff25c2129e9065a6ab3e9fbfe2fcdf3c7b7bee6bd5a7dc6874028a5ecfe36f"
+    }
+  },
+  "disabled_components": {
+    "production_embeddings_rc2": {"status": "PENDING_SUPPLEMENTAL_EXTERNAL_AUDIT"},
+    "dense_index": {"status": "HOLD"},
+    "full_hybrid": {"status": "BLOCKED"}
+  },
+  "startup_rule": "DIAloga must verify the exact SHA-256 of every required physical artifact before enabling the corresponding retrieval lane."
+}
