@@ -1,0 +1,7 @@
+{
+  "component": "dense_index_rc1",
+  "status": "HOLD_PREMATURE_PARENT_FREEZE",
+  "candidate_sha256": "9f73ca146952b1e1f2c8d3936908ee5877f03490ff67f8711490467f6e8d1773",
+  "integration_enabled": false,
+  "audit_authorized": false
+}
