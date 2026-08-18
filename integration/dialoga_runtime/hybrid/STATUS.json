@@ -1,0 +1,6 @@
+{
+  "component": "full_hybrid_index",
+  "status": "BLOCKED",
+  "integration_enabled": false,
+  "requires": ["production_embeddings_frozen", "dense_index_frozen"]
+}
