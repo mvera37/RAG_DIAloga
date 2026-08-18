@@ -1,0 +1,8 @@
+{
+  "component": "production_embeddings_rc2",
+  "status": "NOT_DEPLOYED_PENDING_SUPPLEMENTAL_EXTERNAL_AUDIT",
+  "historical_candidate_sha256": "67d0804361c2cb594216c5c33de330cc7c22c5f5988372eabd9988ba8f86ae2a",
+  "fresh_regeneration_candidate_sha256": "1a06c0d1779f043bfcd75ec04b575b85d491c4ff6dddcac4c9b9db6e95ae8db4",
+  "vector_sha256": "89189e573b7f7818b137bd69d00a0acabbaec0c64a2778d22c9244b432262a6e",
+  "integration_enabled": false
+}
