@@ -19,6 +19,13 @@
       "dependency_trust_manifest": "rag/03_lexical/runtime_rc2/runtime_dependency_trust_manifest_rc2.json",
       "runtime_source": "rag/03_lexical/runtime_rc2/scripts/runtime_lexical_retriever_rc2.py",
       "physical_release_asset": "DIAloga_Hybrid_Index_V4_Lexical_Runtime_Integration_RC2.zip"
+    },
+    "production_embeddings": {
+      "frozen_attestation": "rag/04_embeddings/production_rc2/freeze/DIAloga_Production_Embeddings_RC2_FROZEN_ATTESTATION_v2.json",
+      "freeze_completion": "rag/04_embeddings/production_rc2/freeze/DIAloga_Production_Embeddings_RC2_FREEZE_COMPLETION_v2.json",
+      "external_release_anchor": "rag/04_embeddings/production_rc2/trust_recovery/OFFICIAL_RELEASE_ANCHOR.json",
+      "physical_release_asset": "DIAloga_Production_Embeddings_RC2_Candidate.zip",
+      "vector_member": "data/production_embeddings.f32le"
     }
   },
   "asset_catalog": "releases/ASSET_CATALOG.json",
