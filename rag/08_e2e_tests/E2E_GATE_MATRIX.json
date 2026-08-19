@@ -1,0 +1,31 @@
+{
+  "schema_version": "dialoga_e2e_gate_matrix_v1",
+  "status": "PREPARED_NOT_EXECUTED",
+  "execution_authorized_now": false,
+  "prerequisites": {
+    "dense_rc2_frozen": true,
+    "dense_rc2_frozen_attestation_sha256": "991dc756d0ba513324ba59e2428e211417009f4b46ea6d936790fa0572416ff3",
+    "full_hybrid_built": false,
+    "full_hybrid_frozen": false,
+    "dialoga_local_source_available": false,
+    "application_wiring_complete": false
+  },
+  "test_groups": [
+    "STARTUP_FAIL_CLOSED",
+    "ROUTING_INITIAL_PRIMARY_SECONDARY",
+    "STRUCTURED_EXACT",
+    "LEXICAL_BM25",
+    "DENSE_RETRIEVAL",
+    "FULL_HYBRID_RETRIEVAL",
+    "HARD_FILTER_BEFORE_TOPK",
+    "CANDIDATE_K_40_CONTRACT",
+    "LEXICAL_ONLY_16_PRESERVATION",
+    "REJECT_BLOCKED_HOLD_REVOKED",
+    "REJECT_DENSE_RC1",
+    "RECORD_ID_CORPUS_ORDINAL_TRACEABILITY",
+    "DEPENDENCY_SHA_MISMATCH_REJECTION",
+    "APPLICATION_WIRING_ACCEPTANCE"
+  ],
+  "runtime_rule": "Do not enable dense or hybrid_semantic until Full Hybrid and Application Wiring gates have passed.",
+  "next_execution_gate": "AFTER_FULL_HYBRID_RELEASE_CLOSURE_AND_DIALOGA_WIRING_AVAILABLE"
+}
