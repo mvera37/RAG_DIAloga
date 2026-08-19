@@ -1,5 +1,5 @@
 {
-  "schema_version": "dialoga_runtime_integration_manifest_v1",
+  "schema_version": "dialoga_runtime_integration_manifest_v2",
   "runtime_bundle": "DIAloga_RAG_Runtime",
   "status": "PARTIAL_AUTHORIZED_LEXICAL_RUNTIME_WITH_FROZEN_EMBEDDINGS",
   "policy": "FAIL_CLOSED",
@@ -40,9 +40,25 @@
       "dense_lane_enabled": false
     }
   },
-  "disabled_components": {
-    "dense_index": {"status": "HOLD_REBUILD_REQUIRED_AGAINST_FROZEN_PARENT_V2"},
-    "full_hybrid": {"status": "BLOCKED_PENDING_DENSE_REBUILD_AUDIT_AND_FREEZE"}
+  "pending_components": {
+    "dense_index_rc2": {
+      "status": "READY_FOR_EXTERNAL_AUDIT_NOT_RUNTIME_AUTHORIZED",
+      "candidate": "DIAloga_Dense_Index_Build_RC2_Candidate.zip",
+      "bytes": 4387297,
+      "candidate_sha256": "f45b854796c733affed1811984cdd6ebd061eaf0ec9341e4a4af60bf74df1ea8",
+      "index_sha256": "085215053fa3da335d3f557e644ea33c33c678e47012c4c3d2d12cf9b6fe0198",
+      "row_map_sha256": "957afabb965ffca781502ab15063f11930950207d771ed42cc5bcec49c6bcada",
+      "payload_sha256": "89189e573b7f7818b137bd69d00a0acabbaec0c64a2778d22c9244b432262a6e",
+      "parent_frozen_attestation_sha256": "1ebb82c73abe68b56fc806b05ef2dfe59b547c1775f9821749a2bb0ba5b7c40f",
+      "external_audit_bundle": "DIAloga_Dense_Index_Build_RC2_External_Audit_Bundle.zip",
+      "external_audit_bundle_sha256": "8e10f52a8ce63db6129969c2fcaf3e4c3ef43ace3448ba1a76ba1260913df662",
+      "runtime_authorized": false,
+      "dense_lane_enabled": false
+    }
   },
-  "startup_rule": "DIAloga must verify the exact SHA-256 of every required physical artifact and authority file before enabling the corresponding retrieval lane. Production Embeddings may be loaded only with the v2 frozen attestation; dense/hybrid lanes remain disabled until their own frozen releases exist."
+  "disabled_components": {
+    "dense_index_rc1": {"status": "HOLD_DO_NOT_AUDIT_DO_NOT_PROMOTE"},
+    "full_hybrid": {"status": "BLOCKED_PENDING_DENSE_RC2_EXTERNAL_AUDIT_AND_FREEZE"}
+  },
+  "startup_rule": "DIAloga must verify the exact SHA-256 of every required physical artifact and authority file before enabling the corresponding retrieval lane. Production Embeddings may be loaded only with the v2 frozen attestation. Dense RC2 is audit evidence only until it receives external PASS, freeze eligibility, and its own frozen attestation."
 }
