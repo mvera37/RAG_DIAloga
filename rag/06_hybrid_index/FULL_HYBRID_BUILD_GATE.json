@@ -1,12 +1,41 @@
 {
-  "schema_version": "dialoga_full_hybrid_build_gate_v1",
+  "schema_version": "dialoga_full_hybrid_build_gate_v2",
   "component": "DIAloga_Hybrid_Index_V4_Full_Hybrid",
-  "status": "AUTHORIZED_FOR_NEW_BUILD_NOT_YET_BUILT",
+  "status": "CANDIDATE_READY_FOR_EXTERNAL_AUDIT_NOT_FROZEN",
   "policy": "FAIL_CLOSED",
   "build_authorized": true,
+  "candidate_built": true,
+  "internal_validation_passed": true,
   "runtime_authorized": false,
   "freeze_authorized": false,
-  "external_audit_required_now": false,
+  "external_audit_required_now": true,
+  "candidate": {
+    "filename": "DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_Candidate.zip",
+    "bytes": 1738458,
+    "members": 25,
+    "sha256": "c7537e8befb53427a8911a4508d3bc68771d617f3630616c3f7ad4ddd0d9f6fc",
+    "artifact_class": "QUERY_TIME_FULL_HYBRID_COMPOSITION"
+  },
+  "internal_gates": {
+    "candidate_validator": "PASS_125_OF_125",
+    "adversarial": "PASS_8_OF_8",
+    "physical_cross_parent": "PASS_28_OF_28",
+    "deterministic_candidate_rebuild": "PASS_4_OF_4_BYTE_IDENTICAL",
+    "audit_bundle_verifier_support": "PASS_30_OF_30",
+    "audit_bundle_verifier_with_external_anchor": "PASS_31_OF_31"
+  },
+  "external_release_anchor": {
+    "repository": "mvera37/RAG_DIAloga",
+    "commit_sha": "9e6a7a5a745095e4e24404ca99d25647ff73b345",
+    "path": "rag/06_hybrid_index/rc1/release_authority/FULL_HYBRID_RC1_OFFICIAL_RELEASE_ANCHOR.json",
+    "sha256": "034e1b95296ba9f971b6fcf1c7522319bc2f04f67b300907f5cca50474e2214a"
+  },
+  "external_audit_bundle": {
+    "filename": "DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_External_Audit_Bundle.zip",
+    "bytes": 23362489,
+    "members": 15,
+    "sha256": "257fb9876b2ed4ad9e137317ad7eb8540204e6060a96fafd1bf5a78e6fcae5eb"
+  },
   "required_frozen_authorities": {
     "hybrid_design_rc9_frozen_attestation_sha256": "71a1cbca13ac20716c86e04c44bfb6ca9084b409b76105a2a36df69286ca2679",
     "lexical_index_rc1_frozen_attestation_sha256": "ce49cbdebe04a11e8ef239f2a9156d1ca2eb52063835794ea26880ea0d4e1df9",
@@ -24,21 +53,15 @@
     "dense_index_sha256": "085215053fa3da335d3f557e644ea33c33c678e47012c4c3d2d12cf9b6fe0198",
     "dense_row_map_sha256": "957afabb965ffca781502ab15063f11930950207d771ed42cc5bcec49c6bcada"
   },
-  "dense_freeze_evidence": {
-    "closure_external_audit_sha256": "f75c5a9374837211c5ebeee42026d3558e339996ca1ee88ac762ea3522c93116",
-    "closure_verdict": "PASS_WITH_NON_BLOCKING_FINDINGS",
-    "all_previous_blockers_closed": true,
-    "freeze_completion_sha256": "c86aa65e52ed8b62939917ea45ed63e3c9e187fd9c221ce5e33580ceba5b5405",
-    "freeze_completion_checks": "PASS_18_OF_18"
-  },
   "prohibitions": [
     "DO_NOT_USE_DENSE_RC1",
     "DO_NOT_MODIFY_FROZEN_DEPENDENCIES",
-    "DO_NOT_ENABLE_DENSE_RUNTIME_BEFORE_FULL_HYBRID_RELEASE_GATES",
-    "DO_NOT_ENABLE_HYBRID_SEMANTIC_BEFORE_FULL_HYBRID_RELEASE_GATES",
+    "DO_NOT_ENABLE_DENSE_RUNTIME_BEFORE_FULL_HYBRID_EXTERNAL_PASS_AND_FREEZE",
+    "DO_NOT_ENABLE_HYBRID_SEMANTIC_BEFORE_FULL_HYBRID_EXTERNAL_PASS_AND_FREEZE",
     "DO_NOT_START_APPLICATION_WIRING_BEFORE_FULL_HYBRID_CLOSURE",
+    "DO_NOT_TREAT_CANDIDATE_LOCAL_VALIDATOR_AS_ROOT_OF_TRUST",
     "ABORT_ON_ANY_SHA256_MISMATCH"
   ],
-  "next_state_after_successful_internal_build": "FULL_HYBRID_CANDIDATE_INTERNAL_VALIDATION",
-  "next_external_audit_gate": "ONLY_AFTER_FULL_HYBRID_CANDIDATE_IS_BUILT_AND_INTERNALLY_VALIDATED"
+  "next_state_after_external_pass": "FULL_HYBRID_RC1_FREEZE_ELIGIBILITY_REVIEW",
+  "next_external_audit_gate": "NOW"
 }
