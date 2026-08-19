@@ -1,0 +1,13 @@
+{
+  "schema_version": "dialoga_dense_rc2_external_anchor_reference_v1",
+  "repository": "mvera37/RAG_DIAloga",
+  "commit_sha": "49b1b255cd34ed1db3a5a28fc8deb11576fcb732",
+  "anchor_path": "rag/05_dense_index/rc2/release_authority/DENSE_RC2_OFFICIAL_RELEASE_ANCHOR.json",
+  "anchor_sha256": "487ead0654711b94366e3e9d56086deecc0de4573a9a7e6670a28491d9b1b07d",
+  "anchor_role": "EXTERNAL_DENSE_RELEASE_AUTHORITY",
+  "verification_policy": [
+    "auditor must fetch anchor from exact immutable commit independently of supplied audit bundle",
+    "auditor must SHA-256 the fetched anchor and require exact match",
+    "bundle-local anchor copies are convenience only and cannot serve as terminal trust authority"
+  ]
+}
