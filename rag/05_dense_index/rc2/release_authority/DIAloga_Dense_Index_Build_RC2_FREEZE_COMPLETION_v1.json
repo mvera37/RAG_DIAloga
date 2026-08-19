@@ -1,0 +1,53 @@
+{
+  "closure_external_audit": {
+    "filename": "DIAloga_Dense_Index_Build_RC2_Closure_External_Audit_FINAL.md",
+    "release_freeze_eligible": true,
+    "sha256": "f75c5a9374837211c5ebeee42026d3558e339996ca1ee88ac762ea3522c93116",
+    "verdict": "PASS_WITH_NON_BLOCKING_FINDINGS"
+  },
+  "frozen_attestation": {
+    "bytes": 7231,
+    "filename": "DIAloga_Dense_Index_Build_RC2_FROZEN_ATTESTATION_v1.json",
+    "publication": {
+      "branch": "agent/bootstrap-rag",
+      "commit_sha": "a0118f9d6d0addf1448fbd734dcbd8a7b957fb8c",
+      "immutable_commit_reachable": true,
+      "path": "rag/05_dense_index/rc2/release_authority/DIAloga_Dense_Index_Build_RC2_FROZEN_ATTESTATION_v1.json",
+      "repository": "mvera37/RAG_DIAloga"
+    },
+    "sha256": "991dc756d0ba513324ba59e2428e211417009f4b46ea6d936790fa0572416ff3"
+  },
+  "physical_validation": {
+    "checks": [
+      {"check":"closure_report_sha","detail":null,"pass":true},
+      {"check":"prior_audit_sha","detail":null,"pass":true},
+      {"check":"supp_audit_sha","detail":null,"pass":true},
+      {"check":"closure_bundle_sha","detail":null,"pass":true},
+      {"check":"source_audit_bundle_sha","detail":null,"pass":true},
+      {"check":"candidate_sha","detail":null,"pass":true},
+      {"check":"dense_index_sha","detail":null,"pass":true},
+      {"check":"row_map_sha","detail":null,"pass":true},
+      {"check":"parent_attestation_sha","detail":null,"pass":true},
+      {"check":"design_attestation_sha","detail":null,"pass":true},
+      {"check":"candidate_internal_validation","detail":null,"pass":true},
+      {"check":"audit_verdict","detail":null,"pass":true},
+      {"check":"freeze_eligible","detail":null,"pass":true},
+      {"check":"all_blockers_closed","detail":null,"pass":true},
+      {"check":"false_pass_resistance","detail":null,"pass":true},
+      {"check":"candidate_determinism","detail":null,"pass":true},
+      {"check":"state_frozen","detail":null,"pass":true},
+      {"check":"full_hybrid_not_built","detail":null,"pass":true}
+    ],
+    "checks_failed": 0,
+    "checks_passed": 18,
+    "checks_total": 18
+  },
+  "release": "DIAloga_Hybrid_Index_V4_Dense_Index_Build_RC2",
+  "result": {
+    "application_wiring_authorized": false,
+    "dense_index_rc2_frozen": true,
+    "ready_for_full_hybrid_index_build": true
+  },
+  "schema_version": "dialoga_dense_index_build_rc2_freeze_completion_v1",
+  "status": "PASS"
+}
