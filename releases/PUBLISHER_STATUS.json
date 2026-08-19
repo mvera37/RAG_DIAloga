@@ -1,0 +1,19 @@
+{
+  "schema_version": "dialoga_release_publisher_status_v1",
+  "status": "PUBLISHER_UPDATE_REQUIRED_BEFORE_FINAL_BINARY_RELEASE",
+  "current_inventory": "releases/RELEASE_UPLOAD_INVENTORY.json",
+  "current_inventory_schema": "dialoga_release_upload_inventory_v3",
+  "historical_publisher": "releases/scripts/PUBLISH_DIAloga_RELEASE_ASSETS.ps1",
+  "historical_publisher_state": "PRE_DENSE_RC2_FREEZE_DO_NOT_USE_AS_FINAL_PUBLISHER",
+  "current_staging_manifest": "releases/STAGING_MANIFEST_CURRENT.json",
+  "current_staging_state": "PRE_DENSE_RC2_FREEZE_TRANSFER_SNAPSHOT",
+  "staging_delta": "releases/STAGING_DELTA_POST_DENSE_FREEZE.json",
+  "missing_post_freeze_release_asset": {
+    "filename": "DIAloga_Dense_Index_Build_RC2_Closure_External_Audit_Bundle.zip",
+    "bytes": 21623663,
+    "sha256": "d130b209ec45dcbac9e823fd3daf1192f443e9b98844395a7d31a1a29c8786b4"
+  },
+  "integration_blocked_by_publisher_update": false,
+  "full_hybrid_build_blocked_by_publisher_update": false,
+  "final_binary_release_publication_blocked_until_publisher_sync": true
+}
