@@ -1,7 +1,22 @@
 {
-  "component": "dense_index_rc1",
-  "status": "HOLD_PREMATURE_PARENT_FREEZE",
-  "candidate_sha256": "9f73ca146952b1e1f2c8d3936908ee5877f03490ff67f8711490467f6e8d1773",
+  "component": "dense_index",
   "integration_enabled": false,
-  "audit_authorized": false
+  "active_runtime_release": null,
+  "rc1_historical": {
+    "audit_authorized": false,
+    "candidate_sha256": "9f73ca146952b1e1f2c8d3936908ee5877f03490ff67f8711490467f6e8d1773",
+    "status": "HOLD_DO_NOT_AUDIT_DO_NOT_PROMOTE"
+  },
+  "rc2_candidate": {
+    "audit_authorized": true,
+    "candidate_sha256": "f45b854796c733affed1811984cdd6ebd061eaf0ec9341e4a4af60bf74df1ea8",
+    "external_audit_bundle_sha256": "8e10f52a8ce63db6129969c2fcaf3e4c3ef43ace3448ba1a76ba1260913df662",
+    "frozen": false,
+    "index_sha256": "085215053fa3da335d3f557e644ea33c33c678e47012c4c3d2d12cf9b6fe0198",
+    "parent_frozen_attestation_sha256": "1ebb82c73abe68b56fc806b05ef2dfe59b547c1775f9821749a2bb0ba5b7c40f",
+    "payload_sha256": "89189e573b7f7818b137bd69d00a0acabbaec0c64a2778d22c9244b432262a6e",
+    "row_map_sha256": "957afabb965ffca781502ab15063f11930950207d771ed42cc5bcec49c6bcada",
+    "status": "READY_FOR_EXTERNAL_AUDIT"
+  },
+  "runtime_gate": "Dense lane remains disabled until RC2 external audit PASS, release freeze eligibility, and Dense RC2 frozen attestation."
 }
