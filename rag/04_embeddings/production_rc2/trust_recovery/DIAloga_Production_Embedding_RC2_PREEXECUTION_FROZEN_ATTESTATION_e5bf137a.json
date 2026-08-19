@@ -1,0 +1,33 @@
+{
+  "arbitrary_pass_directories_authorized": false,
+  "artifact_type": "PREEXECUTION_FROZEN_ATTESTATION",
+  "change_class": "PRODUCTION_EMBEDDING_EXECUTION_PROVENANCE_AND_ENVIRONMENT_FAIL_CLOSED_HARDENING_ONLY",
+  "corpus_member_sha256": "c488a97b588032f0c6150e95580ec77d51868b9355323487dcf9c428a84a37c6",
+  "created_before_any_rc2_vector_generation": true,
+  "dense_index_authorized": false,
+  "execution_bundle_bytes": 76635021,
+  "execution_bundle_filename": "DIAloga_Production_Embedding_Generation_RC2_Execution_Bundle.zip",
+  "execution_bundle_sha256": "e5bf137afcdb782d11de7fdc455cdc10bfbf12e4dc8db4ba3e75469dc8bfdb6c",
+  "expected_physical_passes": [
+    "A",
+    "B",
+    "C"
+  ],
+  "frozen_parent_attestation_sha256": "cf45c855cb209e278c4f0e0604d9a1f90d71b592bd39fba4c1646d5579c8eb79",
+  "full_hybrid_authorized": false,
+  "issued_at_america_lima": "2026-08-18T00:25:00-05:00",
+  "locked_artifacts": 16,
+  "model_id": "ibm-granite/granite-embedding-311m-multilingual-r2",
+  "model_revision": "44399559930365213510b1ee2eb15ded83374f0e",
+  "model_root_sha256": "39f3282103fbafccc288ad3ff8b3717d5266d378f3e684a83587506fdc7473ad",
+  "pairing_rule": "This attestation is valid only with the exact Execution Bundle SHA-256 declared above.",
+  "policy_sha256": "07d3ff9ebe97a42f0642de90bd8abba22273db75506129daa6bbc84a0e894b71",
+  "preexecution_authority_sha256": "038db0df36db44a084d56619da44cc84edce732670bc1d941b5b17053d493331",
+  "preexecution_lock_sha256": "1fc5ab15368c646fcc14dda2e58e42568248850ab265c5722de8df975236f589",
+  "production_vectors_present_at_attestation_creation": false,
+  "rc4_sha256": "f45eb3a90b73dadb14d9c73bc87fde64f1b1a49d298395e93fe8a8e7555214d1",
+  "release": "DIAloga_Hybrid_Index_V4_Production_Embedding_Generation_RC2",
+  "requirements_lock_sha256": "ffc1cef94f7ebf76f6e05a5b20255cf572db67c1a617128fb57fc1377a4bd53e",
+  "schema_version": "dialoga_production_embedding_rc2_preexecution_frozen_attestation_v2",
+  "status": "FROZEN_BEFORE_PRODUCTION_EMBEDDING_RC2_EXECUTION"
+}
