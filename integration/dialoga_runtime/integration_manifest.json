@@ -1,7 +1,7 @@
 {
   "schema_version": "dialoga_runtime_integration_manifest_v1",
   "runtime_bundle": "DIAloga_RAG_Runtime",
-  "status": "PARTIAL_AUTHORIZED_LEXICAL_ONLY",
+  "status": "PARTIAL_AUTHORIZED_LEXICAL_RUNTIME_WITH_FROZEN_EMBEDDINGS",
   "policy": "FAIL_CLOSED",
   "components": {
     "canonical_rc4": {
@@ -27,12 +27,22 @@
       "artifact": "DIAloga_Hybrid_Index_V4_Lexical_Runtime_Integration_RC2.zip",
       "bytes": 551255,
       "sha256": "f2ff25c2129e9065a6ab3e9fbfe2fcdf3c7b7bee6bd5a7dc6874028a5ecfe36f"
+    },
+    "production_embeddings_rc2": {
+      "status": "FROZEN",
+      "artifact": "DIAloga_Production_Embeddings_RC2_Candidate.zip",
+      "bytes": 17164878,
+      "sha256": "67d0804361c2cb594216c5c33de330cc7c22c5f5988372eabd9988ba8f86ae2a",
+      "vector_sha256": "89189e573b7f7818b137bd69d00a0acabbaec0c64a2778d22c9244b432262a6e",
+      "frozen_attestation": "rag/04_embeddings/production_rc2/freeze/DIAloga_Production_Embeddings_RC2_FROZEN_ATTESTATION_v2.json",
+      "frozen_attestation_sha256": "1ebb82c73abe68b56fc806b05ef2dfe59b547c1775f9821749a2bb0ba5b7c40f",
+      "runtime_authorized": true,
+      "dense_lane_enabled": false
     }
   },
   "disabled_components": {
-    "production_embeddings_rc2": {"status": "PENDING_SUPPLEMENTAL_EXTERNAL_AUDIT"},
-    "dense_index": {"status": "HOLD"},
-    "full_hybrid": {"status": "BLOCKED"}
+    "dense_index": {"status": "HOLD_REBUILD_REQUIRED_AGAINST_FROZEN_PARENT_V2"},
+    "full_hybrid": {"status": "BLOCKED_PENDING_DENSE_REBUILD_AUDIT_AND_FREEZE"}
   },
-  "startup_rule": "DIAloga must verify the exact SHA-256 of every required physical artifact before enabling the corresponding retrieval lane."
+  "startup_rule": "DIAloga must verify the exact SHA-256 of every required physical artifact and authority file before enabling the corresponding retrieval lane. Production Embeddings may be loaded only with the v2 frozen attestation; dense/hybrid lanes remain disabled until their own frozen releases exist."
 }
