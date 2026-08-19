@@ -1,5 +1,5 @@
 {
-  "schema_version": "dialoga_release_upload_inventory_v3",
+  "schema_version": "dialoga_release_upload_inventory_v4",
   "policy": "VERIFY_SHA256_BEFORE_UPLOAD_FAIL_CLOSED",
   "repository": "mvera37/RAG_DIAloga",
   "asset_groups": {
@@ -15,6 +15,10 @@
       {"filename":"DIAloga_Hybrid_Index_V4_Lexical_Runtime_Integration_RC2.zip","bytes":551255,"sha256":"f2ff25c2129e9065a6ab3e9fbfe2fcdf3c7b7bee6bd5a7dc6874028a5ecfe36f","state":"FROZEN","publish":true},
       {"filename":"DIAloga_Production_Embeddings_RC2_Candidate.zip","bytes":17164878,"sha256":"67d0804361c2cb594216c5c33de330cc7c22c5f5988372eabd9988ba8f86ae2a","state":"FROZEN_RELEASE_AUTHORITY","frozen_attestation_sha256":"1ebb82c73abe68b56fc806b05ef2dfe59b547c1775f9821749a2bb0ba5b7c40f","publish":true},
       {"filename":"DIAloga_Dense_Index_Build_RC2_Candidate.zip","bytes":4387297,"sha256":"f45b854796c733affed1811984cdd6ebd061eaf0ec9341e4a4af60bf74df1ea8","state":"FROZEN_RELEASE_AUTHORITY","frozen_attestation_sha256":"991dc756d0ba513324ba59e2428e211417009f4b46ea6d936790fa0572416ff3","publish":true}
+    ],
+    "full_hybrid_rc1_external_audit": [
+      {"filename":"DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_Candidate.zip","bytes":1738458,"sha256":"c7537e8befb53427a8911a4508d3bc68771d617f3630616c3f7ad4ddd0d9f6fc","state":"READY_FOR_EXTERNAL_AUDIT_NOT_FROZEN","publish":true},
+      {"filename":"DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_External_Audit_Bundle.zip","bytes":23362489,"sha256":"257fb9876b2ed4ad9e137317ad7eb8540204e6060a96fafd1bf5a78e6fcae5eb","state":"READY_FOR_EXTERNAL_AUDIT","publish":true}
     ],
     "production_embeddings_reproducibility_and_audit": [
       {"filename":"DIAloga_Production_Embeddings_RC2_Candidate_FRESH_REGEN.zip","bytes":17164879,"sha256":"1a06c0d1779f043bfcd75ec04b575b85d491c4ff6dddcac4c9b9db6e95ae8db4","state":"REPRODUCIBILITY_EVIDENCE_ONLY_NOT_RELEASE_AUTHORITY","publish":true},
@@ -53,7 +57,8 @@
     "Do not treat the producer fresh embeddings candidate as release authority; it is reproducibility evidence only.",
     "Do not alter any FROZEN ZIP bytes before or after upload.",
     "Do not add files inside the authenticated Granite311 snapshot.",
-    "Do not enable dense or hybrid_semantic runtime lanes until a new Full Hybrid candidate is built, validated and passes its required release/freeze gates.",
+    "Do not treat Full Hybrid RC1 as FROZEN or runtime-authorized before external PASS and a dedicated Frozen Attestation.",
+    "Do not enable dense or hybrid_semantic runtime lanes until Full Hybrid closure is complete.",
     "Do not begin Application Wiring until Full Hybrid closure is complete."
   ]
 }
