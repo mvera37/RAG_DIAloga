@@ -1,0 +1,20 @@
+{
+  "schema_version": "dialoga_historical_audit_staging_v1",
+  "staging_archive": {
+    "filename": "DIAloga_GitHub_Release_Staging_Historical_Audits_PARTIAL.zip",
+    "bytes": 404197405,
+    "sha256": "b6593346f34dd1b4143bcb5df31a3e0fe02c52d57a286b57792228dc08003146"
+  },
+  "asset_count": 5,
+  "assets": [
+    {"name":"DIAloga_RAG_Canonical_V4_Integrated_RC4_Audit_Bundle.zip","bytes":76585846,"sha256":"46cd654e69316d115e53627132843c841b993b2ae39142dbfc4b217afa6e9ec9"},
+    {"name":"DIAloga_Hybrid_Index_V4_Lexical_Build_RC1_Audit_Bundle.zip","bytes":77710492,"sha256":"5e7023f427e8b719cc1ea38128d16a1c13ad732da6577fd535b8d0bedb472020"},
+    {"name":"DIAloga_Hybrid_Index_V4_Lexical_Runtime_Integration_RC2_Audit_Bundle.zip","bytes":78792855,"sha256":"3f4043237cac50245caa02e13d86679080aebb3edd776f7f2b80e640449ddd3c"},
+    {"name":"DIAloga_Embedding_Model_Benchmark_RC2_External_Audit_Bundle.zip","bytes":77242143,"sha256":"a26cb3e998edab6d581fa5307ffb78dd0d2c4682290366a8699930e8859e1c21"},
+    {"name":"DIAloga_Production_Embeddings_RC2_External_Audit_Bundle.zip","bytes":93861840,"sha256":"e32f442fd2b39573842604692f51a3f9c67fd96b808b0e0e0cddde4328a334dd"}
+  ],
+  "missing_due_platform_materialization_limit": [
+    {"name":"DIAloga_Hybrid_Index_V4_Design_RC9_External_Audit_Bundle.zip","bytes":154615634,"sha256":"c7364ad53a841e72a4114784ba06be7c93a64b3152e6725a37cf0958d7516ff1","reason":"Source exists in Library but exceeds the 100 MiB materialization limit of the current ChatGPT file bridge."}
+  ],
+  "rule": "These are historical audit evidence archives, not DIAloga runtime artifacts."
+}
