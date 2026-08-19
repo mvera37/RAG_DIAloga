@@ -1,0 +1,36 @@
+{
+  "schema_version": "dialoga_release_staging_delta_v1",
+  "status": "CURRENT_STAGING_ARCHIVE_PREDATES_DENSE_RC2_FREEZE",
+  "current_staging_manifest": "releases/STAGING_MANIFEST_CURRENT.json",
+  "current_staging_archive": {
+    "filename": "DIAloga_GitHub_Release_Staging_Current.zip",
+    "bytes": 324348878,
+    "sha256": "cb575eb4ab654db7ef8c085a78206c889af387314a2096f90966a8db755e4abd",
+    "asset_count": 13,
+    "safe_as_historical_transfer_snapshot": true,
+    "safe_as_final_post_dense_freeze_staging": false
+  },
+  "dense_rc2_post_freeze_state": {
+    "candidate_sha256": "f45b854796c733affed1811984cdd6ebd061eaf0ec9341e4a4af60bf74df1ea8",
+    "frozen_attestation_sha256": "991dc756d0ba513324ba59e2428e211417009f4b46ea6d936790fa0572416ff3",
+    "freeze_completion_sha256": "c86aa65e52ed8b62939917ea45ed63e3c9e187fd9c221ce5e33580ceba5b5405",
+    "closure_external_audit_sha256": "f75c5a9374837211c5ebeee42026d3558e339996ca1ee88ac762ea3522c93116"
+  },
+  "release_asset_delta": [
+    {
+      "filename": "DIAloga_Dense_Index_Build_RC2_Closure_External_Audit_Bundle.zip",
+      "bytes": 21623663,
+      "sha256": "d130b209ec45dcbac9e823fd3daf1192f443e9b98844395a7d31a1a29c8786b4",
+      "required_for_final_dense_audit_archive": true,
+      "present_in_current_13_asset_staging": false
+    }
+  ],
+  "repository_only_authority_files": [
+    "rag/05_dense_index/rc2/release_authority/DIAloga_Dense_Index_Build_RC2_FROZEN_ATTESTATION_v1.json",
+    "rag/05_dense_index/rc2/release_authority/DIAloga_Dense_Index_Build_RC2_FREEZE_COMPLETION_v1.json",
+    "rag/05_dense_index/rc2/audits/AUDIT_CHAIN.json",
+    "rag/06_hybrid_index/FULL_HYBRID_BUILD_GATE.json"
+  ],
+  "required_action_before_final_release_publication": "REBUILD_STAGING_OR_SUPPLY_MISSING_POST_FREEZE_ASSETS_TO_PUBLISHER_V2_AND_VERIFY_ALL_SHA256",
+  "prohibition": "DO_NOT_RENAME_STAGING_MANIFEST_CURRENT_AS_POST_DENSE_FREEZE_WITHOUT_REBUILDING_THE_PHYSICAL_ARCHIVE"
+}
