@@ -17,9 +17,31 @@
       "external_audit_bundle_sha256": "0ce7fdb6cb5e4d06cea564a8d433feefaf1f5b3610702d15d135010d812224a9",
       "index_sha256": "60c82903864df04a07dc6756a5939c37238dd426b582ec56ecd3f000ba901d42",
       "rebuild_required": true,
-      "required_parent_frozen_attestation_sha256": "1ebb82c73abe68b56fc806b05ef2dfe59b547c1775f9821749a2bb0ba5b7c40f",
-      "required_parent_vector_sha256": "89189e573b7f7818b137bd69d00a0acabbaec0c64a2778d22c9244b432262a6e",
-      "status": "HOLD_REBUILD_REQUIRED_AGAINST_FROZEN_PARENT_V2"
+      "status": "HOLD_DO_NOT_AUDIT_DO_NOT_PROMOTE"
+    },
+    "rc2": {
+      "audit_authorized": true,
+      "candidate_bytes": 4387297,
+      "candidate_sha256": "f45b854796c733affed1811984cdd6ebd061eaf0ec9341e4a4af60bf74df1ea8",
+      "change_class": "PARENT_FREEZE_LINEAGE_REBIND_ONLY",
+      "external_audit_bundle_bytes": 21585823,
+      "external_audit_bundle_sha256": "8e10f52a8ce63db6129969c2fcaf3e4c3ef43ace3448ba1a76ba1260913df662",
+      "freeze_eligible": false,
+      "frozen": false,
+      "index_sha256": "085215053fa3da335d3f557e644ea33c33c678e47012c4c3d2d12cf9b6fe0198",
+      "internal_gates": {
+        "adversarial": "PASS_8_OF_8",
+        "audit_bundle_verifier": "PASS_49_OF_49",
+        "candidate_validator": "PASS_88_OF_88",
+        "conformance_fixtures": 72,
+        "deterministic_index": true,
+        "deterministic_zip": true,
+        "self_retrieval_top1": "1450/1450"
+      },
+      "parent_frozen_attestation_sha256": "1ebb82c73abe68b56fc806b05ef2dfe59b547c1775f9821749a2bb0ba5b7c40f",
+      "payload_sha256": "89189e573b7f7818b137bd69d00a0acabbaec0c64a2778d22c9244b432262a6e",
+      "row_map_sha256": "957afabb965ffca781502ab15063f11930950207d771ed42cc5bcec49c6bcada",
+      "status": "READY_FOR_EXTERNAL_AUDIT"
     }
   },
   "embedding_model_benchmark": {
@@ -32,7 +54,7 @@
     }
   },
   "full_hybrid": {
-    "status": "BLOCKED_PENDING_DENSE_REBUILD_AUDIT_AND_FREEZE"
+    "status": "BLOCKED_PENDING_DENSE_RC2_EXTERNAL_AUDIT_AND_FREEZE"
   },
   "hybrid_design": {
     "rc9": {
@@ -92,5 +114,5 @@
   },
   "repository": "mvera37/RAG_DIAloga",
   "schema_version": "dialoga_rag_release_status_v1",
-  "updated_at": "2026-08-19T10:22:30-05:00"
+  "updated_at": "2026-08-19T10:39:55-05:00"
 }
