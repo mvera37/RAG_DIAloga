@@ -1,0 +1,68 @@
+{
+  "attestation_type": "EXTERNAL_FREEZE_ATTESTATION",
+  "authorization_state": {
+    "ready_for_embeddings": false,
+    "ready_for_index_build": false,
+    "ready_for_index_design": true
+  },
+  "candidate": "DIAloga_RAG_Canonical_V4_Integrated_RC4",
+  "canonical_state": {
+    "lexical_eligible": 1466,
+    "records_total": 1466,
+    "scope_counts": {
+      "cneb_general": 418,
+      "inicial": 182,
+      "primaria": 451,
+      "secundaria": 415
+    },
+    "unique_record_ids": 1466,
+    "vector_eligible": 1450
+  },
+  "cryptographic_pins": {
+    "integrated_corpus_sha256": "c488a97b588032f0c6150e95580ec77d51868b9355323487dcf9c428a84a37c6",
+    "integration_registry_sha256": "f37d233c6566857e39af75ee88d90119582ba3d7775960c80a006b6ff8bebd63",
+    "integration_release_root_sha256": "b8d357978fb75e4fca14a3df91a73183b718848dc84e4c80d5cba90c1a8fabc9",
+    "package_closure_root_sha256": "c80887f065e8d9bee3c88dd4e699d63fd68a0d64d1eab01b77cad535a8060a5a"
+  },
+  "external_audit": {
+    "gate": "PASS_FREEZE_APPROVED",
+    "new_confirmed_blockers": 0,
+    "recommend_rc5": false,
+    "report_filename": "Integrated_RC4_external_audit_PASS.md",
+    "report_sha256": "ee3a5dde7fab31eae1f34ebf55ccec7858c511dec891c7bc55f633e2d577b44d"
+  },
+  "external_trust_anchor": {
+    "filename": "DIAloga_RAG_Canonical_V4_Integrated_RC4.external_trust_anchor.json",
+    "location_requirement": "OUTSIDE_FROZEN_PACKAGE",
+    "sha256": "d8dff2d3f5dc9b984bc91234e471c65db53158f21162a335264f388417cad523"
+  },
+  "freeze_decision": "PASS_FREEZE_APPROVED",
+  "freeze_timestamp_local": "2026-08-12T23:58:18-05:00",
+  "freeze_timestamp_utc": "2026-08-13T04:58:18Z",
+  "frozen_artifact": {
+    "bytes": 76570567,
+    "filename": "DIAloga_RAG_Canonical_V4_Integrated_RC4.zip",
+    "hash_controlled_artifacts": 52,
+    "package_files": 55,
+    "sha256": "f45eb3a90b73dadb14d9c73bc87fde64f1b1a49d298395e93fe8a8e7555214d1"
+  },
+  "immutability_rule": "The frozen RC4 ZIP MUST NOT be modified. Any package-content change requires a new release candidate and external audit.",
+  "integration_frozen": true,
+  "schema_version": "integrated_rc4_frozen_attestation_v1",
+  "trust_boundary_note": "The external trust anchor must be obtained from a trusted distribution channel. Its sidecar SHA-256 is an integrity check, not a digital signature or proof of issuer identity.",
+  "validated_evidence": {
+    "artifact_hashes": "PASS_52_OF_52",
+    "authenticated_validator": "PASS_99_OF_99",
+    "authenticated_validator_authenticity": "PASS_EXTERNAL_ATTESTATION",
+    "build_a_b": "PASS_BYTE_IDENTICAL",
+    "declared_adversarial": "PASS_14_OF_14",
+    "derived_output_rebuild": "PASS_10_OF_10_BYTE_IDENTICAL",
+    "deterministic_zip": "PASS_BYTE_IDENTICAL",
+    "external_anchor_a_b": "PASS_BYTE_IDENTICAL",
+    "internal_validator": "PASS_88_OF_88_NOT_AUTHENTICATED",
+    "package_closure_root": "PASS",
+    "package_inventory": "PASS_55_OF_55",
+    "pytest_external": "PASS_83_OF_83",
+    "release_root": "PASS_26_OF_26"
+  }
+}
