@@ -26,6 +26,14 @@
       "external_release_anchor": "rag/04_embeddings/production_rc2/trust_recovery/OFFICIAL_RELEASE_ANCHOR.json",
       "physical_release_asset": "DIAloga_Production_Embeddings_RC2_Candidate.zip",
       "vector_member": "data/production_embeddings.f32le"
+    },
+    "dense_index_rc2": {
+      "frozen_attestation": "rag/05_dense_index/rc2/release_authority/DIAloga_Dense_Index_Build_RC2_FROZEN_ATTESTATION_v1.json",
+      "freeze_completion": "rag/05_dense_index/rc2/release_authority/DIAloga_Dense_Index_Build_RC2_FREEZE_COMPLETION_v1.json",
+      "external_release_anchor": "rag/05_dense_index/rc2/release_authority/DENSE_RC2_OFFICIAL_RELEASE_ANCHOR.json",
+      "physical_release_asset": "DIAloga_Dense_Index_Build_RC2_Candidate.zip",
+      "index_member": "index/dense_exact_flat_v1.didx",
+      "row_map_member": "index/dense_index_rows.jsonl"
     }
   },
   "asset_catalog": "releases/ASSET_CATALOG.json",
