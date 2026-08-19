@@ -20,14 +20,35 @@
       "status": "HOLD_DO_NOT_AUDIT_DO_NOT_PROMOTE"
     },
     "rc2": {
-      "audit_authorized": true,
+      "audit_authorized": false,
       "candidate_bytes": 4387297,
       "candidate_sha256": "f45b854796c733affed1811984cdd6ebd061eaf0ec9341e4a4af60bf74df1ea8",
       "change_class": "PARENT_FREEZE_LINEAGE_REBIND_ONLY",
       "external_audit_bundle_bytes": 21585823,
       "external_audit_bundle_sha256": "8e10f52a8ce63db6129969c2fcaf3e4c3ef43ace3448ba1a76ba1260913df662",
-      "freeze_eligible": false,
-      "frozen": false,
+      "closure_audit_bundle_bytes": 21623663,
+      "closure_audit_bundle_sha256": "d130b209ec45dcbac9e823fd3daf1192f443e9b98844395a7d31a1a29c8786b4",
+      "closure_audit": {
+        "all_previous_blockers_closed": true,
+        "production_ready": true,
+        "release_freeze_eligible": true,
+        "sha256": "f75c5a9374837211c5ebeee42026d3558e339996ca1ee88ac762ea3522c93116",
+        "verdict": "PASS_WITH_NON_BLOCKING_FINDINGS"
+      },
+      "external_public_pin": {
+        "anchor_sha256": "487ead0654711b94366e3e9d56086deecc0de4573a9a7e6670a28491d9b1b07d",
+        "commit_sha": "49b1b255cd34ed1db3a5a28fc8deb11576fcb732",
+        "ready": true,
+        "signed": false
+      },
+      "freeze_eligible": true,
+      "frozen": true,
+      "frozen_attestation_path": "rag/05_dense_index/rc2/release_authority/DIAloga_Dense_Index_Build_RC2_FROZEN_ATTESTATION_v1.json",
+      "frozen_attestation_sha256": "991dc756d0ba513324ba59e2428e211417009f4b46ea6d936790fa0572416ff3",
+      "frozen_attestation_commit": "a0118f9d6d0addf1448fbd734dcbd8a7b957fb8c",
+      "freeze_completion_path": "rag/05_dense_index/rc2/release_authority/DIAloga_Dense_Index_Build_RC2_FREEZE_COMPLETION_v1.json",
+      "freeze_completion_sha256": "c86aa65e52ed8b62939917ea45ed63e3c9e187fd9c221ce5e33580ceba5b5405",
+      "freeze_completion_checks": "PASS_18_OF_18",
       "index_sha256": "085215053fa3da335d3f557e644ea33c33c678e47012c4c3d2d12cf9b6fe0198",
       "internal_gates": {
         "adversarial": "PASS_8_OF_8",
@@ -41,7 +62,7 @@
       "parent_frozen_attestation_sha256": "1ebb82c73abe68b56fc806b05ef2dfe59b547c1775f9821749a2bb0ba5b7c40f",
       "payload_sha256": "89189e573b7f7818b137bd69d00a0acabbaec0c64a2778d22c9244b432262a6e",
       "row_map_sha256": "957afabb965ffca781502ab15063f11930950207d771ed42cc5bcec49c6bcada",
-      "status": "READY_FOR_EXTERNAL_AUDIT"
+      "status": "FROZEN"
     }
   },
   "embedding_model_benchmark": {
@@ -54,7 +75,8 @@
     }
   },
   "full_hybrid": {
-    "status": "BLOCKED_PENDING_DENSE_RC2_EXTERNAL_AUDIT_AND_FREEZE"
+    "status": "READY_FOR_BUILD_PENDING_NEW_FULL_HYBRID_CANDIDATE",
+    "required_dense_frozen_attestation_sha256": "991dc756d0ba513324ba59e2428e211417009f4b46ea6d936790fa0572416ff3"
   },
   "hybrid_design": {
     "rc9": {
@@ -114,5 +136,5 @@
   },
   "repository": "mvera37/RAG_DIAloga",
   "schema_version": "dialoga_rag_release_status_v1",
-  "updated_at": "2026-08-19T10:39:55-05:00"
+  "updated_at": "2026-08-19T12:01:44-05:00"
 }
