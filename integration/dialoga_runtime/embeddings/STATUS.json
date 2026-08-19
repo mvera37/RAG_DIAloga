@@ -1,8 +1,26 @@
 {
   "component": "production_embeddings_rc2",
-  "status": "NOT_DEPLOYED_PENDING_SUPPLEMENTAL_EXTERNAL_AUDIT",
-  "historical_candidate_sha256": "67d0804361c2cb594216c5c33de330cc7c22c5f5988372eabd9988ba8f86ae2a",
-  "fresh_regeneration_candidate_sha256": "1a06c0d1779f043bfcd75ec04b575b85d491c4ff6dddcac4c9b9db6e95ae8db4",
-  "vector_sha256": "89189e573b7f7818b137bd69d00a0acabbaec0c64a2778d22c9244b432262a6e",
-  "integration_enabled": false
+  "status": "FROZEN_AUTHORIZED",
+  "candidate": {
+    "artifact": "DIAloga_Production_Embeddings_RC2_Candidate.zip",
+    "bytes": 17164878,
+    "sha256": "67d0804361c2cb594216c5c33de330cc7c22c5f5988372eabd9988ba8f86ae2a"
+  },
+  "vector": {
+    "member": "data/production_embeddings.f32le",
+    "bytes": 4454400,
+    "shape": [1450, 768],
+    "dtype": "float32",
+    "byte_order": "little",
+    "sha256": "89189e573b7f7818b137bd69d00a0acabbaec0c64a2778d22c9244b432262a6e"
+  },
+  "frozen_attestation": {
+    "path": "rag/04_embeddings/production_rc2/freeze/DIAloga_Production_Embeddings_RC2_FROZEN_ATTESTATION_v2.json",
+    "sha256": "1ebb82c73abe68b56fc806b05ef2dfe59b547c1775f9821749a2bb0ba5b7c40f"
+  },
+  "revoked_attestation_sha256": "deea94bfe44ea672695bddab3d4de17189e8378ae2f6281838fded66934f63d1",
+  "integration_enabled": true,
+  "dense_lane_enabled": false,
+  "hybrid_semantic_lane_enabled": false,
+  "lane_gate_reason": "Dense Index has not yet been rebuilt, externally audited and frozen against the new Production Embeddings RC2 parent freeze."
 }
