@@ -1,0 +1,44 @@
+{
+  "schema_version": "dialoga_full_hybrid_build_gate_v1",
+  "component": "DIAloga_Hybrid_Index_V4_Full_Hybrid",
+  "status": "AUTHORIZED_FOR_NEW_BUILD_NOT_YET_BUILT",
+  "policy": "FAIL_CLOSED",
+  "build_authorized": true,
+  "runtime_authorized": false,
+  "freeze_authorized": false,
+  "external_audit_required_now": false,
+  "required_frozen_authorities": {
+    "hybrid_design_rc9_frozen_attestation_sha256": "71a1cbca13ac20716c86e04c44bfb6ca9084b409b76105a2a36df69286ca2679",
+    "lexical_index_rc1_frozen_attestation_sha256": "ce49cbdebe04a11e8ef239f2a9156d1ca2eb52063835794ea26880ea0d4e1df9",
+    "lexical_runtime_rc2_frozen_attestation_sha256": "7084a3be23d8c34dca7737e2628092f40a906e76d2f6d5151b20a6329ae04f5e",
+    "production_embeddings_rc2_frozen_attestation_v2_sha256": "1ebb82c73abe68b56fc806b05ef2dfe59b547c1775f9821749a2bb0ba5b7c40f",
+    "dense_index_rc2_frozen_attestation_v1_sha256": "991dc756d0ba513324ba59e2428e211417009f4b46ea6d936790fa0572416ff3"
+  },
+  "required_physical_identities": {
+    "canonical_rc4_candidate_sha256": "f45eb3a90b73dadb14d9c73bc87fde64f1b1a49d298395e93fe8a8e7555214d1",
+    "lexical_index_rc1_candidate_sha256": "67edda46bb3e0465921c254ae05df4a1b6a30926b6a26f45574b69f97dd2cdac",
+    "lexical_runtime_rc2_candidate_sha256": "f2ff25c2129e9065a6ab3e9fbfe2fcdf3c7b7bee6bd5a7dc6874028a5ecfe36f",
+    "production_embeddings_rc2_candidate_sha256": "67d0804361c2cb594216c5c33de330cc7c22c5f5988372eabd9988ba8f86ae2a",
+    "production_vector_sha256": "89189e573b7f7818b137bd69d00a0acabbaec0c64a2778d22c9244b432262a6e",
+    "dense_rc2_candidate_sha256": "f45b854796c733affed1811984cdd6ebd061eaf0ec9341e4a4af60bf74df1ea8",
+    "dense_index_sha256": "085215053fa3da335d3f557e644ea33c33c678e47012c4c3d2d12cf9b6fe0198",
+    "dense_row_map_sha256": "957afabb965ffca781502ab15063f11930950207d771ed42cc5bcec49c6bcada"
+  },
+  "dense_freeze_evidence": {
+    "closure_external_audit_sha256": "f75c5a9374837211c5ebeee42026d3558e339996ca1ee88ac762ea3522c93116",
+    "closure_verdict": "PASS_WITH_NON_BLOCKING_FINDINGS",
+    "all_previous_blockers_closed": true,
+    "freeze_completion_sha256": "c86aa65e52ed8b62939917ea45ed63e3c9e187fd9c221ce5e33580ceba5b5405",
+    "freeze_completion_checks": "PASS_18_OF_18"
+  },
+  "prohibitions": [
+    "DO_NOT_USE_DENSE_RC1",
+    "DO_NOT_MODIFY_FROZEN_DEPENDENCIES",
+    "DO_NOT_ENABLE_DENSE_RUNTIME_BEFORE_FULL_HYBRID_RELEASE_GATES",
+    "DO_NOT_ENABLE_HYBRID_SEMANTIC_BEFORE_FULL_HYBRID_RELEASE_GATES",
+    "DO_NOT_START_APPLICATION_WIRING_BEFORE_FULL_HYBRID_CLOSURE",
+    "ABORT_ON_ANY_SHA256_MISMATCH"
+  ],
+  "next_state_after_successful_internal_build": "FULL_HYBRID_CANDIDATE_INTERNAL_VALIDATION",
+  "next_external_audit_gate": "ONLY_AFTER_FULL_HYBRID_CANDIDATE_IS_BUILT_AND_INTERNALLY_VALIDATED"
+}
