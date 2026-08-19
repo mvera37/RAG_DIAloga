@@ -16,7 +16,10 @@
       "candidate_sha256": "9f73ca146952b1e1f2c8d3936908ee5877f03490ff67f8711490467f6e8d1773",
       "external_audit_bundle_sha256": "0ce7fdb6cb5e4d06cea564a8d433feefaf1f5b3610702d15d135010d812224a9",
       "index_sha256": "60c82903864df04a07dc6756a5939c37238dd426b582ec56ecd3f000ba901d42",
-      "status": "HOLD_PREMATURE_PARENT_FREEZE"
+      "rebuild_required": true,
+      "required_parent_frozen_attestation_sha256": "1ebb82c73abe68b56fc806b05ef2dfe59b547c1775f9821749a2bb0ba5b7c40f",
+      "required_parent_vector_sha256": "89189e573b7f7818b137bd69d00a0acabbaec0c64a2778d22c9244b432262a6e",
+      "status": "HOLD_REBUILD_REQUIRED_AGAINST_FROZEN_PARENT_V2"
     }
   },
   "embedding_model_benchmark": {
@@ -29,7 +32,7 @@
     }
   },
   "full_hybrid": {
-    "status": "BLOCKED"
+    "status": "BLOCKED_PENDING_DENSE_REBUILD_AUDIT_AND_FREEZE"
   },
   "hybrid_design": {
     "rc9": {
@@ -53,10 +56,22 @@
   "production_embeddings": {
     "rc2": {
       "candidate_sha256": "67d0804361c2cb594216c5c33de330cc7c22c5f5988372eabd9988ba8f86ae2a",
-      "freeze_eligible": false,
+      "closure_audit": {
+        "previous_blocked_resolved": true,
+        "production_ready": true,
+        "release_freeze_eligible": true,
+        "sha256": "329c9adc8acacf73c34b622a782e6ea0daddc4280c692eecf8df26408582e61c",
+        "verdict": "PASS_WITH_NON_BLOCKING_FINDINGS"
+      },
+      "external_public_pin": {
+        "anchor_sha256": "e666651849018dbe690e16c9e5b5ac451ebba74d30abd8f4e4f1634b5b513fbc",
+        "commit_sha": "9284f94832dbf97b2cc214d1c0ff603b743efa8b",
+        "ready": true,
+        "signed": false
+      },
+      "freeze_eligible": true,
       "fresh_regeneration": {
-        "embedded_validator": "PASS_134_OF_134",
-        "external_auditor_confirmation_required": true,
+        "external_auditor_confirmation_required": false,
         "fresh_candidate_sha256": "1a06c0d1779f043bfcd75ec04b575b85d491c4ff6dddcac4c9b9db6e95ae8db4",
         "fresh_vector_sha256": "89189e573b7f7818b137bd69d00a0acabbaec0c64a2778d22c9244b432262a6e",
         "locally_verified": true,
@@ -64,14 +79,18 @@
         "snapshot_zip_sha256": "3e79757c748ede47e8ebe3c768a29ce0218e14949dab41177b8ce42b40fdec12",
         "vector_byte_identical_to_historical": true
       },
+      "frozen_attestation_path": "rag/04_embeddings/production_rc2/freeze/DIAloga_Production_Embeddings_RC2_FROZEN_ATTESTATION_v2.json",
+      "frozen_attestation_sha256": "1ebb82c73abe68b56fc806b05ef2dfe59b547c1775f9821749a2bb0ba5b7c40f",
       "revoked_frozen_attestation_sha256": "deea94bfe44ea672695bddab3d4de17189e8378ae2f6281838fded66934f63d1",
-      "status": "READY_FOR_SUPPLEMENTAL_EXTERNAL_AUDIT",
-      "supplemental_audit_sha256": "8351b311a0e8190aa50dce9f9d83e7cb522c0611225b5db6a8694b0caa93b142",
-      "supplemental_audit_verdict": "BLOCKED",
+      "status": "FROZEN",
+      "supplemental_audit": {
+        "sha256": "79ee77db4dc515eef322249c6bf6c63c4d7ff8e13a4bc811442e41574a9604a8",
+        "verdict": "BLOCKED_CLOSED_BY_FRESH_REGENERATION_CLOSURE_AUDIT"
+      },
       "vector_sha256": "89189e573b7f7818b137bd69d00a0acabbaec0c64a2778d22c9244b432262a6e"
     }
   },
   "repository": "mvera37/RAG_DIAloga",
   "schema_version": "dialoga_rag_release_status_v1",
-  "updated_at": "2026-08-18T16:16:00-05:00"
+  "updated_at": "2026-08-19T10:22:30-05:00"
 }
