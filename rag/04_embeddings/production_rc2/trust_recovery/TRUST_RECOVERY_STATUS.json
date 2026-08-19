@@ -1,19 +1,44 @@
 {
-  "final_supplemental_audit": {
-    "filename": "DIAloga_Production_Embeddings_RC2_External_Audit_FINAL.md",
-    "production_ready": false,
-    "release_freeze_eligible": false,
-    "sha256": "8351b311a0e8190aa50dce9f9d83e7cb522c0611225b5db6a8694b0caa93b142",
-    "verdict": "BLOCKED"
+  "audit_chain": {
+    "fresh_regeneration_closure_audit": {
+      "filename": "DIAloga_Production_Embeddings_RC2_Fresh_Regeneration_Closure_Audit_FINAL.md",
+      "previous_blocked_resolved": true,
+      "production_ready": true,
+      "release_freeze_eligible": true,
+      "sha256": "329c9adc8acacf73c34b622a782e6ea0daddc4280c692eecf8df26408582e61c",
+      "verdict": "PASS_WITH_NON_BLOCKING_FINDINGS"
+    },
+    "supplemental_external_audit": {
+      "filename": "DIAloga_Production_Embeddings_RC2_Supplemental_External_Audit_FINAL.md",
+      "production_ready": false,
+      "release_freeze_eligible": false,
+      "sha256": "79ee77db4dc515eef322249c6bf6c63c4d7ff8e13a4bc811442e41574a9604a8",
+      "verdict": "BLOCKED_CLOSED_BY_FRESH_REGENERATION_CLOSURE_AUDIT"
+    }
+  },
+  "external_root_of_trust": {
+    "anchor_sha256": "e666651849018dbe690e16c9e5b5ac451ebba74d30abd8f4e4f1634b5b513fbc",
+    "commit_sha": "9284f94832dbf97b2cc214d1c0ff603b743efa8b",
+    "public_pin_ready": true,
+    "signed_release_authority_ready": false,
+    "status": "ACCEPTED_UNSIGNED_IMMUTABLE_PUBLIC_PIN"
+  },
+  "freeze": {
+    "candidate_sha256": "67d0804361c2cb594216c5c33de330cc7c22c5f5988372eabd9988ba8f86ae2a",
+    "frozen_attestation_path": "rag/04_embeddings/production_rc2/freeze/DIAloga_Production_Embeddings_RC2_FROZEN_ATTESTATION_v2.json",
+    "frozen_attestation_sha256": "1ebb82c73abe68b56fc806b05ef2dfe59b547c1775f9821749a2bb0ba5b7c40f",
+    "freeze_completion_sha256": "3425863d1cf2cf4c9e1c89bea0e9a389df487f4569246d0087d4114ce2cb8c03",
+    "status": "FROZEN",
+    "vector_sha256": "89189e573b7f7818b137bd69d00a0acabbaec0c64a2778d22c9244b432262a6e"
   },
   "held_downstream_artifacts": {
     "dense_index_rc1_candidate": {
       "sha256": "9f73ca146952b1e1f2c8d3936908ee5877f03490ff67f8711490467f6e8d1773",
-      "status": "HOLD_PREMATURE_PARENT_FREEZE"
+      "status": "HOLD_DO_NOT_AUDIT_REBUILD_REQUIRED"
     },
     "dense_index_rc1_external_audit_bundle": {
       "sha256": "0ce7fdb6cb5e4d06cea564a8d433feefaf1f5b3610702d15d135010d812224a9",
-      "status": "DO_NOT_AUDIT_YET"
+      "status": "HOLD_DO_NOT_SEND"
     }
   },
   "rc1_scope_invariance": {
@@ -22,18 +47,18 @@
     "rc1_reference_role": "repair history / informational only"
   },
   "release": "DIAloga_Hybrid_Index_V4_Production_Embedding_Generation_RC2",
-  "required_before_valid_freeze": [
-    "EXTERNAL_RELEASE_AUTHENTICITY_ANCHOR",
-    "AUTHENTICATED_GRANITE311_SNAPSHOT",
-    "FRESH_END_TO_END_REGENERATION"
-  ],
+  "required_before_valid_freeze": {
+    "AUTHENTICATED_GRANITE311_SNAPSHOT": true,
+    "EXTERNAL_RELEASE_AUTHENTICITY_ANCHOR": true,
+    "FRESH_END_TO_END_REGENERATION": true
+  },
   "revoked_artifacts": {
     "production_embeddings_rc2_frozen_attestation": {
       "must_not_be_used_as_downstream_authority": true,
       "sha256": "deea94bfe44ea672695bddab3d4de17189e8378ae2f6281838fded66934f63d1",
-      "status": "REVOKED_BY_LATER_EXTERNAL_AUDIT"
+      "status": "REVOKED_SUPERSEDED_DO_NOT_USE"
     }
   },
-  "schema_version": "dialoga_production_embeddings_rc2_trust_recovery_status_v1",
-  "status": "BLOCKED_PENDING_EXTERNAL_TRUST_EVIDENCE"
+  "schema_version": "dialoga_production_embeddings_rc2_trust_recovery_status_v2",
+  "status": "CLOSED_FREEZE_COMPLETED"
 }
