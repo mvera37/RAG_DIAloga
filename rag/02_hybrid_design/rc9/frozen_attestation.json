@@ -1,0 +1,102 @@
+{
+  "artifact_type": "EXTERNAL_FROZEN_ATTESTATION",
+  "candidate": "DIAloga_Hybrid_Index_V4_Design_RC9",
+  "change_control": {
+    "candidate_zip_change": "NEW_DESIGN_RELEASE_AND_EXTERNAL_AUDIT_REQUIRED",
+    "downstream_outputs": "Version and audit downstream artifacts separately; do not mutate RC9.",
+    "functional_core_change": "NEW_DESIGN_RELEASE_AND_EXTERNAL_AUDIT_REQUIRED",
+    "trust_graph_change": "NEW_DESIGN_RELEASE_AND_EXTERNAL_AUDIT_REQUIRED"
+  },
+  "downstream_rules": {
+    "dense_index_build": "NOT_AUTHORIZED",
+    "embedding_model_benchmark": "AUTHORIZED_AFTER_THIS_ATTESTATION",
+    "full_hybrid_index_build": "NOT_AUTHORIZED",
+    "lexical_index_build": "AUTHORIZED_AFTER_THIS_ATTESTATION",
+    "production_embedding_generation": "NOT_AUTHORIZED",
+    "required_downstream_binding": "Every downstream build/benchmark artifact must pin the RC9 candidate SHA-256 and this frozen-attestation SHA-256."
+  },
+  "external_audit_bundle": {
+    "bytes": 154615634,
+    "deterministic_repack": "PASS_BYTE_IDENTICAL",
+    "filename": "DIAloga_Hybrid_Index_V4_Design_RC9_External_Audit_Bundle.zip",
+    "inventory": "PASS_24_PLUS_2",
+    "members": 26,
+    "sha256": "c7364ad53a841e72a4114784ba06be7c93a64b3152e6725a37cf0958d7516ff1"
+  },
+  "freeze_basis": {
+    "external_audit_assertions": {
+      "blocking_defects": 0,
+      "create_rc10": false,
+      "design_eligible_for_freeze": true,
+      "functional_changes_detected": 0
+    },
+    "external_audit_decision": "PASS_EXTERNAL_DESIGN_AUDIT",
+    "external_audit_report": {
+      "bytes": 20242,
+      "filename": "Hybrid_Index_V4_Design_RC9_external_audit_PASS.md",
+      "sha256": "af3e05b9d65a1ac99d14f634dde2c2b4a73a0e0df9b138054f9f057a776681a4"
+    }
+  },
+  "freeze_status": "FROZEN",
+  "freeze_timestamp": {
+    "america_lima": "2026-08-14T14:47:01-05:00",
+    "utc": "2026-08-14T19:47:01Z"
+  },
+  "freeze_transition": {
+    "design_frozen": true,
+    "ready_for_dense_index_build": false,
+    "ready_for_embedding_model_benchmark": true,
+    "ready_for_embeddings": false,
+    "ready_for_full_hybrid_index": false,
+    "ready_for_lexical_index_build": true
+  },
+  "frozen_candidate": {
+    "bytes": 708462,
+    "filename": "DIAloga_Hybrid_Index_V4_Design_RC9.zip",
+    "immutability_rule": "The RC9 candidate ZIP is immutable. Any candidate-content change requires a new design release candidate and external audit.",
+    "members": 28,
+    "sha256": "e7f9eb8da031a56752e89c0cd357aa3dd6a244fac365743b38574fb80a90e8f5"
+  },
+  "root_of_trust": {
+    "custody_rule": "Retain this digest outside the RC9 candidate/bundle as the trusted expected anchor value.",
+    "expected_external_trust_anchor_sha256": "801defe9a038b39b885eb6563a677cddbf0d548595269a31192742ba76ce0813",
+    "external_trust_anchor": {
+      "bytes": 2229,
+      "sha256": "801defe9a038b39b885eb6563a677cddbf0d548595269a31192742ba76ce0813"
+    }
+  },
+  "schema_version": "hybrid_index_v4_design_rc9_frozen_attestation_v1",
+  "trusted_evidence": {
+    "adversarial_validation": {
+      "fresh_byte_identical": true,
+      "result": "PASS_20_OF_20",
+      "sha256": "72b0882732d38ca1d726720a1a9a148351cfcff9f365c9f0d124fbdddb455198"
+    },
+    "authenticated_validation": {
+      "fresh_byte_identical": true,
+      "result": "PASS_EXTERNAL_ATTESTATION_69_OF_69",
+      "sha256": "b0e26285376535cc1b3cde985ca5d8d29824a8db00d9160980ffb95a4c0db2aa"
+    },
+    "clean_validation": {
+      "fresh_byte_identical": true,
+      "result": "PASS_160_OF_160",
+      "sha256": "e7c2a464a684b1bf4c6d9bc41896d13b5e3830b67206e31e839c13adda5ae674"
+    },
+    "frozen_rc4_authentication": "PASS_EXTERNAL_ATTESTATION_99_OF_99",
+    "functional_conformance": "PASS_8321_OF_8321",
+    "functional_rc7_external_baseline": {
+      "bundle_sha256": "37a98747515f3e995e303f1bf1f2cdc1a8155a78b5b06158ff6c8a21927fc15e",
+      "result": "PASS_16_OF_16_BYTE_IDENTICAL"
+    },
+    "pre_freeze_release_completion": {
+      "design_frozen": false,
+      "frozen_attestation_emitted": false,
+      "sha256": "8f390c09851bf490463e4d347ebad32146bbd42f4b40a02e6d716ba4b6974261",
+      "status": "READY_FOR_EXTERNAL_DESIGN_AUDIT"
+    },
+    "release_gate": {
+      "semantic_binding": "PASS_FULL_SEMANTIC_BINDING",
+      "sha256": "0c780c377877730ed89caaed5543200616181d98326e7256e365b29628adfd5e"
+    }
+  }
+}
