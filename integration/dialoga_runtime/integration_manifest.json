@@ -1,7 +1,7 @@
 {
-  "schema_version": "dialoga_runtime_integration_manifest_v3",
+  "schema_version": "dialoga_runtime_integration_manifest_v4",
   "runtime_bundle": "DIAloga_RAG_Runtime",
-  "status": "PARTIAL_AUTHORIZED_LEXICAL_RUNTIME_WITH_FROZEN_EMBEDDINGS_AND_DENSE_FULL_HYBRID_AUDIT_PENDING",
+  "status": "PARTIAL_AUTHORIZED_LEXICAL_RUNTIME_WITH_FROZEN_EMBEDDINGS_AND_DENSE_FULL_HYBRID_BLOCKED_CLOSURE_AUDIT_READY",
   "policy": "FAIL_CLOSED",
   "components": {
     "canonical_rc4": {
@@ -34,7 +34,6 @@
       "bytes": 17164878,
       "sha256": "67d0804361c2cb594216c5c33de330cc7c22c5f5988372eabd9988ba8f86ae2a",
       "vector_sha256": "89189e573b7f7818b137bd69d00a0acabbaec0c64a2778d22c9244b432262a6e",
-      "frozen_attestation": "rag/04_embeddings/production_rc2/freeze/DIAloga_Production_Embeddings_RC2_FROZEN_ATTESTATION_v2.json",
       "frozen_attestation_sha256": "1ebb82c73abe68b56fc806b05ef2dfe59b547c1775f9821749a2bb0ba5b7c40f",
       "runtime_authorized": true,
       "dense_lane_enabled": false
@@ -47,29 +46,32 @@
       "index_sha256": "085215053fa3da335d3f557e644ea33c33c678e47012c4c3d2d12cf9b6fe0198",
       "row_map_sha256": "957afabb965ffca781502ab15063f11930950207d771ed42cc5bcec49c6bcada",
       "payload_sha256": "89189e573b7f7818b137bd69d00a0acabbaec0c64a2778d22c9244b432262a6e",
-      "parent_frozen_attestation_sha256": "1ebb82c73abe68b56fc806b05ef2dfe59b547c1775f9821749a2bb0ba5b7c40f",
-      "frozen_attestation": "rag/05_dense_index/rc2/release_authority/DIAloga_Dense_Index_Build_RC2_FROZEN_ATTESTATION_v1.json",
       "frozen_attestation_sha256": "991dc756d0ba513324ba59e2428e211417009f4b46ea6d936790fa0572416ff3",
-      "freeze_completion_sha256": "c86aa65e52ed8b62939917ea45ed63e3c9e187fd9c221ce5e33580ceba5b5405",
-      "closure_audit_sha256": "f75c5a9374837211c5ebeee42026d3558e339996ca1ee88ac762ea3522c93116",
       "runtime_authorized": true,
       "dense_lane_enabled": false
     }
   },
   "pending_components": {
     "full_hybrid_rc1": {
-      "status": "READY_FOR_EXTERNAL_AUDIT_NOT_FROZEN",
+      "status": "BLOCKED_PENDING_SUPPLEMENTAL_CLOSURE_EXTERNAL_AUDIT",
       "artifact": "DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_Candidate.zip",
       "bytes": 1738458,
       "sha256": "c7537e8befb53427a8911a4508d3bc68771d617f3630616c3f7ad4ddd0d9f6fc",
-      "artifact_class": "QUERY_TIME_FULL_HYBRID_COMPOSITION",
-      "external_anchor_commit": "9e6a7a5a745095e4e24404ca99d25647ff73b345",
-      "external_anchor_sha256": "034e1b95296ba9f971b6fcf1c7522319bc2f04f67b300907f5cca50474e2214a",
-      "external_audit_bundle": "DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_External_Audit_Bundle.zip",
-      "external_audit_bundle_sha256": "257fb9876b2ed4ad9e137317ad7eb8540204e6060a96fafd1bf5a78e6fcae5eb",
-      "candidate_validator": "PASS_125_OF_125",
-      "adversarial": "PASS_8_OF_8",
-      "physical_cross_parent": "PASS_28_OF_28",
+      "candidate_unchanged": true,
+      "initial_external_audit": {
+        "sha256": "449eb7a5076fc523b2fee015987ab75490f00553e5ea5825940b8e08aaf78cbf",
+        "verdict": "BLOCKED",
+        "blocking_findings": ["FINDING-HYBRID-001", "FINDING-HYBRID-002"]
+      },
+      "supplemental_closure_bundle": {
+        "filename": "DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_Supplemental_Closure_External_Audit_Bundle.zip",
+        "bytes": 105321856,
+        "sha256": "98a9a8742487c6c07fe98e86e3f27e518a84f1a5f2e3641cae3bbb3b2b6569fc"
+      },
+      "conditional_closure_authority": {
+        "commit_sha": "91b0b691e4efe7668f73b7f8efd9f9b13db63f67",
+        "sha256": "b67f6e33a97041ae3329a462e12b2ed9000bc890202961be3e9ced9aad12e2e2"
+      },
       "runtime_authorized": false,
       "freeze_authorized": false,
       "dense_lane_enabled": false,
@@ -79,5 +81,5 @@
   "disabled_components": {
     "dense_index_rc1": {"status": "HOLD_DO_NOT_AUDIT_DO_NOT_PROMOTE"}
   },
-  "startup_rule": "DIAloga must verify the exact SHA-256 of every required physical artifact and authority file before enabling the corresponding retrieval lane. Full Hybrid RC1 is audit evidence only until an independent external PASS and a dedicated frozen attestation exist. Dense and hybrid_semantic lanes remain disabled."
+  "startup_rule": "DIAloga must fail closed. Full Hybrid RC1 remains non-runtime and non-frozen after the initial BLOCKED audit. Dense and hybrid_semantic lanes remain disabled until the supplemental external closure audit returns PASS/freeze-eligible and a dedicated Full Hybrid Frozen Attestation is issued and validated."
 }
