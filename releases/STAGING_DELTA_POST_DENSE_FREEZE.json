@@ -1,0 +1,52 @@
+{
+  "schema_version": "dialoga_release_staging_delta_v2",
+  "status": "CURRENT_STAGING_ARCHIVE_PREDATES_DENSE_RC2_FREEZE_AND_FULL_HYBRID_RC1_AUDIT_CHAIN",
+  "current_staging_manifest": "releases/STAGING_MANIFEST_CURRENT.json",
+  "current_staging_archive": {
+    "filename": "DIAloga_GitHub_Release_Staging_Current.zip",
+    "bytes": 324348878,
+    "sha256": "cb575eb4ab654db7ef8c085a78206c889af387314a2096f90966a8db755e4abd",
+    "asset_count": 13,
+    "safe_as_historical_transfer_snapshot": true,
+    "safe_as_final_current_release_staging": false
+  },
+  "release_asset_delta": [
+    {
+      "filename": "DIAloga_Dense_Index_Build_RC2_Closure_External_Audit_Bundle.zip",
+      "bytes": 21623663,
+      "sha256": "d130b209ec45dcbac9e823fd3daf1192f443e9b98844395a7d31a1a29c8786b4",
+      "present_in_current_13_asset_staging": false
+    },
+    {
+      "filename": "DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_Candidate.zip",
+      "bytes": 1738458,
+      "sha256": "c7537e8befb53427a8911a4508d3bc68771d617f3630616c3f7ad4ddd0d9f6fc",
+      "state": "BLOCKED_PENDING_SUPPLEMENTAL_CLOSURE_AUDIT_NOT_FROZEN",
+      "present_in_current_13_asset_staging": false
+    },
+    {
+      "filename": "DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_External_Audit_Bundle.zip",
+      "bytes": 23362489,
+      "sha256": "257fb9876b2ed4ad9e137317ad7eb8540204e6060a96fafd1bf5a78e6fcae5eb",
+      "state": "INITIAL_AUDIT_COMPLETED_BLOCKED_CHAIN_EVIDENCE",
+      "present_in_current_13_asset_staging": false
+    },
+    {
+      "filename": "DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_Supplemental_Closure_External_Audit_Bundle.zip",
+      "bytes": 105321856,
+      "sha256": "98a9a8742487c6c07fe98e86e3f27e518a84f1a5f2e3641cae3bbb3b2b6569fc",
+      "state": "READY_FOR_SUPPLEMENTAL_CLOSURE_EXTERNAL_AUDIT",
+      "present_in_current_13_asset_staging": false
+    }
+  ],
+  "repository_only_authority_files": [
+    "rag/05_dense_index/rc2/release_authority/DIAloga_Dense_Index_Build_RC2_FROZEN_ATTESTATION_v1.json",
+    "rag/05_dense_index/rc2/release_authority/DIAloga_Dense_Index_Build_RC2_FREEZE_COMPLETION_v1.json",
+    "rag/06_hybrid_index/FULL_HYBRID_BUILD_GATE.json",
+    "rag/06_hybrid_index/rc1/audits/AUDIT_CHAIN.json",
+    "rag/06_hybrid_index/rc1/release_authority/FULL_HYBRID_RC1_OFFICIAL_RELEASE_ANCHOR.json",
+    "rag/06_hybrid_index/rc1/release_authority/FULL_HYBRID_RC1_CLOSURE_AUTHORIZATION.json"
+  ],
+  "required_action_before_final_release_publication": "REBUILD_FINAL_STAGING_ONLY_AFTER_FULL_HYBRID_CLOSURE_AND_FREEZE; VERIFY_ALL_SHA256_FAIL_CLOSED",
+  "prohibition": "DO_NOT_TREAT_CURRENT_13_ASSET_STAGING_AS_FINAL_POST_FULL_HYBRID_RELEASE"
+}

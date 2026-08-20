@@ -1,0 +1,8 @@
+{
+  "component": "hybrid_design_rc9",
+  "status": "FROZEN",
+  "artifact": "DIAloga_Hybrid_Index_V4_Design_RC9.zip",
+  "sha256": "e7f9eb8da031a56752e89c0cd357aa3dd6a244fac365743b38574fb80a90e8f5",
+  "role": "canonical request schema, lane applicability, constraint/routing contract and retrieval design authority",
+  "trust_anchor": "rag/02_hybrid_design/rc9/external_trust_anchor.json"
+}

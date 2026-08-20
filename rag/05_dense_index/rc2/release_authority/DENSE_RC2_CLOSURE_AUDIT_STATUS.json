@@ -1,0 +1,62 @@
+{
+  "schema_version": "dialoga_dense_rc2_closure_audit_status_v1",
+  "release": "DIAloga_Hybrid_Index_V4_Dense_Index_Build_RC2",
+  "status": "CLOSED_PASS_FROZEN",
+  "dense_frozen": true,
+  "dense_release_freeze_eligible": true,
+  "prior_audits": [
+    {
+      "file": "DIAloga_Dense_Index_Build_RC2_External_Audit_FINAL.md",
+      "sha256": "26405462685cad7265ba4d8b716cc9aeed5e1d84bd924fbff0d8d7db96c7de92",
+      "verdict": "BLOCKED"
+    },
+    {
+      "file": "DIAloga_Dense_Index_Build_RC2_Supplemental_External_Audit_FINAL.md",
+      "sha256": "fb2a993716826cb93b8f1582dcf2cd90c0b2d9c3453c83aa39c4a57cbea835c4",
+      "verdict": "BLOCKED"
+    }
+  ],
+  "closure_external_audit": {
+    "file": "DIAloga_Dense_Index_Build_RC2_Closure_External_Audit_FINAL.md",
+    "sha256": "f75c5a9374837211c5ebeee42026d3558e339996ca1ee88ac762ea3522c93116",
+    "verdict": "PASS_WITH_NON_BLOCKING_FINDINGS",
+    "dense_production_ready": true,
+    "dense_release_freeze_eligible": true,
+    "all_previous_blockers_closed": true
+  },
+  "verified_core": {
+    "candidate_sha256": "f45b854796c733affed1811984cdd6ebd061eaf0ec9341e4a4af60bf74df1ea8",
+    "dense_index_sha256": "085215053fa3da335d3f557e644ea33c33c678e47012c4c3d2d12cf9b6fe0198",
+    "row_map_sha256": "957afabb965ffca781502ab15063f11930950207d771ed42cc5bcec49c6bcada",
+    "parent_frozen_attestation_sha256": "1ebb82c73abe68b56fc806b05ef2dfe59b547c1775f9821749a2bb0ba5b7c40f"
+  },
+  "closure_evidence": {
+    "deterministic_packaging_verified_by_auditor": true,
+    "auditor_build_1_byte_identical": true,
+    "auditor_build_2_byte_identical": true,
+    "packaging_spec_sha256": "e9bb633ded2c867d9699f61db5002d6ab9173a988c59ef0dc0b35c33f8aa57f0",
+    "packer_sha256": "ed7a30bc3936dbc563b0bc88247adcc597be2a24c7a1f612bd76b3d57fdb8370",
+    "external_anchor_sha256": "487ead0654711b94366e3e9d56086deecc0de4573a9a7e6670a28491d9b1b07d",
+    "external_anchor_commit": "49b1b255cd34ed1db3a5a28fc8deb11576fcb732",
+    "coordinated_false_pass_resistance": "VERIFIED"
+  },
+  "closure_audit_bundle": {
+    "filename": "DIAloga_Dense_Index_Build_RC2_Closure_External_Audit_Bundle.zip",
+    "sha256": "d130b209ec45dcbac9e823fd3daf1192f443e9b98844395a7d31a1a29c8786b4",
+    "bytes": 21623663
+  },
+  "freeze": {
+    "frozen_attestation_path": "rag/05_dense_index/rc2/release_authority/DIAloga_Dense_Index_Build_RC2_FROZEN_ATTESTATION_v1.json",
+    "frozen_attestation_sha256": "991dc756d0ba513324ba59e2428e211417009f4b46ea6d936790fa0572416ff3",
+    "frozen_attestation_commit": "a0118f9d6d0addf1448fbd734dcbd8a7b957fb8c",
+    "freeze_completion_path": "rag/05_dense_index/rc2/release_authority/DIAloga_Dense_Index_Build_RC2_FREEZE_COMPLETION_v1.json",
+    "freeze_completion_sha256": "c86aa65e52ed8b62939917ea45ed63e3c9e187fd9c221ce5e33580ceba5b5405",
+    "freeze_completion_checks": "PASS_18_OF_18"
+  },
+  "remaining_gate": null,
+  "full_hybrid_status": "READY_FOR_BUILD_NOT_YET_BUILT",
+  "non_blocking_hardening": [
+    "Dense external anchor is unsigned; optional signed release authority may be added later.",
+    "RC1-to-RC2 historical invariance remains unverified and is not a freeze gate."
+  ]
+}

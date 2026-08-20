@@ -1,0 +1,93 @@
+{
+  "artifact_type": "EXTERNAL_AUDIT_DERIVED_FROZEN_ATTESTATION",
+  "candidate": "DIAloga_Hybrid_Index_V4_Embedding_Model_Benchmark_RC2",
+  "downstream_hardening_register": {
+    "blocking_for_this_freeze": false,
+    "filename": "DIAloga_Embedding_Model_Benchmark_RC2.downstream_hardening_register.json",
+    "sha256": "418d9773332ad714e19ed1a6686cca6af32e9c1b86c551fe507276d151760bfe"
+  },
+  "downstream_rules": {
+    "benchmark_rc3": "NOT REQUIRED.",
+    "dense_index_build": "NOT AUTHORIZED until production embedding generation is independently built, validated and gated.",
+    "full_hybrid_index": "NOT AUTHORIZED.",
+    "production_embedding_generation": "AUTHORIZED AS A SEPARATE DOWNSTREAM BUILD ONLY. It must pin this Frozen Attestation SHA and the exact Granite311 canonical configuration."
+  },
+  "freeze_basis": {
+    "blocking_defects": 0,
+    "create_embedding_model_benchmark_rc3": false,
+    "external_audit_bundle": {
+      "bytes": 77242143,
+      "filename": "DIAloga_Embedding_Model_Benchmark_RC2_External_Audit_Bundle.zip",
+      "sha256": "a26cb3e998edab6d581fa5307ffb78dd0d2c4682290366a8699930e8859e1c21"
+    },
+    "external_audit_decision": "PASS_EXTERNAL_EMBEDDING_MODEL_BENCHMARK_RC2_AUDIT",
+    "external_audit_report": {
+      "bytes": 28172,
+      "filename": "Embedding_Model_Benchmark_RC2_external_audit_PASS.md",
+      "sha256": "b2b50aea4e87c3d666e2faa2f28e8aab90fc5d60d5d10b97fbe514ce7a8f6d0e"
+    },
+    "granite311_eligible_for_freeze": true,
+    "non_blocking_hardening_findings": 3
+  },
+  "freeze_status": "FROZEN",
+  "freeze_timestamp": {
+    "america_lima": "2026-08-17T22:36:00-05:00",
+    "utc": "2026-08-18T03:36:00Z"
+  },
+  "frozen_benchmark_candidate": {
+    "bytes": 255571,
+    "filename": "DIAloga_Embedding_Model_Benchmark_RC2_Candidate.zip",
+    "immutability_rule": "Any modification to the RC2 candidate or nominated model configuration requires a new audited downstream release; this frozen candidate must never be edited.",
+    "members": 29,
+    "sha256": "684b4b7b9d2c11a6d97a1e821f542b727ad93620e39a6c92e30766301a3e9691"
+  },
+  "frozen_embedding_configuration": {
+    "canonical_snapshot_root_sha256": "39f3282103fbafccc288ad3ff8b3717d5266d378f3e684a83587506fdc7473ad",
+    "embedding_dimension": 768,
+    "l2_normalized": true,
+    "max_supported_tokens": 32768,
+    "model_id": "ibm-granite/granite-embedding-311m-multilingual-r2",
+    "pooling": "CLS",
+    "revision": "44399559930365213510b1ee2eb15ded83374f0e",
+    "truncation": false
+  },
+  "preserved_frozen_ancestry": {
+    "design_rc9_frozen_attestation_sha256": "71a1cbca13ac20716c86e04c44bfb6ca9084b409b76105a2a36df69286ca2679",
+    "integrated_rc4_sha256": "f45eb3a90b73dadb14d9c73bc87fde64f1b1a49d298395e93fe8a8e7555214d1",
+    "lexical_baseline_sha256": "d221db991d390d139a69b5b847bdf8d8c29ccdd11b1cfe2f817696ea284e3192",
+    "lexical_index_rc1_frozen_attestation_sha256": "ce49cbdebe04a11e8ef239f2a9156d1ca2eb52063835794ea26880ea0d4e1df9",
+    "quality_suite_sha256": "e8f36990a2c6389f114cf89fde74dceb2da9f9601f62dae96e2ce3493ed82c56",
+    "runtime_integration_rc2_frozen_attestation_sha256": "7084a3be23d8c34dca7737e2628092f40a906e76d2f6d5151b20a6329ae04f5e"
+  },
+  "release_class": "EMBEDDING_BENCHMARK_PROVENANCE_AND_STATISTICAL_REPRODUCIBILITY_HARDENING_ONLY",
+  "schema_version": "dialoga_embedding_model_benchmark_rc2_frozen_attestation_v1",
+  "selection_evidence": {
+    "actual_seed": 20260816,
+    "bge_m3_required": false,
+    "bootstrap_iterations": 10000,
+    "declared_seed": 20260816,
+    "dense_only_replaces_lexical_bm25": false,
+    "granite311_quality_superiority": "PASS_STATISTICALLY_DECISIVE",
+    "paired_mrr10_ci95": [
+      0.09051400543704152,
+      0.12024992557768557
+    ],
+    "paired_mrr10_delta_granite311_minus_granite97": 0.10539042226940318,
+    "paired_ndcg10_ci95": [
+      0.06814383854143329,
+      0.09057264120976292
+    ],
+    "paired_ndcg10_delta_granite311_minus_granite97": 0.07941143816485212,
+    "primary_subset": "natural + nontrivial",
+    "primary_subset_cases": 1413,
+    "quality_cases": 2852
+  },
+  "state_transition": {
+    "embedding_model_benchmark_rc2_frozen": true,
+    "embedding_model_frozen": true,
+    "production_embeddings_generated": false,
+    "ready_for_dense_index_build": false,
+    "ready_for_full_hybrid_index": false,
+    "ready_for_production_embedding_generation": true
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "application_wiring": {
+    "status": "AUTHORIZED_PENDING_LOCAL_DIALOGA_SOURCE_NOT_STARTED"
+  },
+  "canonical": {
+    "integrated_v4_rc4": {
+      "candidate_sha256": "f45eb3a90b73dadb14d9c73bc87fde64f1b1a49d298395e93fe8a8e7555214d1",
+      "records": 1466,
+      "status": "FROZEN"
+    }
+  },
+  "dense_index": {
+    "rc1": {
+      "status": "HOLD_DO_NOT_AUDIT_DO_NOT_PROMOTE"
+    },
+    "rc2": {
+      "candidate_sha256": "f45b854796c733affed1811984cdd6ebd061eaf0ec9341e4a4af60bf74df1ea8",
+      "frozen_attestation_sha256": "991dc756d0ba513324ba59e2428e211417009f4b46ea6d936790fa0572416ff3",
+      "index_sha256": "085215053fa3da335d3f557e644ea33c33c678e47012c4c3d2d12cf9b6fe0198",
+      "row_map_sha256": "957afabb965ffca781502ab15063f11930950207d771ed42cc5bcec49c6bcada",
+      "status": "FROZEN"
+    }
+  },
+  "full_hybrid": {
+    "rc1": {
+      "candidate_sha256": "c7537e8befb53427a8911a4508d3bc68771d617f3630616c3f7ad4ddd0d9f6fc",
+      "final_external_audit_sha256": "89daea8dfa1ede0317d88a96f7f9f0797d5203f4a44ef7dc4fadeeb6c02f64b5",
+      "final_external_verdict": "PASS_WITH_NON_BLOCKING_FINDINGS",
+      "freeze_completion_sha256": "6e1afd9c66d9dc219cd3614ec4f0972e7008217e6b460bc8cd78581a5a75457c",
+      "frozen_attestation_sha256": "cc5c7929d52f64bda6dce24d82d1fe0c18319c3f021a4d88a89ed7639d5d5971",
+      "runtime_promotion_authorized": true,
+      "status": "FROZEN"
+    }
+  },
+  "hybrid_design": {
+    "rc9": {
+      "frozen_attestation_sha256": "71a1cbca13ac20716c86e04c44bfb6ca9084b409b76105a2a36df69286ca2679",
+      "status": "FROZEN"
+    }
+  },
+  "lexical": {
+    "index_rc1": {
+      "candidate_sha256": "67edda46bb3e0465921c254ae05df4a1b6a30926b6a26f45574b69f97dd2cdac",
+      "frozen_attestation_sha256": "ce49cbdebe04a11e8ef239f2a9156d1ca2eb52063835794ea26880ea0d4e1df9",
+      "status": "FROZEN"
+    },
+    "runtime_rc2": {
+      "candidate_sha256": "f2ff25c2129e9065a6ab3e9fbfe2fcdf3c7b7bee6bd5a7dc6874028a5ecfe36f",
+      "frozen_attestation_sha256": "7084a3be23d8c34dca7737e2628092f40a906e76d2f6d5151b20a6329ae04f5e",
+      "status": "FROZEN_VALID"
+    }
+  },
+  "production_embeddings": {
+    "rc2": {
+      "candidate_sha256": "67d0804361c2cb594216c5c33de330cc7c22c5f5988372eabd9988ba8f86ae2a",
+      "frozen_attestation_sha256": "1ebb82c73abe68b56fc806b05ef2dfe59b547c1775f9821749a2bb0ba5b7c40f",
+      "status": "FROZEN",
+      "vector_sha256": "89189e573b7f7818b137bd69d00a0acabbaec0c64a2778d22c9244b432262a6e"
+    }
+  },
+  "production_ready": false,
+  "repository": "mvera37/RAG_DIAloga",
+  "schema_version": "dialoga_rag_release_status_v4",
+  "updated_at": "2026-08-20T14:21:00-05:00"
+}

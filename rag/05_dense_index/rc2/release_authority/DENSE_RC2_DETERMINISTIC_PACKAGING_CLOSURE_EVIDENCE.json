@@ -1,0 +1,23 @@
+{
+  "schema_version": "dialoga_dense_rc2_packaging_closure_evidence_v1",
+  "status": "PASS_BYTE_IDENTICAL",
+  "original_candidate_sha256": "f45b854796c733affed1811984cdd6ebd061eaf0ec9341e4a4af60bf74df1ea8",
+  "rebuilt_candidate_sha256": "f45b854796c733affed1811984cdd6ebd061eaf0ec9341e4a4af60bf74df1ea8",
+  "original_candidate_bytes": 4387297,
+  "rebuilt_candidate_bytes": 4387297,
+  "byte_identical": true,
+  "packaging_spec_sha256": "e9bb633ded2c867d9699f61db5002d6ab9173a988c59ef0dc0b35c33f8aa57f0",
+  "authoritative_packer_sha256": "ed7a30bc3936dbc563b0bc88247adcc597be2a24c7a1f612bd76b3d57fdb8370",
+  "runtime": {
+    "python": "3.13.5",
+    "implementation": "CPython",
+    "zlib_runtime": "1.3.1"
+  },
+  "member_count": 23,
+  "core_unchanged": {
+    "dense_index_sha256": "085215053fa3da335d3f557e644ea33c33c678e47012c4c3d2d12cf9b6fe0198",
+    "row_map_sha256": "957afabb965ffca781502ab15063f11930950207d771ed42cc5bcec49c6bcada",
+    "parent_payload_sha256": "89189e573b7f7818b137bd69d00a0acabbaec0c64a2778d22c9244b432262a6e",
+    "parent_frozen_attestation_sha256": "1ebb82c73abe68b56fc806b05ef2dfe59b547c1775f9821749a2bb0ba5b7c40f"
+  }
+}

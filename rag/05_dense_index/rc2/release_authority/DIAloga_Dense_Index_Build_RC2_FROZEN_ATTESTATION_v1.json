@@ -1,0 +1,165 @@
+{
+  "artifact_type": "EXTERNAL_AUDIT_CLOSURE_DERIVED_FROZEN_ATTESTATION",
+  "audit_chain": {
+    "closure_external_audit": {
+      "all_previous_blockers_closed": true,
+      "bytes": 30523,
+      "closed_blockers": [
+        "PACKAGING_AUTHORITY",
+        "CANDIDATE_DETERMINISM",
+        "DENSE_RELEASE_AUTHORITY",
+        "COORDINATED_FALSE_PASS"
+      ],
+      "filename": "DIAloga_Dense_Index_Build_RC2_Closure_External_Audit_FINAL.md",
+      "non_blocking_findings": [
+        "Dense external release authority is an unsigned immutable GitHub public pin.",
+        "RC1->RC2 historical functional invariance is not verified and is not a freeze gate."
+      ],
+      "production_ready": true,
+      "release_freeze_eligible": true,
+      "sha256": "f75c5a9374837211c5ebeee42026d3558e339996ca1ee88ac762ea3522c93116",
+      "verdict": "PASS_WITH_NON_BLOCKING_FINDINGS"
+    },
+    "combined_release_decision": "The closure audit independently retested and closed every freeze-blocking finding while preserving the previously audited Dense core byte invariants.",
+    "external_audit": {
+      "bytes": 35904,
+      "filename": "DIAloga_Dense_Index_Build_RC2_External_Audit_FINAL.md",
+      "production_ready": false,
+      "release_freeze_eligible": false,
+      "remaining_blocker": "Candidate ZIP byte-identical rebuild lacked authoritative deterministic packaging evidence.",
+      "sha256": "26405462685cad7265ba4d8b716cc9aeed5e1d84bd924fbff0d8d7db96c7de92",
+      "verdict": "BLOCKED"
+    },
+    "supplemental_external_audit": {
+      "bytes": 30565,
+      "filename": "DIAloga_Dense_Index_Build_RC2_Supplemental_External_Audit_FINAL.md",
+      "production_ready": true,
+      "release_freeze_eligible": false,
+      "remaining_blockers": [
+        "DENSE_RELEASE_AUTHORITY_NOT_VERIFIED",
+        "DETERMINISTIC_CANDIDATE_PACKAGING_NOT_VERIFIED"
+      ],
+      "sha256": "fb2a993716826cb93b8f1582dcf2cd90c0b2d9c3453c83aa39c4a57cbea835c4",
+      "verdict": "BLOCKED"
+    }
+  },
+  "authorization": {
+    "application_wiring": false,
+    "dense_index_modification": false,
+    "dense_index_runtime_promotion": true,
+    "full_hybrid_index_build": "AUTHORIZED_AS_NEW_DOWNSTREAM_BUILD_ONLY",
+    "parent_artifact_modification": false
+  },
+  "deterministic_packaging_authority": {
+    "auditor_build_1_sha256": "f45b854796c733affed1811984cdd6ebd061eaf0ec9341e4a4af60bf74df1ea8",
+    "auditor_build_2_sha256": "f45b854796c733affed1811984cdd6ebd061eaf0ec9341e4a4af60bf74df1ea8",
+    "candidate_byte_determinism_verified": true,
+    "closure_evidence_sha256": "85d207ad4f19d8d10dff9b06fcd4e1791a24a72c2f3a4299bafc2a279b3fa005",
+    "packaging_spec_sha256": "e9bb633ded2c867d9699f61db5002d6ab9173a988c59ef0dc0b35c33f8aa57f0",
+    "packer_sha256": "ed7a30bc3936dbc563b0bc88247adcc597be2a24c7a1f612bd76b3d57fdb8370",
+    "runtime_contract": {
+      "compression": "ZIP_DEFLATED",
+      "compresslevel": 9,
+      "python_implementation": "CPython",
+      "python_major_minor": "3.13",
+      "zlib_runtime_version": "1.3.1"
+    }
+  },
+  "external_root_of_trust": {
+    "anchor_path": "rag/05_dense_index/rc2/release_authority/DENSE_RC2_OFFICIAL_RELEASE_ANCHOR.json",
+    "anchor_sha256": "487ead0654711b94366e3e9d56086deecc0de4573a9a7e6670a28491d9b1b07d",
+    "commit_sha": "49b1b255cd34ed1db3a5a28fc8deb11576fcb732",
+    "external_public_pin_ready": true,
+    "remaining_hardening": "Optional signed tag/release authority.",
+    "repository": "mvera37/RAG_DIAloga",
+    "signed_authority_required_for_this_freeze": false,
+    "signed_release_authority_ready": false,
+    "type": "IMMUTABLE_GITHUB_COMMIT_PUBLIC_PIN"
+  },
+  "freeze_status": "FROZEN",
+  "freeze_timestamp": {
+    "america_chicago": "2026-08-19T11:58:21-05:00",
+    "utc": "2026-08-19T16:58:21Z"
+  },
+  "frozen_parent_chain": {
+    "hybrid_index_v4_design_rc9_frozen_attestation_sha256": "71a1cbca13ac20716c86e04c44bfb6ca9084b409b76105a2a36df69286ca2679",
+    "production_embeddings_rc2_candidate_sha256": "67d0804361c2cb594216c5c33de330cc7c22c5f5988372eabd9988ba8f86ae2a",
+    "production_embeddings_rc2_frozen_attestation_v2_sha256": "1ebb82c73abe68b56fc806b05ef2dfe59b547c1775f9821749a2bb0ba5b7c40f",
+    "production_vector_sha256": "89189e573b7f7818b137bd69d00a0acabbaec0c64a2778d22c9244b432262a6e"
+  },
+  "historical_rc1_guard": {
+    "candidate_sha256": "9f73ca146952b1e1f2c8d3936908ee5877f03490ff67f8711490467f6e8d1773",
+    "rc1_to_rc2_scope_invariance_required_for_freeze": false,
+    "rc1_to_rc2_scope_invariance_verified": false,
+    "status": "HOLD_DO_NOT_AUDIT_DO_NOT_PROMOTE"
+  },
+  "next_release_rule": "The next Full Hybrid build must pin this exact Dense RC2 Frozen Attestation SHA-256, the frozen Dense candidate SHA-256, and all previously frozen lexical/design authorities. No Full Hybrid freeze is implied by this attestation.",
+  "release": "DIAloga_Hybrid_Index_V4_Dense_Index_Build_RC2",
+  "release_authority": {
+    "dense_index": {
+      "algorithm": "EXACT_FLAT_CUSTOM",
+      "bytes": 4455088,
+      "candidate_k": 40,
+      "cardinality": 1450,
+      "dimension": 768,
+      "filename": "index/dense_exact_flat_v1.didx",
+      "format": "DIALOGA_DENSE_EXACT_FLAT_V1",
+      "hard_filters_before_top_k": true,
+      "metric": "cosine_l2_normalized",
+      "payload_bytes": 4454400,
+      "payload_sha256": "89189e573b7f7818b137bd69d00a0acabbaec0c64a2778d22c9244b432262a6e",
+      "sha256": "085215053fa3da335d3f557e644ea33c33c678e47012c4c3d2d12cf9b6fe0198",
+      "tie_break": [
+        "cosine_similarity DESC",
+        "corpus_ordinal ASC"
+      ]
+    },
+    "official_candidate": {
+      "bytes": 4387297,
+      "filename": "DIAloga_Dense_Index_Build_RC2_Candidate.zip",
+      "immutability_rule": "Frozen byte-for-byte. Any modification requires a new candidate identity and a new external release decision.",
+      "members": 23,
+      "sha256": "f45b854796c733affed1811984cdd6ebd061eaf0ec9341e4a4af60bf74df1ea8"
+    },
+    "row_map": {
+      "bytes": 366751,
+      "filename": "index/dense_index_rows.jsonl",
+      "rows": 1450,
+      "sha256": "957afabb965ffca781502ab15063f11930950207d771ed42cc5bcec49c6bcada"
+    }
+  },
+  "schema_version": "dialoga_dense_index_build_rc2_frozen_attestation_v1",
+  "state_transition": {
+    "application_wired": false,
+    "dense_index_frozen": true,
+    "dense_index_rc2_frozen": true,
+    "full_hybrid_index_built": false,
+    "ready_for_dense_runtime_promotion": true,
+    "ready_for_full_hybrid_index_build": true
+  },
+  "verification": {
+    "candidate_internal_validation": {
+      "checks_passed": 88,
+      "checks_total": 88,
+      "member_sha256": "03ff0e7e4db2bba13406237b58bd8de2b83cae64621bd1a0a1a8b1c930e544ca",
+      "status": "PASS"
+    },
+    "conformance": {
+      "cases_passed": 72,
+      "cases_total": 72,
+      "status": "PASS"
+    },
+    "coordinated_false_pass_attack_executed": true,
+    "coordinated_false_pass_resistance": "VERIFIED",
+    "core_invariants_unchanged": true,
+    "external_dense_anchor_rejected_fake": true,
+    "fresh_dense_index_rebuild_byte_identical": true,
+    "fresh_row_map_rebuild_byte_identical": true,
+    "self_retrieval": {
+      "rows_passed": 1450,
+      "rows_total": 1450,
+      "status": "PASS"
+    },
+    "unexpected_scope_drift": false
+  }
+}

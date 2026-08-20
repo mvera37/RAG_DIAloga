@@ -1,0 +1,8 @@
+{
+  "component": "canonical_rc4",
+  "status": "FROZEN",
+  "artifact": "DIAloga_RAG_Canonical_V4_Integrated_RC4.zip",
+  "sha256": "f45eb3a90b73dadb14d9c73bc87fde64f1b1a49d298395e93fe8a8e7555214d1",
+  "records": 1466,
+  "corpus_sha256": "c488a97b588032f0c6150e95580ec77d51868b9355323487dcf9c428a84a37c6"
+}

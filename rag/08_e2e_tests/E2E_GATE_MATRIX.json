@@ -1,0 +1,35 @@
+{
+  "schema_version": "dialoga_e2e_gate_matrix_v2",
+  "status": "PREPARED_WAITING_APPLICATION_WIRING",
+  "execution_authorized_now": false,
+  "prerequisites": {
+    "dense_rc2_frozen": true,
+    "dense_rc2_frozen_attestation_sha256": "991dc756d0ba513324ba59e2428e211417009f4b46ea6d936790fa0572416ff3",
+    "full_hybrid_built": true,
+    "full_hybrid_frozen": true,
+    "full_hybrid_frozen_attestation_sha256": "cc5c7929d52f64bda6dce24d82d1fe0c18319c3f021a4d88a89ed7639d5d5971",
+    "full_hybrid_freeze_completion_sha256": "6e1afd9c66d9dc219cd3614ec4f0972e7008217e6b460bc8cd78581a5a75457c",
+    "runtime_promotion_complete": true,
+    "dialoga_local_source_available": false,
+    "application_wiring_complete": false
+  },
+  "test_groups": [
+    "STARTUP_FAIL_CLOSED",
+    "ROUTING_INITIAL_PRIMARY_SECONDARY",
+    "STRUCTURED_EXACT",
+    "LEXICAL_BM25",
+    "DENSE_RETRIEVAL",
+    "FULL_HYBRID_RETRIEVAL",
+    "HARD_FILTER_BEFORE_TOPK",
+    "CANDIDATE_K_40_CONTRACT",
+    "LEXICAL_ONLY_16_PRESERVATION",
+    "UNICODE_SPANISH_NORMALIZATION",
+    "REJECT_BLOCKED_HOLD_REVOKED",
+    "REJECT_DENSE_RC1",
+    "RECORD_ID_CORPUS_ORDINAL_TRACEABILITY",
+    "DEPENDENCY_SHA_MISMATCH_REJECTION",
+    "APPLICATION_WIRING_ACCEPTANCE"
+  ],
+  "runtime_rule": "The integration runtime may expose dense and hybrid_semantic only under the frozen fail-closed manifest. DIAloga must not be declared production-ready until Application Wiring and this E2E matrix pass.",
+  "next_execution_gate": "AFTER_CURRENT_DIALOGA_SOURCE_IS_WIRED_TO_THE_FROZEN_RUNTIME"
+}

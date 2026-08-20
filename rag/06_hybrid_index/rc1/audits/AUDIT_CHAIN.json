@@ -1,0 +1,55 @@
+{
+  "application_wiring_authorized_after_runtime_promotion": true,
+  "candidate": {
+    "bytes": 1738458,
+    "filename": "DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_Candidate.zip",
+    "sha256": "c7537e8befb53427a8911a4508d3bc68771d617f3630616c3f7ad4ddd0d9f6fc",
+    "unchanged_across_audit_chain": true
+  },
+  "closure_authority": {
+    "commit_sha": "91b0b691e4efe7668f73b7f8efd9f9b13db63f67",
+    "sha256": "b67f6e33a97041ae3329a462e12b2ed9000bc890202961be3e9ced9aad12e2e2"
+  },
+  "current_state": "FROZEN_RUNTIME_PROMOTION_AUTHORIZED",
+  "freeze": {
+    "freeze_completion_commit": "ae957d0f0c9cdfffc9a242f1045b0102cc2122ce",
+    "freeze_completion_sha256": "6e1afd9c66d9dc219cd3614ec4f0972e7008217e6b460bc8cd78581a5a75457c",
+    "frozen_attestation_commit": "39d879c4384a94bec2f25f07d0e900a18f803d00",
+    "frozen_attestation_sha256": "cc5c7929d52f64bda6dce24d82d1fe0c18319c3f021a4d88a89ed7639d5d5971",
+    "status": "FROZEN",
+    "validation": "PASS_36_OF_36"
+  },
+  "history": [
+    {
+      "report": "DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_External_Audit_FINAL.md",
+      "sha256": "449eb7a5076fc523b2fee015987ab75490f00553e5ea5825940b8e08aaf78cbf",
+      "stage": "INITIAL_EXTERNAL_AUDIT",
+      "verdict": "BLOCKED"
+    },
+    {
+      "finding": "FINDING-HYBRID-CLOSURE-001",
+      "report": "DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_Supplemental_Closure_External_Audit_FINAL.md",
+      "sha256": "f837abc05f48f6d9b0964e35dfb66e36b8047b877bb161b3c0a3bafdd4a2f3b5",
+      "stage": "SUPPLEMENTAL_CLOSURE_EXTERNAL_AUDIT",
+      "verdict": "REPAIR_REQUIRED"
+    },
+    {
+      "finding_status": "INVALIDATED",
+      "report": "DIAloga_Lexical_Runtime_RC2_Unicode_Normalization_Diagnostic_Audit_FINAL.md",
+      "sha256": "84b3b748597f97c1123ae9bd5da3955731d5b9546fb509d76fd979ec02613791",
+      "stage": "UNICODE_NORMALIZATION_DIAGNOSTIC",
+      "verdict": "DIAGNOSIS_HARNESS_ENCODING_DEFECT"
+    },
+    {
+      "freeze_transition_authorized": true,
+      "release_freeze_eligible": true,
+      "report": "DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_Final_Closure_Gate_Reevaluation_FINAL.md",
+      "sha256": "89daea8dfa1ede0317d88a96f7f9f0797d5203f4a44ef7dc4fadeeb6c02f64b5",
+      "stage": "FINAL_CLOSURE_GATE_REEVALUATION",
+      "verdict": "PASS_WITH_NON_BLOCKING_FINDINGS"
+    }
+  ],
+  "release": "DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1",
+  "runtime_authorized_after_freeze": true,
+  "schema_version": "dialoga_full_hybrid_rc1_audit_chain_v2"
+}

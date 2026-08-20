@@ -1,0 +1,17 @@
+{
+  "schema_version": "dialoga_production_embeddings_rc2_supplemental_audit_bundle_identity_v1",
+  "status": "READY_FOR_EXTERNAL_SUPPLEMENTAL_AUDIT",
+  "bundle_filename": "DIAloga_Production_Embeddings_RC2_Supplemental_External_Audit_Bundle.zip",
+  "bundle_sha256": "31937db6a7d028a3b75610ae01920cf9665e5e3d394269ab6ee6f26f9cb5a6ef",
+  "bundle_bytes": 34359114,
+  "bundle_members": 12,
+  "fresh_candidate_sha256": "1a06c0d1779f043bfcd75ec04b575b85d491c4ff6dddcac4c9b9db6e95ae8db4",
+  "fresh_vector_sha256": "89189e573b7f7818b137bd69d00a0acabbaec0c64a2778d22c9244b432262a6e",
+  "historical_candidate_sha256": "67d0804361c2cb594216c5c33de330cc7c22c5f5988372eabd9988ba8f86ae2a",
+  "snapshot_zip_sha256": "3e79757c748ede47e8ebe3c768a29ce0218e14949dab41177b8ce42b40fdec12",
+  "snapshot_root_sha256": "39f3282103fbafccc288ad3ff8b3717d5266d378f3e684a83587506fdc7473ad",
+  "github_external_anchor_commit_sha": "9284f94832dbf97b2cc214d1c0ff603b743efa8b",
+  "github_external_anchor_file_sha256": "e666651849018dbe690e16c9e5b5ac451ebba74d30abd8f4e4f1634b5b513fbc",
+  "dense_index_audit_authorized": false,
+  "production_embeddings_frozen": false
+}

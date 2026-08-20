@@ -1,0 +1,31 @@
+{
+  "schema_version": "dialoga_production_embeddings_rc2_audit_reports_manifest_v1",
+  "reports": [
+    {
+      "filename": "DIAloga_Production_Embeddings_RC2_Supplemental_External_Audit_FINAL.md",
+      "bytes": 57589,
+      "sha256": "79ee77db4dc515eef322249c6bf6c63c4d7ff8e13a4bc811442e41574a9604a8",
+      "verdict": "BLOCKED",
+      "production_ready": false,
+      "release_freeze_eligible": false,
+      "historical_role": "INTERMEDIATE_BLOCKED_AUDIT",
+      "closed_by": "DIAloga_Production_Embeddings_RC2_Fresh_Regeneration_Closure_Audit_FINAL.md"
+    },
+    {
+      "filename": "DIAloga_Production_Embeddings_RC2_Fresh_Regeneration_Closure_Audit_FINAL.md",
+      "bytes": 17785,
+      "sha256": "329c9adc8acacf73c34b622a782e6ea0daddc4280c692eecf8df26408582e61c",
+      "verdict": "PASS_WITH_NON_BLOCKING_FINDINGS",
+      "production_ready": true,
+      "release_freeze_eligible": true,
+      "historical_role": "FREEZE_AUTHORITY_EVIDENCE",
+      "remaining_info_finding": "External GitHub authority is an immutable unsigned public pin rather than a signed release authority."
+    }
+  ],
+  "freeze_authority": {
+    "path": "rag/04_embeddings/production_rc2/freeze/DIAloga_Production_Embeddings_RC2_FROZEN_ATTESTATION_v2.json",
+    "sha256": "1ebb82c73abe68b56fc806b05ef2dfe59b547c1775f9821749a2bb0ba5b7c40f",
+    "status": "FROZEN"
+  },
+  "rule": "The supplemental BLOCKED report remains immutable historical evidence. The later closure audit is the controlling audit for the previously open fresh-regeneration blockers."
+}

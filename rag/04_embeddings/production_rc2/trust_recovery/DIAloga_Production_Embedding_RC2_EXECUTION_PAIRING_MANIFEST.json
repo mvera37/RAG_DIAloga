@@ -1,0 +1,17 @@
+{
+  "execution_bundle": {
+    "bytes": 76635021,
+    "filename": "DIAloga_Production_Embedding_Generation_RC2_Execution_Bundle.zip",
+    "sha256": "e5bf137afcdb782d11de7fdc455cdc10bfbf12e4dc8db4ba3e75469dc8bfdb6c"
+  },
+  "preexecution_authority_sha256": "038db0df36db44a084d56619da44cc84edce732670bc1d941b5b17053d493331",
+  "preexecution_frozen_attestation": {
+    "filename": "DIAloga_Production_Embedding_RC2_PREEXECUTION_FROZEN_ATTESTATION_e5bf137a.json",
+    "sha256": "82b175399bdf8d092ff2020cd096f9838f2880510b56950964818375fa8152bc"
+  },
+  "preexecution_lock_sha256": "1fc5ab15368c646fcc14dda2e58e42568248850ab265c5722de8df975236f589",
+  "release": "DIAloga_Hybrid_Index_V4_Production_Embedding_Generation_RC2",
+  "schema_version": "dialoga_production_embedding_rc2_execution_pairing_manifest_v1",
+  "status": "VALID_EXECUTION_PAIR",
+  "warning": "Do not pair this Execution Bundle with any earlier PREEXECUTION FROZEN ATTESTATION."
+}

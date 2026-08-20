@@ -1,0 +1,177 @@
+{
+  "artifact_type": "EXTERNAL_AUDIT_CLOSURE_DERIVED_FROZEN_ATTESTATION",
+  "audit_chain": {
+    "combined_release_decision": "The closure audit directly retested and closed the operational blockers left open by the supplemental audit. The two reports form the authoritative audit chain for this freeze.",
+    "fresh_regeneration_closure_audit": {
+      "actual_model_execution_verified": true,
+      "auditor_pass_a_b_c_byte_identical": true,
+      "auditor_vector_sha256": "89189e573b7f7818b137bd69d00a0acabbaec0c64a2778d22c9244b432262a6e",
+      "auditor_vs_historical_byte_identical": true,
+      "auditor_vs_supplemental_fresh_byte_identical": true,
+      "blocking_findings": 0,
+      "byte_reproducibility_verified": true,
+      "bytes": 17785,
+      "filename": "DIAloga_Production_Embeddings_RC2_Fresh_Regeneration_Closure_Audit_FINAL.md",
+      "fresh_regeneration_executed": true,
+      "non_blocking_findings": [
+        "INFO: external GitHub commit is an immutable public pin but is unsigned"
+      ],
+      "numerical_reproducibility_verified": true,
+      "previous_blocked_resolved": true,
+      "production_ready": true,
+      "release_freeze_eligible": true,
+      "sha256": "329c9adc8acacf73c34b622a782e6ea0daddc4280c692eecf8df26408582e61c",
+      "verdict": "PASS_WITH_NON_BLOCKING_FINDINGS"
+    },
+    "supplemental_external_audit": {
+      "bytes": 57589,
+      "closed_surfaces": [
+        "external_authenticity",
+        "root_of_trust_as_public_pin",
+        "coordinated_false_pass_resistance",
+        "snapshot_physical_authentication",
+        "execution_bundle_identity",
+        "preexecution_attestation_identity",
+        "pairing_manifest_identity"
+      ],
+      "filename": "DIAloga_Production_Embeddings_RC2_Supplemental_External_Audit_FINAL.md",
+      "production_ready": false,
+      "release_freeze_eligible": false,
+      "remaining_blocker": "Auditor environment did not match requirements lock, so fresh model execution was not completed in this audit.",
+      "sha256": "79ee77db4dc515eef322249c6bf6c63c4d7ff8e13a4bc811442e41574a9604a8",
+      "verdict": "BLOCKED"
+    }
+  },
+  "authorization": {
+    "application_wiring": false,
+    "dense_index_build": "AUTHORIZED_AS_NEW_DOWNSTREAM_REBUILD_ONLY",
+    "dense_index_freeze": false,
+    "full_hybrid_index_build": false,
+    "production_embeddings_runtime_promotion": true
+  },
+  "execution_chain": {
+    "actual_canonical_pip_freeze_sha256": "d78db3caa433056db854af184e3a46ada8e37b4edca7d531f458e31a388508d2",
+    "embedding_model_benchmark_rc2_frozen_attestation_sha256": "cf45c855cb209e278c4f0e0604d9a1f90d71b592bd39fba4c1646d5579c8eb79",
+    "execution_bundle_sha256": "e5bf137afcdb782d11de7fdc455cdc10bfbf12e4dc8db4ba3e75469dc8bfdb6c",
+    "execution_pairing_manifest_sha256": "ac3d2d87477d9a74e038e60865eab9a4bd59dc717293b9a4dc86d1f73de2de38",
+    "preexecution_frozen_attestation_sha256": "82b175399bdf8d092ff2020cd096f9838f2880510b56950964818375fa8152bc",
+    "requirements_lock_sha256": "ffc1cef94f7ebf76f6e05a5b20255cf572db67c1a617128fb57fc1377a4bd53e"
+  },
+  "external_root_of_trust": {
+    "anchor_path": "rag/04_embeddings/production_rc2/trust_recovery/OFFICIAL_RELEASE_ANCHOR.json",
+    "anchor_sha256": "e666651849018dbe690e16c9e5b5ac451ebba74d30abd8f4e4f1634b5b513fbc",
+    "commit_sha": "9284f94832dbf97b2cc214d1c0ff603b743efa8b",
+    "external_public_pin_ready": true,
+    "remaining_hardening": "Optional signed tag or signed release authority.",
+    "repository": "mvera37/RAG_DIAloga",
+    "signed_authority_required_for_this_freeze": false,
+    "signed_release_authority_ready": false,
+    "type": "IMMUTABLE_GITHUB_COMMIT_PUBLIC_PIN"
+  },
+  "freeze_status": "FROZEN",
+  "freeze_time_physical_verification": {
+    "candidate_internal_validation": {
+      "checks_passed": 133,
+      "checks_total": 133,
+      "internal_validation_member_sha256": "f5c708d13dd8e8567df77a8805ea5ab1b3f0115eb814d66b31288de1c2795eca",
+      "status": "PASS"
+    },
+    "candidate_manifest_sha256": "9dc0c9568c3201debb90055f045b6893b9a51272a2fd755c9e86e7cd240d8762",
+    "candidate_sha256_match": true,
+    "candidate_sha256_recalculated": true,
+    "runtime_attestation_sha256": "ab5ef23ed27aa275627c0fcf9a18d2dd64f109e1da17066b54ae95e62b7b2d4c",
+    "vector_sha256_match": true,
+    "vector_sha256_recalculated_from_candidate_member": true
+  },
+  "freeze_timestamp": {
+    "america_chicago": "2026-08-19T10:22:30-05:00",
+    "utc": "2026-08-19T15:22:30Z"
+  },
+  "frozen_model_configuration": {
+    "authenticated_snapshot_zip_sha256": "3e79757c748ede47e8ebe3c768a29ce0218e14949dab41177b8ce42b40fdec12",
+    "canonical_snapshot_root_sha256": "39f3282103fbafccc288ad3ff8b3717d5266d378f3e684a83587506fdc7473ad",
+    "embedding_dimension": 768,
+    "l2_normalized": true,
+    "max_supported_tokens": 32768,
+    "model_id": "ibm-granite/granite-embedding-311m-multilingual-r2",
+    "pooling": "CLS",
+    "revision": "44399559930365213510b1ee2eb15ded83374f0e",
+    "truncation": false
+  },
+  "frozen_source_corpus": {
+    "corpus_member_sha256": "c488a97b588032f0c6150e95580ec77d51868b9355323487dcf9c428a84a37c6",
+    "corpus_records": 1466,
+    "embedding_records": 1450,
+    "integrated_canonical_v4_rc4_sha256": "f45eb3a90b73dadb14d9c73bc87fde64f1b1a49d298395e93fe8a8e7555214d1",
+    "lexical_only_records": 16
+  },
+  "historical_dense_guard": {
+    "candidate_filename": "DIAloga_Dense_Index_Build_RC1_Candidate.zip",
+    "candidate_sha256": "9f73ca146952b1e1f2c8d3936908ee5877f03490ff67f8711490467f6e8d1773",
+    "rule": "Do not reuse this candidate as downstream release authority. Rebuild Dense against this new Production Embeddings RC2 freeze before external Dense audit.",
+    "status": "HOLD_DO_NOT_AUDIT_DO_NOT_PROMOTE"
+  },
+  "next_release_rule": "The next Dense rebuild must pin the SHA-256 of this exact v2 Frozen Attestation and the exact frozen production vector SHA-256. No Dense external audit is authorized until that rebuild is completed and internally validated.",
+  "release": "DIAloga_Hybrid_Index_V4_Production_Embedding_Generation_RC2",
+  "release_authority": {
+    "official_candidate": {
+      "bytes": 17164878,
+      "filename": "DIAloga_Production_Embeddings_RC2_Candidate.zip",
+      "identity_source": "externally pinned official production candidate plus freeze-time physical SHA-256 recalculation",
+      "immutability_rule": "Frozen byte-for-byte. Any modification requires a new candidate identity and a new release/audit decision.",
+      "members": 28,
+      "sha256": "67d0804361c2cb594216c5c33de330cc7c22c5f5988372eabd9988ba8f86ae2a"
+    },
+    "production_vector": {
+      "byte_order": "little",
+      "bytes": 4454400,
+      "dtype": "float32",
+      "embedding_records": 1450,
+      "filename": "data/production_embeddings.f32le",
+      "l2_normalized": true,
+      "layout": "C_ORDER",
+      "lexical_only_excluded": 16,
+      "sha256": "89189e573b7f7818b137bd69d00a0acabbaec0c64a2778d22c9244b432262a6e",
+      "shape": [
+        1450,
+        768
+      ]
+    }
+  },
+  "reproducibility_evidence_not_frozen_as_release_candidate": {
+    "auditor_generated_candidate": {
+      "candidate_zip_bytes": null,
+      "candidate_zip_sha256": null,
+      "is_release_candidate": false,
+      "note": "Closure audit did not record the generated candidate ZIP SHA/bytes; this does not affect vector reproducibility and the auditor-generated ZIP is not a release authority object.",
+      "role": "INDEPENDENT_REGENERATION_EVIDENCE_ONLY",
+      "vector_sha256": "89189e573b7f7818b137bd69d00a0acabbaec0c64a2778d22c9244b432262a6e"
+    },
+    "producer_fresh_candidate": {
+      "bytes": 17164879,
+      "filename": "DIAloga_Production_Embeddings_RC2_Candidate_FRESH_REGEN.zip",
+      "is_release_candidate": false,
+      "role": "REPRODUCIBILITY_EVIDENCE_ONLY",
+      "sha256": "1a06c0d1779f043bfcd75ec04b575b85d491c4ff6dddcac4c9b9db6e95ae8db4",
+      "vector_sha256": "89189e573b7f7818b137bd69d00a0acabbaec0c64a2778d22c9244b432262a6e"
+    }
+  },
+  "revocation_history": {
+    "prior_frozen_attestation": {
+      "filename": "DIAloga_Production_Embeddings_RC2.frozen_attestation.json",
+      "reason": "A later stricter external audit found stronger trust-chain and independent-regeneration gates still open. Historical evidence is preserved but the attestation has no downstream authority.",
+      "sha256": "deea94bfe44ea672695bddab3d4de17189e8378ae2f6281838fded66934f63d1",
+      "status": "REVOKED_SUPERSEDED_DO_NOT_USE"
+    }
+  },
+  "schema_version": "dialoga_production_embeddings_rc2_frozen_attestation_v2",
+  "state_transition": {
+    "dense_index_frozen": false,
+    "full_hybrid_index_built": false,
+    "production_embeddings_frozen": true,
+    "production_embeddings_rc2_frozen": true,
+    "ready_for_dense_index_rebuild": true,
+    "ready_for_full_hybrid_index": false,
+    "ready_for_runtime_promotion": true
+  }
+}

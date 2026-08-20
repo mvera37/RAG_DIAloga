@@ -1,0 +1,26 @@
+{
+  "component": "dense_index",
+  "integration_enabled": false,
+  "active_runtime_release": null,
+  "rc1_historical": {
+    "audit_authorized": false,
+    "candidate_sha256": "9f73ca146952b1e1f2c8d3936908ee5877f03490ff67f8711490467f6e8d1773",
+    "status": "HOLD_DO_NOT_AUDIT_DO_NOT_PROMOTE"
+  },
+  "rc2_frozen": {
+    "audit_authorized": false,
+    "candidate_sha256": "f45b854796c733affed1811984cdd6ebd061eaf0ec9341e4a4af60bf74df1ea8",
+    "index_sha256": "085215053fa3da335d3f557e644ea33c33c678e47012c4c3d2d12cf9b6fe0198",
+    "row_map_sha256": "957afabb965ffca781502ab15063f11930950207d771ed42cc5bcec49c6bcada",
+    "payload_sha256": "89189e573b7f7818b137bd69d00a0acabbaec0c64a2778d22c9244b432262a6e",
+    "parent_frozen_attestation_sha256": "1ebb82c73abe68b56fc806b05ef2dfe59b547c1775f9821749a2bb0ba5b7c40f",
+    "frozen_attestation_sha256": "991dc756d0ba513324ba59e2428e211417009f4b46ea6d936790fa0572416ff3",
+    "frozen_attestation_commit": "a0118f9d6d0addf1448fbd734dcbd8a7b957fb8c",
+    "closure_audit_sha256": "f75c5a9374837211c5ebeee42026d3558e339996ca1ee88ac762ea3522c93116",
+    "freeze_completion_sha256": "c86aa65e52ed8b62939917ea45ed63e3c9e187fd9c221ce5e33580ceba5b5405",
+    "runtime_authorized": true,
+    "dense_lane_enabled": false,
+    "status": "FROZEN"
+  },
+  "runtime_gate": "Dense RC2 is frozen and authorized as a dependency for the next Full Hybrid build. The standalone dense lane remains disabled until Full Hybrid runtime integration is built, audited/frozen as required, and explicitly enabled."
+}

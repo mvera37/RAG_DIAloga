@@ -1,0 +1,63 @@
+{
+  "external_final_decision": {
+    "critical_findings": 0,
+    "freeze_eligible": true,
+    "freeze_transition_authorized": true,
+    "high_findings": 0,
+    "low_findings": 1,
+    "medium_findings": 0,
+    "report": "DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_Final_Closure_Gate_Reevaluation_FINAL.md",
+    "sha256": "89daea8dfa1ede0317d88a96f7f9f0797d5203f4a44ef7dc4fadeeb6c02f64b5",
+    "verdict": "PASS_WITH_NON_BLOCKING_FINDINGS"
+  },
+  "freeze_completed": true,
+  "freeze_timestamp": {
+    "america_lima": "2026-08-20T14:21:00-05:00",
+    "utc": "2026-08-20T19:21:00Z"
+  },
+  "frozen_attestation": {
+    "filename": "DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_FROZEN_ATTESTATION_v1.json",
+    "publication_commit": "39d879c4384a94bec2f25f07d0e900a18f803d00",
+    "repository_path": "rag/06_hybrid_index/rc1/release_authority/DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_FROZEN_ATTESTATION_v1.json",
+    "sha256": "cc5c7929d52f64bda6dce24d82d1fe0c18319c3f021a4d88a89ed7639d5d5971"
+  },
+  "immutability": {
+    "candidate_mutation_allowed": false,
+    "external_authority_mutation_allowed": false,
+    "historical_audit_report_mutation_allowed": false,
+    "parent_mutation_allowed": false
+  },
+  "next_authorized_action": "PROMOTE_FULL_HYBRID_RC1_TO_DIALOGA_RUNTIME_INTEGRATION_AND_ENABLE_DENSE_HYBRID_SEMANTIC_LANES_FAIL_CLOSED",
+  "official_candidate": {
+    "bytes": 1738458,
+    "filename": "DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_Candidate.zip",
+    "members": 25,
+    "sha256": "c7537e8befb53427a8911a4508d3bc68771d617f3630616c3f7ad4ddd0d9f6fc",
+    "unchanged": true
+  },
+  "release": "DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1",
+  "schema_version": "dialoga_full_hybrid_rc1_freeze_completion_v1",
+  "state_after_completion": {
+    "application_wiring_authorized_after_runtime_promotion": true,
+    "dense_lane_promotion_authorized": true,
+    "full_hybrid_rc1": "FROZEN",
+    "hybrid_semantic_lane_promotion_authorized": true,
+    "production_ready": false,
+    "runtime_integration_promotion_authorized": true
+  },
+  "status": "PASS",
+  "superseded_finding_resolution": {
+    "diagnostic_report_sha256": "84b3b748597f97c1123ae9bd5da3955731d5b9546fb509d76fd979ec02613791",
+    "finding": "FINDING-HYBRID-CLOSURE-001",
+    "new_runtime_identity_required": false,
+    "parent_rebind_required": false,
+    "product_defect_confirmed": false,
+    "root_cause": "TEST_HARNESS_ENCODING_DEFECT"
+  },
+  "validation": {
+    "checks_passed": 36,
+    "checks_total": 36,
+    "result": "PASS_36_OF_36",
+    "status": "PASS"
+  }
+}

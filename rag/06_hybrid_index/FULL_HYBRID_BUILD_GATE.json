@@ -1,0 +1,48 @@
+{
+  "candidate": {
+    "artifact_class": "QUERY_TIME_FULL_HYBRID_COMPOSITION",
+    "bytes": 1738458,
+    "filename": "DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_Candidate.zip",
+    "members": 25,
+    "sha256": "c7537e8befb53427a8911a4508d3bc68771d617f3630616c3f7ad4ddd0d9f6fc",
+    "unchanged": true
+  },
+  "candidate_built": true,
+  "component": "DIAloga_Hybrid_Index_V4_Full_Hybrid",
+  "external_audit_required_now": false,
+  "external_closure_passed": true,
+  "final_external_decision": {
+    "all_functional_closure_gates_ready": true,
+    "all_trust_closure_gates_ready": true,
+    "freeze_transition_authorized": true,
+    "report_sha256": "89daea8dfa1ede0317d88a96f7f9f0797d5203f4a44ef7dc4fadeeb6c02f64b5",
+    "verdict": "PASS_WITH_NON_BLOCKING_FINDINGS"
+  },
+  "freeze": {
+    "freeze_completion_commit": "ae957d0f0c9cdfffc9a242f1045b0102cc2122ce",
+    "freeze_completion_sha256": "6e1afd9c66d9dc219cd3614ec4f0972e7008217e6b460bc8cd78581a5a75457c",
+    "frozen_attestation_commit": "39d879c4384a94bec2f25f07d0e900a18f803d00",
+    "frozen_attestation_sha256": "cc5c7929d52f64bda6dce24d82d1fe0c18319c3f021a4d88a89ed7639d5d5971",
+    "validation": "PASS_36_OF_36"
+  },
+  "freeze_authorized": true,
+  "freeze_executed": true,
+  "internal_validation_passed": true,
+  "next_state": "RUNTIME_PROMOTED_APPLICATION_WIRING_READY",
+  "policy": "FAIL_CLOSED",
+  "prohibitions": [
+    "DO_NOT_CHANGE_FULL_HYBRID_RC1_CANDIDATE_BYTES",
+    "DO_NOT_MODIFY_FROZEN_DEPENDENCIES",
+    "DO_NOT_MUTATE_HISTORICAL_AUDIT_REPORTS_OR_EXTERNAL_AUTHORITIES",
+    "ABORT_ON_ANY_SHA256_MISMATCH"
+  ],
+  "runtime_promotion_authorized": true,
+  "runtime_transition": {
+    "application_wiring_authorized_after_runtime_promotion": true,
+    "dense_lane_authorized": true,
+    "hybrid_semantic_lane_authorized": true,
+    "production_ready": false
+  },
+  "schema_version": "dialoga_full_hybrid_build_gate_v4",
+  "status": "FROZEN"
+}

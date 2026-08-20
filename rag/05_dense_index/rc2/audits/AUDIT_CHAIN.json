@@ -1,0 +1,53 @@
+{
+  "schema_version": "dialoga_dense_rc2_audit_chain_v1",
+  "release": "DIAloga_Hybrid_Index_V4_Dense_Index_Build_RC2",
+  "final_release_state": "FROZEN",
+  "reports": [
+    {
+      "filename": "DIAloga_Dense_Index_Build_RC2_External_Audit_FINAL.md",
+      "bytes": 35904,
+      "sha256": "26405462685cad7265ba4d8b716cc9aeed5e1d84bd924fbff0d8d7db96c7de92",
+      "verdict": "BLOCKED",
+      "role": "HISTORICAL_BLOCKED_AUDIT_CHAIN_EVIDENCE"
+    },
+    {
+      "filename": "DIAloga_Dense_Index_Build_RC2_Supplemental_External_Audit_FINAL.md",
+      "bytes": 30565,
+      "sha256": "fb2a993716826cb93b8f1582dcf2cd90c0b2d9c3453c83aa39c4a57cbea835c4",
+      "verdict": "BLOCKED",
+      "role": "HISTORICAL_BLOCKED_AUDIT_CHAIN_EVIDENCE"
+    },
+    {
+      "filename": "DIAloga_Dense_Index_Build_RC2_Closure_External_Audit_FINAL.md",
+      "bytes": 30523,
+      "sha256": "f75c5a9374837211c5ebeee42026d3558e339996ca1ee88ac762ea3522c93116",
+      "verdict": "PASS_WITH_NON_BLOCKING_FINDINGS",
+      "dense_production_ready": true,
+      "dense_release_freeze_eligible": true,
+      "all_previous_blockers_closed": true,
+      "role": "FREEZE_AUTHORITY_EVIDENCE"
+    }
+  ],
+  "audit_bundles": {
+    "original_external_audit_bundle": {
+      "filename": "DIAloga_Dense_Index_Build_RC2_External_Audit_Bundle.zip",
+      "bytes": 21585823,
+      "sha256": "8e10f52a8ce63db6129969c2fcaf3e4c3ef43ace3448ba1a76ba1260913df662",
+      "state": "HISTORICAL_BLOCKED_AUDIT_CHAIN_EVIDENCE"
+    },
+    "closure_external_audit_bundle": {
+      "filename": "DIAloga_Dense_Index_Build_RC2_Closure_External_Audit_Bundle.zip",
+      "bytes": 21623663,
+      "sha256": "d130b209ec45dcbac9e823fd3daf1192f443e9b98844395a7d31a1a29c8786b4",
+      "state": "AUDIT_COMPLETED_PASS_FREEZE_AUTHORITY_EVIDENCE"
+    }
+  },
+  "freeze_authority": {
+    "frozen_attestation": "rag/05_dense_index/rc2/release_authority/DIAloga_Dense_Index_Build_RC2_FROZEN_ATTESTATION_v1.json",
+    "frozen_attestation_sha256": "991dc756d0ba513324ba59e2428e211417009f4b46ea6d936790fa0572416ff3",
+    "freeze_completion": "rag/05_dense_index/rc2/release_authority/DIAloga_Dense_Index_Build_RC2_FREEZE_COMPLETION_v1.json",
+    "freeze_completion_sha256": "c86aa65e52ed8b62939917ea45ed63e3c9e187fd9c221ce5e33580ceba5b5405",
+    "checks": "PASS_18_OF_18"
+  },
+  "note": "The authoritative report identities are the exact byte SHA-256 values above. Do not normalize, rewrite or repack audited source files and treat the resulting bytes as the same evidence."
+}

@@ -1,0 +1,75 @@
+{
+  "schema_version": "dialoga_dense_rc2_official_release_anchor_v1",
+  "release": "DIAloga_Hybrid_Index_V4_Dense_Index_Build_RC2",
+  "authority_role": "EXTERNAL_DENSE_RELEASE_AUTHORITY",
+  "release_state_at_publication": "BLOCKED_PENDING_CLOSURE_AUDIT",
+  "freeze_authorized": false,
+  "root_policy": "PUBLIC_IMMUTABLE_GITHUB_COMMIT_PIN_UNSIGNED",
+  "repository": "mvera37/RAG_DIAloga",
+  "branch_at_publication": "agent/bootstrap-rag",
+  "anchor_path": "rag/05_dense_index/rc2/release_authority/DENSE_RC2_OFFICIAL_RELEASE_ANCHOR.json",
+  "dense_release_identity": {
+    "candidate_filename": "DIAloga_Dense_Index_Build_RC2_Candidate.zip",
+    "candidate_sha256": "f45b854796c733affed1811984cdd6ebd061eaf0ec9341e4a4af60bf74df1ea8",
+    "candidate_bytes": 4387297,
+    "dense_index_sha256": "085215053fa3da335d3f557e644ea33c33c678e47012c4c3d2d12cf9b6fe0198",
+    "dense_index_bytes": 4455088,
+    "row_map_sha256": "957afabb965ffca781502ab15063f11930950207d771ed42cc5bcec49c6bcada",
+    "row_map_bytes": 366751,
+    "external_audit_bundle_sha256": "8e10f52a8ce63db6129969c2fcaf3e4c3ef43ace3448ba1a76ba1260913df662",
+    "external_audit_bundle_bytes": 21585823
+  },
+  "frozen_parent": {
+    "production_embeddings_rc2_frozen_attestation_v2_sha256": "1ebb82c73abe68b56fc806b05ef2dfe59b547c1775f9821749a2bb0ba5b7c40f",
+    "production_embeddings_rc2_candidate_sha256": "67d0804361c2cb594216c5c33de330cc7c22c5f5988372eabd9988ba8f86ae2a",
+    "production_vector_sha256": "89189e573b7f7818b137bd69d00a0acabbaec0c64a2778d22c9244b432262a6e",
+    "hybrid_design_rc9_frozen_attestation_sha256": "71a1cbca13ac20716c86e04c44bfb6ca9084b409b76105a2a36df69286ca2679"
+  },
+  "deterministic_packaging_authority": {
+    "spec_path": "rag/05_dense_index/rc2/release_authority/DENSE_RC2_DETERMINISTIC_PACKAGING_SPEC.json",
+    "spec_sha256": "e9bb633ded2c867d9699f61db5002d6ab9173a988c59ef0dc0b35c33f8aa57f0",
+    "packer_path": "rag/05_dense_index/rc2/release_authority/pack_dense_rc2_candidate_deterministic.py",
+    "packer_sha256": "ed7a30bc3936dbc563b0bc88247adcc597be2a24c7a1f612bd76b3d57fdb8370",
+    "closure_evidence_path": "rag/05_dense_index/rc2/release_authority/DENSE_RC2_DETERMINISTIC_PACKAGING_CLOSURE_EVIDENCE.json",
+    "closure_evidence_sha256": "85d207ad4f19d8d10dff9b06fcd4e1791a24a72c2f3a4299bafc2a279b3fa005",
+    "expected_rebuilt_candidate_sha256": "f45b854796c733affed1811984cdd6ebd061eaf0ec9341e4a4af60bf74df1ea8",
+    "expected_byte_identical": true,
+    "runtime_contract": {
+      "python_implementation": "CPython",
+      "python_major_minor": "3.13",
+      "zlib_runtime_version": "1.3.1",
+      "compression": "ZIP_DEFLATED",
+      "compresslevel": 9
+    }
+  },
+  "audit_history": {
+    "external_audit_final_sha256": "26405462685cad7265ba4d8b716cc9aeed5e1d84bd924fbff0d8d7db96c7de92",
+    "external_audit_final_verdict": "BLOCKED",
+    "supplemental_external_audit_final_sha256": "fb2a993716826cb93b8f1582dcf2cd90c0b2d9c3453c83aa39c4a57cbea835c4",
+    "supplemental_external_audit_final_verdict": "BLOCKED",
+    "blocking_findings_to_close": [
+      "DENSE_RELEASE_AUTHORITY_NOT_VERIFIED",
+      "DETERMINISTIC_CANDIDATE_PACKAGING_NOT_VERIFIED"
+    ]
+  },
+  "auditor_requirements": {
+    "must_fetch_this_anchor_from_exact_github_commit": true,
+    "must_not_trust_anchor_copy_inside_audit_bundle_as_terminal_authority": true,
+    "must_compare_candidate_sha": true,
+    "must_compare_dense_index_sha": true,
+    "must_compare_row_map_sha": true,
+    "must_compare_audit_bundle_sha": true,
+    "must_verify_packer_and_spec_sha": true,
+    "must_execute_authoritative_packer_from_clean_extracted_candidate_members": true,
+    "must_require_rebuilt_candidate_sha_equals_official_candidate_sha": true,
+    "must_run_coordinated_false_pass_challenge_against_external_anchor": true
+  },
+  "allowed_state_transitions": {
+    "dense_index_modification_allowed": false,
+    "row_map_modification_allowed": false,
+    "parent_payload_modification_allowed": false,
+    "parent_frozen_attestation_modification_allowed": false,
+    "dense_promotion_allowed_before_closure_pass": false,
+    "full_hybrid_build_allowed_before_dense_freeze": false
+  }
+}
