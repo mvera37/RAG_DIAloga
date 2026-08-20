@@ -1,50 +1,51 @@
 # Full Hybrid RC1
 
-Status: **READY_FOR_EXTERNAL_AUDIT / NOT FROZEN / NOT RUNTIME AUTHORIZED**
+Status: **BLOCKED BY INITIAL EXTERNAL AUDIT / SUPPLEMENTAL CLOSURE READY FOR EXTERNAL AUDIT / NOT FROZEN / NOT RUNTIME AUTHORIZED**
 
-## Release identity
+## Immutable release identity
 - Candidate: `DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_Candidate.zip`
 - Candidate SHA-256: `c7537e8befb53427a8911a4508d3bc68771d617f3630616c3f7ad4ddd0d9f6fc`
 - Bytes: `1738458`
 - Members: `25`
 - Artifact class: `QUERY_TIME_FULL_HYBRID_COMPOSITION`
 
-Full Hybrid RC1 does not materialize a static fused index. It deterministically composes the already-frozen lexical and Dense rankings at query time according to the frozen Hybrid Design contract.
+The candidate remains byte-identical. No candidate change is required or authorized to close the current findings.
 
-## Frozen fusion contract
-- RRF `k=60`.
-- Lexical `candidate_k=40`.
-- Dense `candidate_k=40`.
-- Base fused set: top 20.
-- Deterministic order: RRF score DESC, lane presence DESC, best lane rank ASC, `corpus_ordinal` ASC.
-- `structured_exact` bypasses RRF and must preserve the complete exact set.
-- The 16 lexical-only records are protected when they have a positive lexical match.
-- Maximum final set: 36 = top-20 base + up to 16 protected lexical-only records.
+## Initial external audit
+- Report: `DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_External_Audit_FINAL.md`
+- SHA-256: `449eb7a5076fc523b2fee015987ab75490f00553e5ea5825940b8e08aaf78cbf`
+- Verdict: **BLOCKED**
+- `FULL_HYBRID_BUILD_READY = true`
+- `FULL_HYBRID_PRODUCTION_READY = false`
+- `FULL_HYBRID_RELEASE_FREEZE_ELIGIBLE = false`
 
-## Internal gates
-- Candidate validator: **PASS 125/125**.
-- Adversarial validation: **PASS 8/8**.
-- Physical Dense ↔ Production Embeddings ↔ Full Hybrid validation: **PASS 28/28**.
-- Candidate deterministic rebuild: **4/4 byte-identical**, including two packaged and two independently implemented rebuilds.
-- Audit bundle verifier: **PASS 30/30** in support mode and **PASS 31/31** when an external anchor file is supplied.
+The auditor independently confirmed the Full Hybrid composition boundary, RRF k=60, 41/41 fusion recomputations, deterministic candidate rebuilds, Dense parent, lexical-only preservation at the fusion boundary, and rejection of a coordinated fake PASS. The two blocking findings were release/evidence scope, not a demonstrated fusion defect:
 
-A validator weakness discovered during the first internal iteration was fixed before this candidate identity was finalized: rehashing a modified RRF contract could previously evade a subset of semantic checks. The final validator pins the complete fusion contract and other critical authorities by SHA-256. No earlier candidate is release authority.
+1. `FINDING-HYBRID-001`: physical Lexical Index RC1 and Lexical Runtime RC2 ZIPs were not supplied in the first audit bundle.
+2. `FINDING-HYBRID-002`: the original candidate anchor intentionally withheld runtime/freeze authorization before external audit.
 
-## External release authority
+`FINDING-HYBRID-003` (unsigned public commit authority) is LOW/non-blocking under the current release contract.
+
+## Supplemental closure package
+- Bundle: `DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_Supplemental_Closure_External_Audit_Bundle.zip`
+- SHA-256: `98a9a8742487c6c07fe98e86e3f27e518a84f1a5f2e3641cae3bbb3b2b6569fc`
+- Bytes: `105321856`
+- Deterministic rebuild: **PASS / byte-identical**
+- Closure-bundle verifier: **PASS 88/88** with independently supplied authority and live lexical runtime execution.
+- Lexical Runtime RC2 validator re-execution: **PASS 9246/9246**.
+- Lexical Runtime RC2 adversarial re-execution: **PASS 36/36**.
+
+The bundle supplies the exact physical Lexical Index RC1 candidate/frozen bundle and Lexical Runtime RC2 candidate/frozen bundle. The Runtime frozen chain contains its original external audit bundle with physical RC4, Design RC9, Lexical Index RC1 and Runtime RC2 evidence.
+
+## Conditional external closure authority
 - Repository: `mvera37/RAG_DIAloga`
-- Immutable commit: `9e6a7a5a745095e4e24404ca99d25647ff73b345`
-- Path: `rag/06_hybrid_index/rc1/release_authority/FULL_HYBRID_RC1_OFFICIAL_RELEASE_ANCHOR.json`
-- Anchor SHA-256: `034e1b95296ba9f971b6fcf1c7522319bc2f04f67b300907f5cca50474e2214a`
+- Immutable commit: `91b0b691e4efe7668f73b7f8efd9f9b13db63f67`
+- Path: `rag/06_hybrid_index/rc1/release_authority/FULL_HYBRID_RC1_CLOSURE_AUTHORIZATION.json`
+- Raw-file SHA-256: `b67f6e33a97041ae3329a462e12b2ed9000bc890202961be3e9ced9aad12e2e2`
 
-The auditor must obtain that anchor independently from the exact commit. A copy included in the audit bundle is not terminal trust authority.
-
-## External audit bundle
-- `DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_External_Audit_Bundle.zip`
-- SHA-256: `257fb9876b2ed4ad9e137317ad7eb8540204e6060a96fafd1bf5a78e6fcae5eb`
-- Bytes: `23362489`
-- Members: `15`
-
-The bundle includes the Full Hybrid candidate, exact frozen Dense and Production Embeddings parent candidates, prior closure reports, physical cross-parent evidence, deterministic rebuild evidence, adversarial results, auditor instructions and a support verifier.
+The auditor must fetch this authority independently from the exact commit. It authorizes a **conditional** release transition: the auditor may return `FULL_HYBRID_PRODUCTION_READY=true` and `FULL_HYBRID_RELEASE_FREEZE_ELIGIBLE=true` only if all blocking findings are closed and no new blocker exists. It does not itself freeze or enable runtime.
 
 ## Runtime and freeze gate
-This release is **not frozen**. `dense` and `hybrid_semantic` must remain disabled. Application Wiring remains blocked. A Full Hybrid Frozen Attestation may be created only after an independent external audit returns an explicit release-freeze decision.
+`dense` and `hybrid_semantic` remain disabled. Application Wiring remains blocked. A Full Hybrid Frozen Attestation may be issued only after the supplemental external closure audit returns an explicit PASS/freeze-eligible decision.
+
+See `audits/AUDIT_CHAIN.json` for the machine-readable audit history.
