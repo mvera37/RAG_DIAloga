@@ -1,134 +1,65 @@
 {
   "application_wiring": {
-    "status": "BLOCKED_PENDING_FULL_HYBRID_SUPPLEMENTAL_CLOSURE_AUDIT_FREEZE_AND_LOCAL_DIALOGA_SOURCE"
+    "status": "AUTHORIZED_PENDING_LOCAL_DIALOGA_SOURCE_NOT_STARTED"
   },
   "canonical": {
     "integrated_v4_rc4": {
       "candidate_sha256": "f45eb3a90b73dadb14d9c73bc87fde64f1b1a49d298395e93fe8a8e7555214d1",
-      "corpus_sha256": "c488a97b588032f0c6150e95580ec77d51868b9355323487dcf9c428a84a37c6",
       "records": 1466,
       "status": "FROZEN"
     }
   },
   "dense_index": {
     "rc1": {
-      "audit_authorized": false,
-      "candidate_sha256": "9f73ca146952b1e1f2c8d3936908ee5877f03490ff67f8711490467f6e8d1773",
-      "external_audit_bundle_sha256": "0ce7fdb6cb5e4d06cea564a8d433feefaf1f5b3610702d15d135010d812224a9",
-      "index_sha256": "60c82903864df04a07dc6756a5939c37238dd426b582ec56ecd3f000ba901d42",
-      "rebuild_required": true,
       "status": "HOLD_DO_NOT_AUDIT_DO_NOT_PROMOTE"
     },
     "rc2": {
-      "audit_authorized": false,
-      "candidate_bytes": 4387297,
       "candidate_sha256": "f45b854796c733affed1811984cdd6ebd061eaf0ec9341e4a4af60bf74df1ea8",
-      "change_class": "PARENT_FREEZE_LINEAGE_REBIND_ONLY",
-      "closure_audit": {
-        "all_previous_blockers_closed": true,
-        "production_ready": true,
-        "release_freeze_eligible": true,
-        "sha256": "f75c5a9374837211c5ebeee42026d3558e339996ca1ee88ac762ea3522c93116",
-        "verdict": "PASS_WITH_NON_BLOCKING_FINDINGS"
-      },
-      "freeze_eligible": true,
-      "frozen": true,
       "frozen_attestation_sha256": "991dc756d0ba513324ba59e2428e211417009f4b46ea6d936790fa0572416ff3",
-      "freeze_completion_sha256": "c86aa65e52ed8b62939917ea45ed63e3c9e187fd9c221ce5e33580ceba5b5405",
       "index_sha256": "085215053fa3da335d3f557e644ea33c33c678e47012c4c3d2d12cf9b6fe0198",
-      "parent_frozen_attestation_sha256": "1ebb82c73abe68b56fc806b05ef2dfe59b547c1775f9821749a2bb0ba5b7c40f",
-      "payload_sha256": "89189e573b7f7818b137bd69d00a0acabbaec0c64a2778d22c9244b432262a6e",
       "row_map_sha256": "957afabb965ffca781502ab15063f11930950207d771ed42cc5bcec49c6bcada",
-      "status": "FROZEN"
-    }
-  },
-  "embedding_model_benchmark": {
-    "rc2": {
-      "canonical_snapshot_root_sha256": "39f3282103fbafccc288ad3ff8b3717d5266d378f3e684a83587506fdc7473ad",
-      "frozen_attestation_sha256": "cf45c855cb209e278c4f0e0604d9a1f90d71b592bd39fba4c1646d5579c8eb79",
-      "revision": "44399559930365213510b1ee2eb15ded83374f0e",
-      "selected_model": "ibm-granite/granite-embedding-311m-multilingual-r2",
       "status": "FROZEN"
     }
   },
   "full_hybrid": {
     "rc1": {
-      "artifact_class": "QUERY_TIME_FULL_HYBRID_COMPOSITION",
-      "audit_authorized": true,
-      "candidate_bytes": 1738458,
-      "candidate_members": 25,
       "candidate_sha256": "c7537e8befb53427a8911a4508d3bc68771d617f3630616c3f7ad4ddd0d9f6fc",
-      "candidate_unchanged": true,
-      "initial_external_audit": {
-        "filename": "DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_External_Audit_FINAL.md",
-        "bytes": 26846,
-        "sha256": "449eb7a5076fc523b2fee015987ab75490f00553e5ea5825940b8e08aaf78cbf",
-        "verdict": "BLOCKED",
-        "build_ready": true,
-        "production_ready": false,
-        "release_freeze_eligible": false,
-        "blocking_findings": ["FINDING-HYBRID-001", "FINDING-HYBRID-002"]
-      },
-      "supplemental_closure": {
-        "status": "READY_FOR_EXTERNAL_CLOSURE_AUDIT",
-        "bundle_filename": "DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_Supplemental_Closure_External_Audit_Bundle.zip",
-        "bundle_bytes": 105321856,
-        "bundle_sha256": "98a9a8742487c6c07fe98e86e3f27e518a84f1a5f2e3641cae3bbb3b2b6569fc",
-        "bundle_verifier": "PASS_88_OF_88",
-        "lexical_runtime_validator": "PASS_9246_OF_9246",
-        "lexical_runtime_adversarial": "PASS_36_OF_36",
-        "conditional_authority_commit": "91b0b691e4efe7668f73b7f8efd9f9b13db63f67",
-        "conditional_authority_sha256": "b67f6e33a97041ae3329a462e12b2ed9000bc890202961be3e9ced9aad12e2e2"
-      },
-      "external_public_pin": {
-        "anchor_sha256": "034e1b95296ba9f971b6fcf1c7522319bc2f04f67b300907f5cca50474e2214a",
-        "commit_sha": "9e6a7a5a745095e4e24404ca99d25647ff73b345",
-        "ready": true,
-        "signed": false
-      },
-      "freeze_eligible": false,
-      "frozen": false,
-      "required_dense_frozen_attestation_sha256": "991dc756d0ba513324ba59e2428e211417009f4b46ea6d936790fa0572416ff3",
-      "runtime_authorized": false,
-      "status": "BLOCKED_PENDING_SUPPLEMENTAL_CLOSURE_EXTERNAL_AUDIT"
+      "final_external_audit_sha256": "89daea8dfa1ede0317d88a96f7f9f0797d5203f4a44ef7dc4fadeeb6c02f64b5",
+      "final_external_verdict": "PASS_WITH_NON_BLOCKING_FINDINGS",
+      "freeze_completion_sha256": "6e1afd9c66d9dc219cd3614ec4f0972e7008217e6b460bc8cd78581a5a75457c",
+      "frozen_attestation_sha256": "cc5c7929d52f64bda6dce24d82d1fe0c18319c3f021a4d88a89ed7639d5d5971",
+      "runtime_promotion_authorized": true,
+      "status": "FROZEN"
     }
   },
   "hybrid_design": {
     "rc9": {
-      "candidate_sha256": "e7f9eb8da031a56752e89c0cd357aa3dd6a244fac365743b38574fb80a90e8f5",
       "frozen_attestation_sha256": "71a1cbca13ac20716c86e04c44bfb6ca9084b409b76105a2a36df69286ca2679",
       "status": "FROZEN"
     }
   },
   "lexical": {
     "index_rc1": {
+      "candidate_sha256": "67edda46bb3e0465921c254ae05df4a1b6a30926b6a26f45574b69f97dd2cdac",
       "frozen_attestation_sha256": "ce49cbdebe04a11e8ef239f2a9156d1ca2eb52063835794ea26880ea0d4e1df9",
-      "index_sha256": "67edda46bb3e0465921c254ae05df4a1b6a30926b6a26f45574b69f97dd2cdac",
       "status": "FROZEN"
     },
     "runtime_rc2": {
       "candidate_sha256": "f2ff25c2129e9065a6ab3e9fbfe2fcdf3c7b7bee6bd5a7dc6874028a5ecfe36f",
       "frozen_attestation_sha256": "7084a3be23d8c34dca7737e2628092f40a906e76d2f6d5151b20a6329ae04f5e",
-      "status": "FROZEN"
+      "status": "FROZEN_VALID"
     }
   },
   "production_embeddings": {
     "rc2": {
       "candidate_sha256": "67d0804361c2cb594216c5c33de330cc7c22c5f5988372eabd9988ba8f86ae2a",
-      "closure_audit": {
-        "previous_blocked_resolved": true,
-        "production_ready": true,
-        "release_freeze_eligible": true,
-        "sha256": "329c9adc8acacf73c34b622a782e6ea0daddc4280c692eecf8df26408582e61c",
-        "verdict": "PASS_WITH_NON_BLOCKING_FINDINGS"
-      },
-      "freeze_eligible": true,
       "frozen_attestation_sha256": "1ebb82c73abe68b56fc806b05ef2dfe59b547c1775f9821749a2bb0ba5b7c40f",
       "status": "FROZEN",
       "vector_sha256": "89189e573b7f7818b137bd69d00a0acabbaec0c64a2778d22c9244b432262a6e"
     }
   },
+  "production_ready": false,
   "repository": "mvera37/RAG_DIAloga",
-  "schema_version": "dialoga_rag_release_status_v3",
-  "updated_at": "2026-08-20T11:31:00-05:00"
+  "schema_version": "dialoga_rag_release_status_v4",
+  "updated_at": "2026-08-20T14:21:00-05:00"
 }
