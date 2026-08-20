@@ -1,0 +1,28 @@
+{
+  "schema_version": "dialoga_application_wiring_gate_v1",
+  "status": "AUTHORIZED_PENDING_LOCAL_DIALOGA_SOURCE_NOT_STARTED",
+  "policy": "FAIL_CLOSED",
+  "wiring_authorized": true,
+  "wiring_started": false,
+  "local_dialoga_source_required": true,
+  "production_ready": false,
+  "required_runtime_authorities": {
+    "full_hybrid_rc1_candidate_sha256": "c7537e8befb53427a8911a4508d3bc68771d617f3630616c3f7ad4ddd0d9f6fc",
+    "full_hybrid_rc1_frozen_attestation_sha256": "cc5c7929d52f64bda6dce24d82d1fe0c18319c3f021a4d88a89ed7639d5d5971",
+    "full_hybrid_rc1_freeze_completion_sha256": "6e1afd9c66d9dc219cd3614ec4f0972e7008217e6b460bc8cd78581a5a75457c",
+    "dense_index_rc2_frozen_attestation_sha256": "991dc756d0ba513324ba59e2428e211417009f4b46ea6d936790fa0572416ff3",
+    "production_embeddings_rc2_frozen_attestation_sha256": "1ebb82c73abe68b56fc806b05ef2dfe59b547c1775f9821749a2bb0ba5b7c40f",
+    "lexical_runtime_rc2_frozen_attestation_sha256": "7084a3be23d8c34dca7737e2628092f40a906e76d2f6d5151b20a6329ae04f5e",
+    "lexical_index_rc1_frozen_attestation_sha256": "ce49cbdebe04a11e8ef239f2a9156d1ca2eb52063835794ea26880ea0d4e1df9"
+  },
+  "required_invariants": [
+    "DO_NOT_MODIFY_ANY_FROZEN_RAG_ARTIFACT",
+    "PRESERVE_STRUCTURED_EXACT_OPEN_CURRICULAR_TOPIC_EXACT_CORPUS_LEXICAL",
+    "NO_BYPASS_OF_INTEGRATION_MANIFEST_OR_ARTIFACT_MAP",
+    "VERIFY_SHA256_BEFORE_SEMANTIC_STARTUP",
+    "ON_MISMATCH_DISABLE_DENSE_AND_HYBRID_SEMANTIC_AND_ABORT_SEMANTIC_STARTUP",
+    "DO_NOT_USE_DENSE_RC1"
+  ],
+  "required_post_wiring_gate": "rag/08_e2e_tests/E2E_GATE_MATRIX.json",
+  "next_action": "PROVIDE_AND_INSPECT_CURRENT_DIALOGA_SOURCE"
+}
