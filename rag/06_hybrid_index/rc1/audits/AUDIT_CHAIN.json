@@ -1,0 +1,54 @@
+{
+  "schema_version": "dialoga_full_hybrid_rc1_audit_chain_v1",
+  "release": "DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1",
+  "candidate": {
+    "filename": "DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_Candidate.zip",
+    "bytes": 1738458,
+    "sha256": "c7537e8befb53427a8911a4508d3bc68771d617f3630616c3f7ad4ddd0d9f6fc",
+    "unchanged_across_audit_chain": true
+  },
+  "initial_external_audit": {
+    "filename": "DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_External_Audit_FINAL.md",
+    "bytes": 26846,
+    "sha256": "449eb7a5076fc523b2fee015987ab75490f00553e5ea5825940b8e08aaf78cbf",
+    "verdict": "BLOCKED",
+    "full_hybrid_build_ready": true,
+    "full_hybrid_production_ready": false,
+    "full_hybrid_release_freeze_eligible": false,
+    "blocking_findings": [
+      "FINDING-HYBRID-001_PHYSICAL_LEXICAL_PARENT_ARTIFACTS_NOT_SUPPLIED",
+      "FINDING-HYBRID-002_PREVIOUS_ANCHOR_WITHHELD_RUNTIME_AND_FREEZE_AUTHORIZATION"
+    ],
+    "nonblocking_findings": [
+      "FINDING-HYBRID-003_SIGNED_RELEASE_AUTHORITY_NOT_VERIFIED"
+    ]
+  },
+  "supplemental_closure": {
+    "status": "READY_FOR_EXTERNAL_CLOSURE_AUDIT",
+    "bundle": {
+      "filename": "DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_Supplemental_Closure_External_Audit_Bundle.zip",
+      "bytes": 105321856,
+      "sha256": "98a9a8742487c6c07fe98e86e3f27e518a84f1a5f2e3641cae3bbb3b2b6569fc",
+      "deterministic_rebuild": true,
+      "verifier": "PASS_88_OF_88_WITH_EXTERNAL_AUTHORITY_AND_RUNTIME_EXECUTION"
+    },
+    "conditional_closure_authority": {
+      "repository": "mvera37/RAG_DIAloga",
+      "commit_sha": "91b0b691e4efe7668f73b7f8efd9f9b13db63f67",
+      "path": "rag/06_hybrid_index/rc1/release_authority/FULL_HYBRID_RC1_CLOSURE_AUTHORIZATION.json",
+      "sha256": "b67f6e33a97041ae3329a462e12b2ed9000bc890202961be3e9ced9aad12e2e2"
+    },
+    "physical_lexical_evidence": {
+      "lexical_index_rc1_candidate_sha256": "67edda46bb3e0465921c254ae05df4a1b6a30926b6a26f45574b69f97dd2cdac",
+      "lexical_index_rc1_frozen_bundle_sha256": "97fff82cadc84ae0a72d28aff2b72c370d72d527d596da253c1f0ad174c5eb46",
+      "lexical_runtime_rc2_candidate_sha256": "f2ff25c2129e9065a6ab3e9fbfe2fcdf3c7b7bee6bd5a7dc6874028a5ecfe36f",
+      "lexical_runtime_rc2_frozen_bundle_sha256": "5e530bb49348588db38c43533c9568e990d449cb541fabc413279ad18be5512e",
+      "local_runtime_validator": "PASS_9246_OF_9246",
+      "local_runtime_adversarial": "PASS_36_OF_36"
+    }
+  },
+  "current_state": "BLOCKED_PENDING_SUPPLEMENTAL_CLOSURE_EXTERNAL_AUDIT",
+  "freeze_executed": false,
+  "runtime_authorized": false,
+  "next_gate": "SUPPLEMENTAL_CLOSURE_EXTERNAL_AUDIT"
+}
