@@ -1,7 +1,7 @@
 {
-  "schema_version": "dialoga_full_hybrid_build_gate_v2",
+  "schema_version": "dialoga_full_hybrid_build_gate_v3",
   "component": "DIAloga_Hybrid_Index_V4_Full_Hybrid",
-  "status": "CANDIDATE_READY_FOR_EXTERNAL_AUDIT_NOT_FROZEN",
+  "status": "BLOCKED_PENDING_SUPPLEMENTAL_CLOSURE_EXTERNAL_AUDIT_NOT_FROZEN",
   "policy": "FAIL_CLOSED",
   "build_authorized": true,
   "candidate_built": true,
@@ -14,27 +14,38 @@
     "bytes": 1738458,
     "members": 25,
     "sha256": "c7537e8befb53427a8911a4508d3bc68771d617f3630616c3f7ad4ddd0d9f6fc",
-    "artifact_class": "QUERY_TIME_FULL_HYBRID_COMPOSITION"
+    "artifact_class": "QUERY_TIME_FULL_HYBRID_COMPOSITION",
+    "unchanged": true
   },
-  "internal_gates": {
-    "candidate_validator": "PASS_125_OF_125",
-    "adversarial": "PASS_8_OF_8",
-    "physical_cross_parent": "PASS_28_OF_28",
-    "deterministic_candidate_rebuild": "PASS_4_OF_4_BYTE_IDENTICAL",
-    "audit_bundle_verifier_support": "PASS_30_OF_30",
-    "audit_bundle_verifier_with_external_anchor": "PASS_31_OF_31"
+  "initial_external_audit": {
+    "filename": "DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_External_Audit_FINAL.md",
+    "bytes": 26846,
+    "sha256": "449eb7a5076fc523b2fee015987ab75490f00553e5ea5825940b8e08aaf78cbf",
+    "verdict": "BLOCKED",
+    "full_hybrid_build_ready": true,
+    "full_hybrid_production_ready": false,
+    "full_hybrid_release_freeze_eligible": false,
+    "blocking_findings": ["FINDING-HYBRID-001", "FINDING-HYBRID-002"]
   },
-  "external_release_anchor": {
-    "repository": "mvera37/RAG_DIAloga",
-    "commit_sha": "9e6a7a5a745095e4e24404ca99d25647ff73b345",
-    "path": "rag/06_hybrid_index/rc1/release_authority/FULL_HYBRID_RC1_OFFICIAL_RELEASE_ANCHOR.json",
-    "sha256": "034e1b95296ba9f971b6fcf1c7522319bc2f04f67b300907f5cca50474e2214a"
-  },
-  "external_audit_bundle": {
-    "filename": "DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_External_Audit_Bundle.zip",
-    "bytes": 23362489,
-    "members": 15,
-    "sha256": "257fb9876b2ed4ad9e137317ad7eb8540204e6060a96fafd1bf5a78e6fcae5eb"
+  "supplemental_closure": {
+    "status": "READY_FOR_EXTERNAL_CLOSURE_AUDIT",
+    "bundle": {
+      "filename": "DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_Supplemental_Closure_External_Audit_Bundle.zip",
+      "bytes": 105321856,
+      "sha256": "98a9a8742487c6c07fe98e86e3f27e518a84f1a5f2e3641cae3bbb3b2b6569fc"
+    },
+    "local_gates": {
+      "bundle_verifier": "PASS_88_OF_88_WITH_EXTERNAL_AUTHORITY_AND_RUNTIME_EXECUTION",
+      "deterministic_bundle_rebuild": true,
+      "lexical_runtime_validator": "PASS_9246_OF_9246",
+      "lexical_runtime_adversarial": "PASS_36_OF_36"
+    },
+    "conditional_closure_authority": {
+      "repository": "mvera37/RAG_DIAloga",
+      "commit_sha": "91b0b691e4efe7668f73b7f8efd9f9b13db63f67",
+      "path": "rag/06_hybrid_index/rc1/release_authority/FULL_HYBRID_RC1_CLOSURE_AUTHORIZATION.json",
+      "sha256": "b67f6e33a97041ae3329a462e12b2ed9000bc890202961be3e9ced9aad12e2e2"
+    }
   },
   "required_frozen_authorities": {
     "hybrid_design_rc9_frozen_attestation_sha256": "71a1cbca13ac20716c86e04c44bfb6ca9084b409b76105a2a36df69286ca2679",
@@ -54,14 +65,13 @@
     "dense_row_map_sha256": "957afabb965ffca781502ab15063f11930950207d771ed42cc5bcec49c6bcada"
   },
   "prohibitions": [
-    "DO_NOT_USE_DENSE_RC1",
+    "DO_NOT_CHANGE_FULL_HYBRID_RC1_CANDIDATE_BYTES",
     "DO_NOT_MODIFY_FROZEN_DEPENDENCIES",
-    "DO_NOT_ENABLE_DENSE_RUNTIME_BEFORE_FULL_HYBRID_EXTERNAL_PASS_AND_FREEZE",
-    "DO_NOT_ENABLE_HYBRID_SEMANTIC_BEFORE_FULL_HYBRID_EXTERNAL_PASS_AND_FREEZE",
+    "DO_NOT_ENABLE_DENSE_RUNTIME_BEFORE_FULL_HYBRID_EXTERNAL_CLOSURE_PASS_AND_FREEZE",
+    "DO_NOT_ENABLE_HYBRID_SEMANTIC_BEFORE_FULL_HYBRID_EXTERNAL_CLOSURE_PASS_AND_FREEZE",
     "DO_NOT_START_APPLICATION_WIRING_BEFORE_FULL_HYBRID_CLOSURE",
-    "DO_NOT_TREAT_CANDIDATE_LOCAL_VALIDATOR_AS_ROOT_OF_TRUST",
     "ABORT_ON_ANY_SHA256_MISMATCH"
   ],
-  "next_state_after_external_pass": "FULL_HYBRID_RC1_FREEZE_ELIGIBILITY_REVIEW",
-  "next_external_audit_gate": "NOW"
+  "next_state_after_external_closure_pass": "FULL_HYBRID_RC1_FREEZE",
+  "next_external_audit_gate": "SUPPLEMENTAL_CLOSURE_NOW"
 }
