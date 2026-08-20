@@ -1,61 +1,37 @@
 {
-  "schema_version": "dialoga_release_upload_inventory_v5",
-  "policy": "VERIFY_SHA256_BEFORE_UPLOAD_FAIL_CLOSED",
-  "repository": "mvera37/RAG_DIAloga",
   "asset_groups": {
-    "cneb_reusable": [
-      {"filename":"DIAloga_RAG_Canonical_V4_phase1_RC3.zip","bytes":1159738,"sha256":"bf242b4e37cdb91e75ecd8fd0a2660c2dfdc08bc429a954d1ea166907d47c7da","state":"FROZEN_DEPENDENCY","publish":true},
-      {"filename":"DIAloga_RAG_Canonical_V4_Primaria_RC6.zip","bytes":23744313,"sha256":"4e534683c5fac26d321c004c755abbcc7185bccdf328279b2d90cdcd72d0bec5","state":"FROZEN_DEPENDENCY","publish":true},
-      {"filename":"DIAloga_RAG_Canonical_V4_Secundaria_RC7.zip","bytes":49906836,"sha256":"471648192628656c4a39ef32caebb6292f013d80bffac76b836c4163b226b9bd","state":"FROZEN_DEPENDENCY","publish":true}
+    "excluded_by_default": [
+      {"bytes":4388591,"category":"dense_index_historical","name":"DIAloga_Dense_Index_Build_RC1_Candidate.zip","publish_as_release_asset":false,"sha256":"9f73ca146952b1e1f2c8d3936908ee5877f03490ff67f8711490467f6e8d1773","status":"HOLD_DO_NOT_AUDIT_DO_NOT_PROMOTE"},
+      {"bytes":35846087,"category":"audit_bundle_historical","name":"DIAloga_Dense_Index_Build_RC1_External_Audit_Bundle.zip","publish_as_release_asset":false,"sha256":"0ce7fdb6cb5e4d06cea564a8d433feefaf1f5b3610702d15d135010d812224a9","status":"HOLD_DO_NOT_AUDIT_DO_NOT_SEND"}
+    ],
+    "full_hybrid_rc1_freeze_and_audit": [
+      {"bytes":1738458,"category":"full_hybrid","frozen_attestation_sha256":"cc5c7929d52f64bda6dce24d82d1fe0c18319c3f021a4d88a89ed7639d5d5971","name":"DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_Candidate.zip","publish_as_release_asset":true,"sha256":"c7537e8befb53427a8911a4508d3bc68771d617f3630616c3f7ad4ddd0d9f6fc","status":"FROZEN_RELEASE"},
+      {"bytes":9440,"category":"freeze_authority","name":"DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_FROZEN_ATTESTATION_v1.json","publish_as_release_asset":false,"sha256":"cc5c7929d52f64bda6dce24d82d1fe0c18319c3f021a4d88a89ed7639d5d5971","status":"FROZEN_AUTHORITY"},
+      {"bytes":2520,"category":"freeze_validation","name":"DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_FREEZE_COMPLETION_v1.json","publish_as_release_asset":false,"sha256":"6e1afd9c66d9dc219cd3614ec4f0972e7008217e6b460bc8cd78581a5a75457c","status":"PASS_36_OF_36"},
+      {"bytes":23362489,"category":"audit_bundle","name":"DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_External_Audit_Bundle.zip","publish_as_release_asset":true,"sha256":"257fb9876b2ed4ad9e137317ad7eb8540204e6060a96fafd1bf5a78e6fcae5eb","status":"HISTORICAL_BLOCKED_CLOSURE_CHAIN_EVIDENCE"},
+      {"bytes":26846,"category":"audit_report","name":"DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_External_Audit_FINAL.md","publish_as_release_asset":false,"sha256":"449eb7a5076fc523b2fee015987ab75490f00553e5ea5825940b8e08aaf78cbf","status":"HISTORICAL_BLOCKED_CLOSURE_CHAIN_EVIDENCE"},
+      {"bytes":105321856,"category":"audit_bundle","name":"DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_Supplemental_Closure_External_Audit_Bundle.zip","publish_as_release_asset":true,"sha256":"98a9a8742487c6c07fe98e86e3f27e518a84f1a5f2e3641cae3bbb3b2b6569fc","status":"AUDIT_COMPLETED_REPAIR_REQUIRED_THEN_SUPERSEDED_BY_DIAGNOSTIC"},
+      {"bytes":22071,"category":"audit_report","name":"DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_Supplemental_Closure_External_Audit_FINAL.md","publish_as_release_asset":false,"sha256":"f837abc05f48f6d9b0964e35dfb66e36b8047b877bb161b3c0a3bafdd4a2f3b5","status":"REPAIR_REQUIRED_FINDING_SUPERSEDED"},
+      {"bytes":7508,"category":"audit_report","name":"DIAloga_Lexical_Runtime_RC2_Unicode_Normalization_Diagnostic_Audit_FINAL.md","publish_as_release_asset":false,"sha256":"84b3b748597f97c1123ae9bd5da3955731d5b9546fb509d76fd979ec02613791","status":"DIAGNOSIS_HARNESS_ENCODING_DEFECT_INVALIDATES_PRODUCT_FINDING"},
+      {"bytes":16685,"category":"audit_report","name":"DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_Final_Closure_Gate_Reevaluation_FINAL.md","publish_as_release_asset":false,"sha256":"89daea8dfa1ede0317d88a96f7f9f0797d5203f4a44ef7dc4fadeeb6c02f64b5","status":"PASS_WITH_NON_BLOCKING_FINDINGS_FREEZE_AUTHORITY_EVIDENCE"}
     ],
     "rag_frozen_core": [
-      {"filename":"DIAloga_RAG_Canonical_V4_Integrated_RC4.zip","bytes":76570567,"sha256":"f45eb3a90b73dadb14d9c73bc87fde64f1b1a49d298395e93fe8a8e7555214d1","state":"FROZEN","publish":true},
-      {"filename":"DIAloga_Hybrid_Index_V4_Design_RC9.zip","bytes":708462,"sha256":"e7f9eb8da031a56752e89c0cd357aa3dd6a244fac365743b38574fb80a90e8f5","state":"FROZEN","publish":true},
-      {"filename":"DIAloga_Hybrid_Index_V4_Lexical_Index_RC1.zip","bytes":401289,"sha256":"67edda46bb3e0465921c254ae05df4a1b6a30926b6a26f45574b69f97dd2cdac","state":"FROZEN","publish":true},
-      {"filename":"DIAloga_Hybrid_Index_V4_Lexical_Runtime_Integration_RC2.zip","bytes":551255,"sha256":"f2ff25c2129e9065a6ab3e9fbfe2fcdf3c7b7bee6bd5a7dc6874028a5ecfe36f","state":"FROZEN","publish":true},
-      {"filename":"DIAloga_Production_Embeddings_RC2_Candidate.zip","bytes":17164878,"sha256":"67d0804361c2cb594216c5c33de330cc7c22c5f5988372eabd9988ba8f86ae2a","state":"FROZEN_RELEASE_AUTHORITY","frozen_attestation_sha256":"1ebb82c73abe68b56fc806b05ef2dfe59b547c1775f9821749a2bb0ba5b7c40f","publish":true},
-      {"filename":"DIAloga_Dense_Index_Build_RC2_Candidate.zip","bytes":4387297,"sha256":"f45b854796c733affed1811984cdd6ebd061eaf0ec9341e4a4af60bf74df1ea8","state":"FROZEN_RELEASE_AUTHORITY","frozen_attestation_sha256":"991dc756d0ba513324ba59e2428e211417009f4b46ea6d936790fa0572416ff3","publish":true}
-    ],
-    "full_hybrid_rc1_audit_chain": [
-      {"filename":"DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_Candidate.zip","bytes":1738458,"sha256":"c7537e8befb53427a8911a4508d3bc68771d617f3630616c3f7ad4ddd0d9f6fc","state":"BLOCKED_PENDING_SUPPLEMENTAL_CLOSURE_AUDIT_NOT_FROZEN","publish":true},
-      {"filename":"DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_External_Audit_Bundle.zip","bytes":23362489,"sha256":"257fb9876b2ed4ad9e137317ad7eb8540204e6060a96fafd1bf5a78e6fcae5eb","state":"INITIAL_AUDIT_COMPLETED_BLOCKED_CHAIN_EVIDENCE","publish":true},
-      {"filename":"DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_External_Audit_FINAL.md","bytes":26846,"sha256":"449eb7a5076fc523b2fee015987ab75490f00553e5ea5825940b8e08aaf78cbf","state":"BLOCKED_CLOSURE_CHAIN_EVIDENCE","publish":false},
-      {"filename":"DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_Supplemental_Closure_External_Audit_Bundle.zip","bytes":105321856,"sha256":"98a9a8742487c6c07fe98e86e3f27e518a84f1a5f2e3641cae3bbb3b2b6569fc","state":"READY_FOR_SUPPLEMENTAL_CLOSURE_EXTERNAL_AUDIT","publish":true}
-    ],
-    "production_embeddings_reproducibility_and_audit": [
-      {"filename":"DIAloga_Production_Embeddings_RC2_Candidate_FRESH_REGEN.zip","bytes":17164879,"sha256":"1a06c0d1779f043bfcd75ec04b575b85d491c4ff6dddcac4c9b9db6e95ae8db4","state":"REPRODUCIBILITY_EVIDENCE_ONLY_NOT_RELEASE_AUTHORITY","publish":true},
-      {"filename":"DIAloga_Production_Embedding_Generation_RC2_Execution_Bundle.zip","bytes":76635021,"sha256":"e5bf137afcdb782d11de7fdc455cdc10bfbf12e4dc8db4ba3e75469dc8bfdb6c","state":"EXECUTION_AUTHORITY","publish":true},
-      {"filename":"DIAloga_Production_Embeddings_RC2_Supplemental_External_Audit_Bundle.zip","bytes":34359114,"sha256":"31937db6a7d028a3b75610ae01920cf9665e5e3d394269ab6ee6f26f9cb5a6ef","state":"HISTORICAL_BLOCKED_CLOSED_BY_CLOSURE_AUDIT","publish":true},
-      {"filename":"DIAloga_Production_Embeddings_RC2_Fresh_Regeneration_Closure_Audit_FINAL.md","bytes":17785,"sha256":"329c9adc8acacf73c34b622a782e6ea0daddc4280c692eecf8df26408582e61c","state":"PASS_WITH_NON_BLOCKING_FINDINGS_FREEZE_AUTHORITY_EVIDENCE","publish":false}
-    ],
-    "dense_rc2_frozen_release_and_audit": [
-      {"filename":"DIAloga_Dense_Index_Build_RC2_External_Audit_Bundle.zip","bytes":21585823,"sha256":"8e10f52a8ce63db6129969c2fcaf3e4c3ef43ace3448ba1a76ba1260913df662","state":"HISTORICAL_BLOCKED_AUDIT_CHAIN_EVIDENCE","publish":true},
-      {"filename":"DIAloga_Dense_Index_Build_RC2_Closure_External_Audit_Bundle.zip","bytes":21623663,"sha256":"d130b209ec45dcbac9e823fd3daf1192f443e9b98844395a7d31a1a29c8786b4","state":"AUDIT_COMPLETED_PASS_FREEZE_AUTHORITY_EVIDENCE","publish":true},
-      {"filename":"DIAloga_Dense_Index_Build_RC2_Closure_External_Audit_FINAL.md","bytes":30523,"sha256":"f75c5a9374837211c5ebeee42026d3558e339996ca1ee88ac762ea3522c93116","state":"PASS_WITH_NON_BLOCKING_FINDINGS_FREEZE_AUTHORITY_EVIDENCE","publish":false},
-      {"filename":"DIAloga_Dense_Index_Build_RC2_FROZEN_ATTESTATION_v1.json","bytes":7231,"sha256":"991dc756d0ba513324ba59e2428e211417009f4b46ea6d936790fa0572416ff3","state":"FROZEN_AUTHORITY","publish":false},
-      {"filename":"DIAloga_Dense_Index_Build_RC2_FREEZE_COMPLETION_v1.json","bytes":3067,"sha256":"c86aa65e52ed8b62939917ea45ed63e3c9e187fd9c221ce5e33580ceba5b5405","state":"PASS_18_OF_18","publish":false}
-    ],
-    "historical_audit_archive": [
-      {"filename":"DIAloga_RAG_Canonical_V4_Integrated_RC4_Audit_Bundle.zip","bytes":76585846,"sha256":"46cd654e69316d115e53627132843c841b993b2ae39142dbfc4b217afa6e9ec9","state":"HISTORICAL_AUTHORITY_EVIDENCE","publish":true},
-      {"filename":"DIAloga_Hybrid_Index_V4_Design_RC9_External_Audit_Bundle.zip","bytes":154615634,"sha256":"c7364ad53a841e72a4114784ba06be7c93a64b3152e6725a37cf0958d7516ff1","state":"HISTORICAL_AUTHORITY_EVIDENCE","publish":true},
-      {"filename":"DIAloga_Hybrid_Index_V4_Lexical_Build_RC1_Audit_Bundle.zip","bytes":77710492,"sha256":"5e7023f427e8b719cc1ea38128d16a1c13ad732da6577fd535b8d0bedb472020","state":"HISTORICAL_AUTHORITY_EVIDENCE","publish":true},
-      {"filename":"DIAloga_Hybrid_Index_V4_Lexical_Runtime_Integration_RC2_Audit_Bundle.zip","bytes":78792855,"sha256":"3f4043237cac50245caa02e13d86679080aebb3edd776f7f2b80e640449ddd3c","state":"HISTORICAL_AUTHORITY_EVIDENCE","publish":true},
-      {"filename":"DIAloga_Embedding_Model_Benchmark_RC2_External_Audit_Bundle.zip","bytes":77242143,"sha256":"a26cb3e998edab6d581fa5307ffb78dd0d2c4682290366a8699930e8859e1c21","state":"HISTORICAL_AUTHORITY_EVIDENCE","publish":true},
-      {"filename":"DIAloga_Production_Embeddings_RC2_External_Audit_Bundle.zip","bytes":93861840,"sha256":"e32f442fd2b39573842604692f51a3f9c67fd96b808b0e0e0cddde4328a334dd","state":"HISTORICAL_PREVIOUS_AUDIT_EVIDENCE","publish":true}
-    ],
-    "external_model_snapshot": [
-      {"filename":"DIAloga_Granite311_Authenticated_Snapshot_RC2.zip","sha256":"3e79757c748ede47e8ebe3c768a29ce0218e14949dab41177b8ce42b40fdec12","state":"AUTHENTICATED_LOCAL_SNAPSHOT","publish":true,"note":"Keep byte-identical; model.safetensors is not duplicated separately."}
-    ],
-    "excluded_by_default": [
-      {"filename":"DIAloga_Dense_Index_Build_RC1_Candidate.zip","bytes":4388591,"sha256":"9f73ca146952b1e1f2c8d3936908ee5877f03490ff67f8711490467f6e8d1773","state":"HOLD_DO_NOT_AUDIT_DO_NOT_PROMOTE","publish":false},
-      {"filename":"DIAloga_Dense_Index_Build_RC1_External_Audit_Bundle.zip","bytes":35846087,"sha256":"0ce7fdb6cb5e4d06cea564a8d433feefaf1f5b3610702d15d135010d812224a9","state":"HOLD_DO_NOT_AUDIT_DO_NOT_SEND","publish":false}
+      {"bytes":76570567,"category":"rag_canonical","name":"DIAloga_RAG_Canonical_V4_Integrated_RC4.zip","publish_as_release_asset":true,"sha256":"f45eb3a90b73dadb14d9c73bc87fde64f1b1a49d298395e93fe8a8e7555214d1","status":"FROZEN"},
+      {"bytes":708462,"category":"hybrid_design","name":"DIAloga_Hybrid_Index_V4_Design_RC9.zip","publish_as_release_asset":true,"sha256":"e7f9eb8da031a56752e89c0cd357aa3dd6a244fac365743b38574fb80a90e8f5","status":"FROZEN"},
+      {"bytes":401289,"category":"lexical_index","name":"DIAloga_Hybrid_Index_V4_Lexical_Index_RC1.zip","publish_as_release_asset":true,"sha256":"67edda46bb3e0465921c254ae05df4a1b6a30926b6a26f45574b69f97dd2cdac","status":"FROZEN"},
+      {"bytes":551255,"category":"lexical_runtime","name":"DIAloga_Hybrid_Index_V4_Lexical_Runtime_Integration_RC2.zip","publish_as_release_asset":true,"sha256":"f2ff25c2129e9065a6ab3e9fbfe2fcdf3c7b7bee6bd5a7dc6874028a5ecfe36f","status":"FROZEN_VALID"},
+      {"bytes":17164878,"category":"production_embeddings","frozen_attestation_sha256":"1ebb82c73abe68b56fc806b05ef2dfe59b547c1775f9821749a2bb0ba5b7c40f","name":"DIAloga_Production_Embeddings_RC2_Candidate.zip","publish_as_release_asset":true,"sha256":"67d0804361c2cb594216c5c33de330cc7c22c5f5988372eabd9988ba8f86ae2a","status":"FROZEN_RELEASE"},
+      {"bytes":4387297,"category":"dense_index","frozen_attestation_sha256":"991dc756d0ba513324ba59e2428e211417009f4b46ea6d936790fa0572416ff3","name":"DIAloga_Dense_Index_Build_RC2_Candidate.zip","publish_as_release_asset":true,"sha256":"f45b854796c733affed1811984cdd6ebd061eaf0ec9341e4a4af60bf74df1ea8","status":"FROZEN_RELEASE"},
+      {"bytes":1738458,"category":"full_hybrid","frozen_attestation_sha256":"cc5c7929d52f64bda6dce24d82d1fe0c18319c3f021a4d88a89ed7639d5d5971","name":"DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_Candidate.zip","publish_as_release_asset":true,"sha256":"c7537e8befb53427a8911a4508d3bc68771d617f3630616c3f7ad4ddd0d9f6fc","status":"FROZEN_RELEASE"}
     ]
   },
+  "policy": "VERIFY_SHA256_BEFORE_UPLOAD_FAIL_CLOSED",
   "prohibitions": [
+    "Do not alter any FROZEN artifact bytes.",
     "Do not publish Dense RC1 as an authorized/current artifact.",
-    "Do not alter FROZEN artifact bytes.",
-    "Do not treat Full Hybrid RC1 as frozen or runtime-authorized before supplemental external closure PASS and a dedicated Frozen Attestation.",
-    "Do not enable dense or hybrid_semantic runtime lanes until Full Hybrid closure is complete.",
-    "Do not begin Application Wiring until Full Hybrid closure is complete."
-  ]
+    "Do not treat historical BLOCKED or REPAIR_REQUIRED reports as current release state.",
+    "Application Wiring may proceed only against the frozen runtime authorities and must pass E2E before production readiness."
+  ],
+  "repository": "mvera37/RAG_DIAloga",
+  "schema_version": "dialoga_release_upload_inventory_v6"
 }
