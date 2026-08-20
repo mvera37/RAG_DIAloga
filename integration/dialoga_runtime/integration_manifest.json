@@ -1,85 +1,64 @@
 {
-  "schema_version": "dialoga_runtime_integration_manifest_v4",
-  "runtime_bundle": "DIAloga_RAG_Runtime",
-  "status": "PARTIAL_AUTHORIZED_LEXICAL_RUNTIME_WITH_FROZEN_EMBEDDINGS_AND_DENSE_FULL_HYBRID_BLOCKED_CLOSURE_AUDIT_READY",
-  "policy": "FAIL_CLOSED",
+  "application_wiring": {
+    "status": "AUTHORIZED_PENDING_LOCAL_DIALOGA_SOURCE_NOT_STARTED"
+  },
   "components": {
     "canonical_rc4": {
-      "status": "FROZEN",
       "artifact": "DIAloga_RAG_Canonical_V4_Integrated_RC4.zip",
-      "bytes": 76570567,
-      "sha256": "f45eb3a90b73dadb14d9c73bc87fde64f1b1a49d298395e93fe8a8e7555214d1"
-    },
-    "hybrid_design_rc9": {
-      "status": "FROZEN",
-      "artifact": "DIAloga_Hybrid_Index_V4_Design_RC9.zip",
-      "bytes": 708462,
-      "sha256": "e7f9eb8da031a56752e89c0cd357aa3dd6a244fac365743b38574fb80a90e8f5"
-    },
-    "lexical_index_rc1": {
-      "status": "FROZEN",
-      "artifact": "DIAloga_Hybrid_Index_V4_Lexical_Index_RC1.zip",
-      "bytes": 401289,
-      "sha256": "67edda46bb3e0465921c254ae05df4a1b6a30926b6a26f45574b69f97dd2cdac"
-    },
-    "lexical_runtime_rc2": {
-      "status": "FROZEN",
-      "artifact": "DIAloga_Hybrid_Index_V4_Lexical_Runtime_Integration_RC2.zip",
-      "bytes": 551255,
-      "sha256": "f2ff25c2129e9065a6ab3e9fbfe2fcdf3c7b7bee6bd5a7dc6874028a5ecfe36f"
-    },
-    "production_embeddings_rc2": {
-      "status": "FROZEN",
-      "artifact": "DIAloga_Production_Embeddings_RC2_Candidate.zip",
-      "bytes": 17164878,
-      "sha256": "67d0804361c2cb594216c5c33de330cc7c22c5f5988372eabd9988ba8f86ae2a",
-      "vector_sha256": "89189e573b7f7818b137bd69d00a0acabbaec0c64a2778d22c9244b432262a6e",
-      "frozen_attestation_sha256": "1ebb82c73abe68b56fc806b05ef2dfe59b547c1775f9821749a2bb0ba5b7c40f",
-      "runtime_authorized": true,
-      "dense_lane_enabled": false
+      "sha256": "f45eb3a90b73dadb14d9c73bc87fde64f1b1a49d298395e93fe8a8e7555214d1",
+      "status": "FROZEN"
     },
     "dense_index_rc2": {
-      "status": "FROZEN",
       "artifact": "DIAloga_Dense_Index_Build_RC2_Candidate.zip",
-      "bytes": 4387297,
-      "sha256": "f45b854796c733affed1811984cdd6ebd061eaf0ec9341e4a4af60bf74df1ea8",
+      "frozen_attestation_sha256": "991dc756d0ba513324ba59e2428e211417009f4b46ea6d936790fa0572416ff3",
       "index_sha256": "085215053fa3da335d3f557e644ea33c33c678e47012c4c3d2d12cf9b6fe0198",
       "row_map_sha256": "957afabb965ffca781502ab15063f11930950207d771ed42cc5bcec49c6bcada",
-      "payload_sha256": "89189e573b7f7818b137bd69d00a0acabbaec0c64a2778d22c9244b432262a6e",
-      "frozen_attestation_sha256": "991dc756d0ba513324ba59e2428e211417009f4b46ea6d936790fa0572416ff3",
       "runtime_authorized": true,
-      "dense_lane_enabled": false
-    }
-  },
-  "pending_components": {
+      "sha256": "f45b854796c733affed1811984cdd6ebd061eaf0ec9341e4a4af60bf74df1ea8",
+      "status": "FROZEN"
+    },
     "full_hybrid_rc1": {
-      "status": "BLOCKED_PENDING_SUPPLEMENTAL_CLOSURE_EXTERNAL_AUDIT",
       "artifact": "DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_Candidate.zip",
-      "bytes": 1738458,
+      "dense_lane_enabled": true,
+      "freeze_completion_sha256": "6e1afd9c66d9dc219cd3614ec4f0972e7008217e6b460bc8cd78581a5a75457c",
+      "frozen_attestation_sha256": "cc5c7929d52f64bda6dce24d82d1fe0c18319c3f021a4d88a89ed7639d5d5971",
+      "hybrid_semantic_lane_enabled": true,
+      "runtime_authorized": true,
       "sha256": "c7537e8befb53427a8911a4508d3bc68771d617f3630616c3f7ad4ddd0d9f6fc",
-      "candidate_unchanged": true,
-      "initial_external_audit": {
-        "sha256": "449eb7a5076fc523b2fee015987ab75490f00553e5ea5825940b8e08aaf78cbf",
-        "verdict": "BLOCKED",
-        "blocking_findings": ["FINDING-HYBRID-001", "FINDING-HYBRID-002"]
-      },
-      "supplemental_closure_bundle": {
-        "filename": "DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_Supplemental_Closure_External_Audit_Bundle.zip",
-        "bytes": 105321856,
-        "sha256": "98a9a8742487c6c07fe98e86e3f27e518a84f1a5f2e3641cae3bbb3b2b6569fc"
-      },
-      "conditional_closure_authority": {
-        "commit_sha": "91b0b691e4efe7668f73b7f8efd9f9b13db63f67",
-        "sha256": "b67f6e33a97041ae3329a462e12b2ed9000bc890202961be3e9ced9aad12e2e2"
-      },
-      "runtime_authorized": false,
-      "freeze_authorized": false,
-      "dense_lane_enabled": false,
-      "hybrid_semantic_lane_enabled": false
+      "status": "FROZEN"
+    },
+    "hybrid_design_rc9": {
+      "artifact": "DIAloga_Hybrid_Index_V4_Design_RC9.zip",
+      "sha256": "e7f9eb8da031a56752e89c0cd357aa3dd6a244fac365743b38574fb80a90e8f5",
+      "status": "FROZEN"
+    },
+    "lexical_index_rc1": {
+      "artifact": "DIAloga_Hybrid_Index_V4_Lexical_Index_RC1.zip",
+      "sha256": "67edda46bb3e0465921c254ae05df4a1b6a30926b6a26f45574b69f97dd2cdac",
+      "status": "FROZEN"
+    },
+    "lexical_runtime_rc2": {
+      "artifact": "DIAloga_Hybrid_Index_V4_Lexical_Runtime_Integration_RC2.zip",
+      "sha256": "f2ff25c2129e9065a6ab3e9fbfe2fcdf3c7b7bee6bd5a7dc6874028a5ecfe36f",
+      "status": "FROZEN_VALID"
+    },
+    "production_embeddings_rc2": {
+      "artifact": "DIAloga_Production_Embeddings_RC2_Candidate.zip",
+      "frozen_attestation_sha256": "1ebb82c73abe68b56fc806b05ef2dfe59b547c1775f9821749a2bb0ba5b7c40f",
+      "runtime_authorized": true,
+      "sha256": "67d0804361c2cb594216c5c33de330cc7c22c5f5988372eabd9988ba8f86ae2a",
+      "status": "FROZEN",
+      "vector_sha256": "89189e573b7f7818b137bd69d00a0acabbaec0c64a2778d22c9244b432262a6e"
     }
   },
   "disabled_components": {
-    "dense_index_rc1": {"status": "HOLD_DO_NOT_AUDIT_DO_NOT_PROMOTE"}
+    "dense_index_rc1": {
+      "status": "HOLD_DO_NOT_AUDIT_DO_NOT_PROMOTE"
+    }
   },
-  "startup_rule": "DIAloga must fail closed. Full Hybrid RC1 remains non-runtime and non-frozen after the initial BLOCKED audit. Dense and hybrid_semantic lanes remain disabled until the supplemental external closure audit returns PASS/freeze-eligible and a dedicated Full Hybrid Frozen Attestation is issued and validated."
+  "policy": "FAIL_CLOSED",
+  "runtime_bundle": "DIAloga_RAG_Runtime",
+  "schema_version": "dialoga_runtime_integration_manifest_v5",
+  "startup_rule": "DIAloga must verify the exact SHA-256 of every required physical artifact and frozen authority before enabling a lane. Any mismatch disables dense/hybrid_semantic and aborts semantic startup.",
+  "status": "FULL_HYBRID_FROZEN_RUNTIME_PROMOTED_APPLICATION_WIRING_READY"
 }
