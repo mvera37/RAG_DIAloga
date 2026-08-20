@@ -1,0 +1,26 @@
+{
+  "application_wiring_status_after_promotion": "AUTHORIZED_PENDING_LOCAL_DIALOGA_SOURCE_NOT_STARTED",
+  "candidate_sha256": "c7537e8befb53427a8911a4508d3bc68771d617f3630616c3f7ad4ddd0d9f6fc",
+  "enabled_lanes_after_promotion": [
+    "structured_exact",
+    "open_curricular",
+    "topic_exact",
+    "corpus_lexical",
+    "dense",
+    "hybrid_semantic"
+  ],
+  "freeze_completion_sha256": "6e1afd9c66d9dc219cd3614ec4f0972e7008217e6b460bc8cd78581a5a75457c",
+  "frozen_attestation_sha256": "cc5c7929d52f64bda6dce24d82d1fe0c18319c3f021a4d88a89ed7639d5d5971",
+  "policy": "FAIL_CLOSED",
+  "production_ready": false,
+  "release": "DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1",
+  "required_parent_attestations": {
+    "dense_index_rc2": "991dc756d0ba513324ba59e2428e211417009f4b46ea6d936790fa0572416ff3",
+    "lexical_index_rc1": "ce49cbdebe04a11e8ef239f2a9156d1ca2eb52063835794ea26880ea0d4e1df9",
+    "lexical_runtime_rc2": "7084a3be23d8c34dca7737e2628092f40a906e76d2f6d5151b20a6329ae04f5e",
+    "production_embeddings_rc2": "1ebb82c73abe68b56fc806b05ef2dfe59b547c1775f9821749a2bb0ba5b7c40f"
+  },
+  "schema_version": "dialoga_full_hybrid_rc1_runtime_promotion_v1",
+  "startup_rule": "Verify every pinned SHA-256 before loading; on any mismatch keep dense and hybrid_semantic disabled and abort semantic runtime startup.",
+  "status": "AUTHORIZED_AND_PROMOTED"
+}
