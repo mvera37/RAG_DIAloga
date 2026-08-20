@@ -1,0 +1,187 @@
+{
+  "artifact_type": "EXTERNAL_AUDIT_CLOSURE_DERIVED_FROZEN_ATTESTATION",
+  "audit_chain": {
+    "combined_release_decision": "Historical BLOCKED and REPAIR_REQUIRED decisions remain preserved. The diagnostic invalidated the sole product finding without product-byte changes, and the final external gate re-evaluation explicitly authorized the formal freeze transition.",
+    "final_closure_gate_reevaluation": {
+      "all_functional_closure_gates_ready": true,
+      "all_trust_closure_gates_ready": true,
+      "bytes": 16685,
+      "critical_findings": 0,
+      "filename": "DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_Final_Closure_Gate_Reevaluation_FINAL.md",
+      "freeze_transition_authorized": true,
+      "high_findings": 0,
+      "low_findings": 1,
+      "medium_findings": 0,
+      "next_authorized_action": "ISSUE_FORMAL_FULL_HYBRID_RC1_FROZEN_ATTESTATION",
+      "release_freeze_eligible": true,
+      "sha256": "89daea8dfa1ede0317d88a96f7f9f0797d5203f4a44ef7dc4fadeeb6c02f64b5",
+      "verdict": "PASS_WITH_NON_BLOCKING_FINDINGS"
+    },
+    "initial_external_audit": {
+      "build_ready": true,
+      "bytes": 26846,
+      "filename": "DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_External_Audit_FINAL.md",
+      "release_freeze_eligible": false,
+      "sha256": "449eb7a5076fc523b2fee015987ab75490f00553e5ea5825940b8e08aaf78cbf",
+      "verdict": "BLOCKED"
+    },
+    "supplemental_closure_bundle": {
+      "bytes": 105321856,
+      "filename": "DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_Supplemental_Closure_External_Audit_Bundle.zip",
+      "sha256": "98a9a8742487c6c07fe98e86e3f27e518a84f1a5f2e3641cae3bbb3b2b6569fc"
+    },
+    "supplemental_closure_external_audit": {
+      "bytes": 22071,
+      "filename": "DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_Supplemental_Closure_External_Audit_FINAL.md",
+      "finding": "FINDING-HYBRID-CLOSURE-001",
+      "finding_original_classification": "HIGH_PRODUCT_FINDING",
+      "release_freeze_eligible": false,
+      "sha256": "f837abc05f48f6d9b0964e35dfb66e36b8047b877bb161b3c0a3bafdd4a2f3b5",
+      "verdict": "REPAIR_REQUIRED"
+    },
+    "unicode_normalization_diagnostic": {
+      "bytes": 7508,
+      "diagnostic_verdict": "DIAGNOSIS_HARNESS_ENCODING_DEFECT",
+      "filename": "DIAloga_Lexical_Runtime_RC2_Unicode_Normalization_Diagnostic_Audit_FINAL.md",
+      "new_runtime_identity_required": false,
+      "product_defect_confirmed": false,
+      "root_cause": "TEST_HARNESS_ENCODING_DEFECT",
+      "sha256": "84b3b748597f97c1123ae9bd5da3955731d5b9546fb509d76fd979ec02613791",
+      "superseded_finding": "FINDING-HYBRID-CLOSURE-001"
+    }
+  },
+  "authorization": {
+    "application_wiring": "AUTHORIZED_AFTER_FROZEN_ATTESTATION_VALIDATION_AND_RUNTIME_PROMOTION",
+    "dense_runtime_lane_promotion": true,
+    "full_hybrid_candidate_modification": false,
+    "full_hybrid_runtime_promotion": true,
+    "hybrid_semantic_lane_promotion": true,
+    "parent_artifact_modification": false,
+    "production_ready_now": false
+  },
+  "candidate_internal_authorities": {
+    "build_authorization_snapshot_sha256": "4c51aa0c3a47efa8ab25d6f15431f70f70bad48d7b866056f32b5c846226656c",
+    "build_identity_sha256": "220d8b03799a97c255207f8d1275878b5e392bcb9229c1c7eafd90bcf9e296ab",
+    "candidate_inventory_sha256": "657d4c195c48ab0f8ddbb8ba3d5bfe030cdd9710adcb6f8a861ba56d50d32085",
+    "candidate_packer_sha256": "f571df4449f1e812e31bbc92ab1f1bbe835e88e2c7b8696b22714637378709be",
+    "candidate_validator_sha256": "444708131cf35776250eeaee2712ec791878b675d9e0eb132eacd89b5678a48d",
+    "deterministic_packaging_spec_sha256": "34a507bf3abf08674a91e61b184c55cf0c59301ac6c493a1acd60c8edc4ac3d1",
+    "parent_binding_sha256": "2fd4f94192cf20c45d16d2eec9871f509d95922fe35de3a2dfe65c048b25945b"
+  },
+  "external_roots_of_trust": {
+    "candidate_identity_anchor": {
+      "commit_sha": "9e6a7a5a745095e4e24404ca99d25647ff73b345",
+      "path": "rag/06_hybrid_index/rc1/release_authority/FULL_HYBRID_RC1_OFFICIAL_RELEASE_ANCHOR.json",
+      "repository": "mvera37/RAG_DIAloga",
+      "sha256": "034e1b95296ba9f971b6fcf1c7522319bc2f04f67b300907f5cca50474e2214a",
+      "type": "IMMUTABLE_GITHUB_COMMIT_PUBLIC_PIN"
+    },
+    "closure_authority": {
+      "commit_sha": "91b0b691e4efe7668f73b7f8efd9f9b13db63f67",
+      "freeze_transition_authorized": true,
+      "path": "rag/06_hybrid_index/rc1/release_authority/FULL_HYBRID_RC1_CLOSURE_AUTHORIZATION.json",
+      "repository": "mvera37/RAG_DIAloga",
+      "sha256": "b67f6e33a97041ae3329a462e12b2ed9000bc890202961be3e9ced9aad12e2e2",
+      "type": "IMMUTABLE_GITHUB_COMMIT_CONDITIONAL_RELEASE_AUTHORITY"
+    },
+    "signed_release_authority": {
+      "ready": false,
+      "required_for_this_freeze": false,
+      "status": "OPTIONAL_HARDENING_NONBLOCKING"
+    }
+  },
+  "freeze_status": "FROZEN",
+  "freeze_timestamp": {
+    "america_lima": "2026-08-20T14:21:00-05:00",
+    "utc": "2026-08-20T19:21:00Z"
+  },
+  "frozen_parent_chain": {
+    "canonical_rc4": {
+      "candidate_sha256": "f45eb3a90b73dadb14d9c73bc87fde64f1b1a49d298395e93fe8a8e7555214d1",
+      "corpus_sha256": "c488a97b588032f0c6150e95580ec77d51868b9355323487dcf9c428a84a37c6",
+      "frozen_attestation_sha256": "f734cf25ae63891a1e4fc9a537bd1a6f8465b5ab5f438bfa061dae11d4006ace"
+    },
+    "dense_index_rc2": {
+      "candidate_sha256": "f45b854796c733affed1811984cdd6ebd061eaf0ec9341e4a4af60bf74df1ea8",
+      "frozen_attestation_sha256": "991dc756d0ba513324ba59e2428e211417009f4b46ea6d936790fa0572416ff3",
+      "index_sha256": "085215053fa3da335d3f557e644ea33c33c678e47012c4c3d2d12cf9b6fe0198",
+      "row_map_sha256": "957afabb965ffca781502ab15063f11930950207d771ed42cc5bcec49c6bcada"
+    },
+    "hybrid_design_rc9": {
+      "candidate_sha256": "e7f9eb8da031a56752e89c0cd357aa3dd6a244fac365743b38574fb80a90e8f5",
+      "frozen_attestation_sha256": "71a1cbca13ac20716c86e04c44bfb6ca9084b409b76105a2a36df69286ca2679"
+    },
+    "lexical_index_rc1": {
+      "candidate_sha256": "67edda46bb3e0465921c254ae05df4a1b6a30926b6a26f45574b69f97dd2cdac",
+      "frozen_attestation_sha256": "ce49cbdebe04a11e8ef239f2a9156d1ca2eb52063835794ea26880ea0d4e1df9"
+    },
+    "lexical_runtime_rc2": {
+      "candidate_sha256": "f2ff25c2129e9065a6ab3e9fbfe2fcdf3c7b7bee6bd5a7dc6874028a5ecfe36f",
+      "frozen_attestation_sha256": "7084a3be23d8c34dca7737e2628092f40a906e76d2f6d5151b20a6329ae04f5e",
+      "runtime_source_sha256": "d260caab5d81debf6199dc52c6b9bb045487296282b4f4ed70006eaf911ad694",
+      "status": "FROZEN_VALID"
+    },
+    "production_embeddings_rc2": {
+      "candidate_sha256": "67d0804361c2cb594216c5c33de330cc7c22c5f5988372eabd9988ba8f86ae2a",
+      "frozen_attestation_sha256": "1ebb82c73abe68b56fc806b05ef2dfe59b547c1775f9821749a2bb0ba5b7c40f",
+      "vector_sha256": "89189e573b7f7818b137bd69d00a0acabbaec0c64a2778d22c9244b432262a6e"
+    }
+  },
+  "next_release_rule": "DIAloga runtime integration must pin this exact Full Hybrid RC1 Frozen Attestation SHA-256 and official candidate SHA-256 before enabling dense/hybrid_semantic. Application Wiring may start only after that runtime promotion and must not mutate frozen RAG artifacts.",
+  "release": "DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1",
+  "release_authority": {
+    "fusion_contract": {
+      "base_limit": 20,
+      "candidate_k_per_lane": 40,
+      "fusion_contract_sha256": "890fe8f813c4aa5f2545a0de94ac51aa950c0b2ef4d6114fc0f7e4adfb359e07",
+      "fusion_core_sha256": "840a5875087dd9ec84d2543ce8d3fe936115645bb735a838c5e2e0f0fc9cd57b",
+      "max_final": 36,
+      "max_protected_lexical_only": 16,
+      "method": "RRF",
+      "rrf_k": 60,
+      "structured_exact_bypass": true,
+      "tie_break": [
+        "RRF_score DESC",
+        "lane_presence_count DESC",
+        "best_lane_rank ASC",
+        "corpus_ordinal ASC"
+      ]
+    },
+    "official_candidate": {
+      "artifact_class": "QUERY_TIME_FULL_HYBRID_COMPOSITION",
+      "bytes": 1738458,
+      "filename": "DIAloga_Hybrid_Index_V4_Full_Hybrid_RC1_Candidate.zip",
+      "immutability_rule": "Frozen byte-for-byte. Any candidate-byte change requires a new candidate identity and a new external audit/release decision.",
+      "members": 25,
+      "sha256": "c7537e8befb53427a8911a4508d3bc68771d617f3630616c3f7ad4ddd0d9f6fc"
+    }
+  },
+  "schema_version": "dialoga_full_hybrid_rc1_frozen_attestation_v1",
+  "state_transition": {
+    "application_wiring_authorized_after_runtime_promotion": true,
+    "full_hybrid_rc1_frozen": true,
+    "production_ready": false,
+    "ready_for_runtime_integration_promotion": true,
+    "runtime_authorized_after_attestation_validation": true
+  },
+  "verification": {
+    "ascii_nfc_search_equivalent": true,
+    "bm25_independent_recomputation": "PASS_20_OF_20",
+    "candidate_deterministic_rebuild_verified": true,
+    "candidate_identity_verified": true,
+    "coordinated_false_pass_resistance": "VERIFIED",
+    "core_invariants_unchanged": true,
+    "dense_lexical_hybrid_alignment": "1450_OF_1450",
+    "external_authority_fake_rejection": "VERIFIED",
+    "lexical_adversarial": "PASS_36_OF_36",
+    "lexical_conformance": "PASS_9246_OF_9246",
+    "lexical_coverage": "1466_OF_1466",
+    "lexical_only_full_hybrid_survival": "16_OF_16",
+    "lexical_only_physical_presence": "16_OF_16",
+    "lexical_only_runtime_retrieval": "16_OF_16",
+    "parent_compatibility_verified": true,
+    "rrf_independent_recomputation": "PASS_41_OF_41",
+    "unexpected_scope_drift": false,
+    "unicode_normalization_ready": true
+  }
+}
